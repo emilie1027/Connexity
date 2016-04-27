@@ -9,6 +9,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.support.AnnotationConfigContextLoader;
 import org.springframework.util.Assert;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = application.Application.class, loader = AnnotationConfigContextLoader.class)
 
@@ -18,7 +21,37 @@ public class ConnexityGatewayUnitTest {
 
     @Test
     public void testSearchByKey() {
-        System.out.print(connexityGateway.getByKeyword("key"));
-        Assert.isTrue(true);
+        try {
+            String result = connexityGateway.getByKeyWord("apple");
+            Assert.notNull(result);
+        }
+        catch (Exception e){
+            Assert.isTrue(false, "Exception is caught");
+        }
+    }
+
+    @Test
+    public void testSearchByKeyWithSpace() {
+        try {
+            String result = connexityGateway.getByKeyWord("Code Complete");
+            Assert.notNull(result);
+        }
+        catch (Exception e){
+            Assert.isTrue(false, "Exception is caught");
+        }
+    }
+
+    @Test
+    public void testSearchByKeyWithOverriddenParameter() {
+        try {
+            Map<String, String> param = new HashMap<String, String>();
+            param.put("format","xml");
+            String result = connexityGateway.getByKeyWord("Code Complete",param);
+            Assert.notNull(result);
+            Assert.isTrue(result.contains("xml"));
+        }
+        catch (Exception e){
+            Assert.isTrue(false, "Exception is caught");
+        }
     }
 }
