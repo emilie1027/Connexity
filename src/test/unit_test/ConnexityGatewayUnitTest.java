@@ -9,6 +9,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.support.AnnotationConfigContextLoader;
 import org.springframework.util.Assert;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -42,16 +43,11 @@ public class ConnexityGatewayUnitTest {
     }
 
     @Test
-    public void testSearchByKeyWithOverriddenParameter() {
-        try {
-            Map<String, String> param = new HashMap<String, String>();
-            param.put("format","xml");
-            String result = connexityGateway.getByKeyWord("Code Complete",param);
-            Assert.notNull(result);
-            Assert.isTrue(result.contains("xml"));
-        }
-        catch (Exception e){
-            Assert.isTrue(false, "Exception is caught");
-        }
+    public void testSearchByKeyWithOverriddenParameter() throws IOException{
+        Map<String, String> param = new HashMap<String, String>();
+        param.put("format","xml");
+        String result = connexityGateway.getByKeyWord("Code Complete",param);
+        Assert.notNull(result);
+        Assert.isTrue(result.contains("xml"));
     }
 }
