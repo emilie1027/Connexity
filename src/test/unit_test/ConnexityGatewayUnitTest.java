@@ -50,4 +50,13 @@ public class ConnexityGatewayUnitTest {
         Assert.notNull(result);
         Assert.isTrue(result.contains("xml"));
     }
+
+    @Test //Price Ranking
+    public void testSearchByKeyWithPriceDescending() throws IOException{
+        Map<String, String> param = new HashMap<String, String>();
+        param.put("results","250");
+        param.put("sort", "price_desc");
+        String result = connexityGateway.getByKeyWord("Code Complete",param);
+        Assert.notNull(result);
+    }
 }
