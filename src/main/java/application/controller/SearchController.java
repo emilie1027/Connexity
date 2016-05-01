@@ -22,7 +22,7 @@ public class SearchController {
     public String search(@RequestParam(value = "key", required = false, defaultValue = "World") String key, Model model) throws IOException{
         List<Offer> searchResult = searchStrategy.search(key);
         model.addAttribute("offers", searchResult);
-        return "home";
+        return "query";
     }
 
 }
