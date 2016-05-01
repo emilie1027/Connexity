@@ -22,7 +22,7 @@ Connexity is a Technology-driven marketing solutions company which connect retai
 
 We would like to keep a `dev` branch which is where all the development will be merged into. There would also be a `backend` branch and a `frontend` branch that will contain different parts of the project. The `release` branch will contain our working prototypes and will be updated with new features.
 
-Each person will work on a different branch of their own named `<name>-<feature` (e.g. `qingwei-spring`).
+Each person will work on a different branch of their own named `<name>-<feature>` (e.g. `qingwei-spring`).
 
 When merging branches, include the `--no-ff` option to keep track of what is happening with the merging, e.g. merging `backend` into `dev` will be
 
