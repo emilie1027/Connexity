@@ -7,13 +7,20 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 @Component
 public class SearchStrategy {
     @Autowired
     private ConnexityGateway connexityGateway;
-    public List<Offer> search(String key) throws IOException{
+
+    public List<Offer> basicSearch(String key) throws IOException{
         String searchResult = connexityGateway.getByKeyWord(key);
+        return Offer.parseString(searchResult);
+    }
+
+    public List<Offer> basicSearch(String key, Map<String, String> overrideParameter) throws IOException{
+        String searchResult = connexityGateway.getByKeyWord(key, overrideParameter);
         return Offer.parseString(searchResult);
     }
 }
