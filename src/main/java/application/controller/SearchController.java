@@ -19,17 +19,10 @@ public class SearchController {
     
     @Autowired
     private SearchStrategy searchStrategy;
-    private List<Offer> searchResult;
-    private Query currentQuery;
-    
-    public SearchController() {
-        searchResult = null;
-        currentQuery = null;
-    }
     
     @RequestMapping("/*")
     public String search(@RequestParam(value = "key", required = false, defaultValue = "World") String key, Model model) throws IOException {
-        searchResult = searchStrategy.basicSearch(key);
+        List<Offer> searchResult = searchStrategy.basicSearch(key);
         model.addAttribute("offers", searchResult);
         return "query";
     }
