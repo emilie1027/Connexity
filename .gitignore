@@ -1,1 +1,10 @@
+<<<<<<< HEAD
 /target/
+=======
+
+*.class
+
+*.jar
+
+*.original
+>>>>>>> dev
