@@ -21,15 +21,15 @@ public class Offer {
     public String upc = null;
     public String description = null;
     public String manufacturer = null;
-    public String url = null;
+    public URL url = null;
     public Double price = null;
-    public List<Image> images = null;
+    public List<URL> images = null;
     public String merchantName = null;
     public String merchantLogoUrl = null;
     public String condition = null;
     public Double relevancy = null;
     public Double markdownPercent = null;
-    
+
     public Offer(JSONObject offerJson) throws IOException, NullPointerException {
         //some element may not in every jsonObject (eg. relevancy and upc)
         //Need a way to check and parse it accordingly
@@ -65,7 +65,7 @@ public class Offer {
             manufacturer = null;
         }
         try {
-            url = (String) offerJson.get("url");
+            url =  new URL((String) ((JSONObject) offerJson.get("url")).get("value"));
         }
         catch (Exception e) {
             url = null;
@@ -76,8 +76,7 @@ public class Offer {
             for(int i = 0; i < imgJSONArray.size(); i++) {
                 JSONObject imgJSON = (JSONObject) imgJSONArray.get(i);
                 URL imgURL = new URL((String) imgJSON.get("value"));
-                Image img = ImageIO.read(imgURL);
-                images.add(img);
+                images.add(imgURL);
             }
         }
         catch (Exception e){
@@ -114,8 +113,8 @@ public class Offer {
             markdownPercent = null;
         }
     }
-    
-    
+
+
     static public List<Offer> parseString(String input) throws IOException {
         try {
             List<Offer> result = new ArrayList<>();
@@ -130,144 +129,145 @@ public class Offer {
         catch (ParseException e) {
             throw new RuntimeException(e.getMessage());
         }
-        
+
     }
-    
-    
+
+
     public static JSONParser getJsonParser() {
         return jsonParser;
     }
-    
-    
+
+
     public static void setJsonParser(JSONParser jsonParser) {
         Offer.jsonParser = jsonParser;
     }
-    
-    
+
+
     public String getTitle() {
         return title;
     }
-    
-    
+
+
     public void setTitle(String title) {
         this.title = title;
     }
-    
-    
+
+
     public String getSku() {
         return sku;
     }
-    
-    
+
+
     public void setSku(String sku) {
         this.sku = sku;
     }
-    
-    
+
+
     public String getUpc() {
         return upc;
     }
-    
-    
+
+
     public void setUpc(String upc) {
         this.upc = upc;
     }
-    
-    
+
+
     public String getDescription() {
         return description;
     }
-    
-    
+
+
     public void setDescription(String description) {
         this.description = description;
     }
-    
-    
+
+
     public String getManufacturer() {
         return manufacturer;
     }
-    
-    
+
+
     public void setManufacturer(String manufacturer) {
         this.manufacturer = manufacturer;
     }
-    
-    
-    public String getUrl() {
+
+
+    public URL getUrl() {
         return url;
     }
-    
-    
-    public void setUrl(String url) {
+
+
+    public void setUrl(URL url) {
         this.url = url;
     }
-    
-    
+
+
     public Double getPrice() {
         return price;
     }
-    
-    
+
+
     public void setPrice(Double price) {
         this.price = price;
     }
-    
-    
-    public List<Image> getImages() {
+
+
+    public List<URL> getImages() {
         return images;
     }
-    
-    
-    public void setImages(List<Image> images) {
+
+
+    public void setImages(List<URL> images) {
         this.images = images;
     }
-    
-    
+
+
     public String getMerchantName() {
         return merchantName;
     }
-    
-    
+
+
     public void setMerchantName(String merchantName) {
         this.merchantName = merchantName;
     }
-    
-    
+
+
     public String getMerchantLogoUrl() {
         return merchantLogoUrl;
     }
-    
-    
+
+
     public void setMerchantLogoUrl(String merchantLogoUrl) {
         this.merchantLogoUrl = merchantLogoUrl;
     }
-    
-    
+
+
     public String getCondition() {
         return condition;
     }
-    
-    
+
+
     public void setCondition(String condition) {
         this.condition = condition;
     }
-    
-    
+
+
     public Double getRelevancy() {
         return relevancy;
     }
-    
-    
+
+
     public void setRelevancy(Double relevancy) {
         this.relevancy = relevancy;
     }
-    
+
+
     public Double getMarkdownPercent() {
         return markdownPercent;
     }
-    
-    
+
+
     public void setMarkdownPercent(Double markdownPercent) {
         this.markdownPercent = markdownPercent;
     }
