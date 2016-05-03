@@ -80,7 +80,7 @@ public class ConnexityGateway {
     private Map returnDefaultParameter(){
         Map<String, String> defaultParameter = new HashMap<>();
         defaultParameter.put("offersOnly", "true");
-        defaultParameter.put("results","10");
+        defaultParameter.put("results","100");
         defaultParameter.put("format", "json");
         return defaultParameter;
     }
