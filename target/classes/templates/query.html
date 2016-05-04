@@ -23,6 +23,76 @@
         }
     </script>
 
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".myli:gt(11)").hide();
+            var total_q=$(".myli").index()+1;
+            var current_page=12;
+            var current_num=1;
+            var total_page = Math.floor(document.getElementById("textbox").value/current_page)+1;
+            var next=$(".next");
+            var prev=$(".prev");
+            $(".total").text(total_page);
+            $(".current_page").text(current_num);
+
+            $(".next").click(function(){
+                if(current_num==100){
+                    return false;
+                }
+                else{
+                    $(".current_page").text(++current_num);
+                    $.each($('.myli'),function(index,item){
+                        var start = current_page* (current_num-1);
+                        var end = current_page * current_num;
+                        if(index >= start){
+                            if(end > index) {
+                                $(this).show();
+                            }else{
+                                $(this).hide();
+                            }
+                        }else {
+                            $(this).hide();
+                        }
+                    });
+                }
+            });
+
+            $(".prev").click(function(){
+                if(current_num==1){
+                    return false;
+                }else{
+                    $(".current_page").text(--current_num);
+                    $.each($('.myli'),function(index,item){
+                        var start = current_page* (current_num-1);
+                        var end = current_page * current_num;
+                        if(index >= start){
+                            if( end >index) {
+                                $(this).show();
+                            }else {
+                                $(this).hide();
+                            }
+                        }else {
+                            $(this).hide();
+                        }
+                    });
+                }
+
+            })
+
+        })
+    </script>
+    <style type="text/css">
+        .item{overflow:hidden;}
+        .clear{zoom:1;}
+        .clear:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+        .page_btn{padding-top:20px;}
+        .page_btn a{cursor:pointer;padding:5px;border:solid 1px #ccc;font-size:12px;}
+        .page_box{float:right;}
+        .num{padding:0 10px;}
+    </style>
+
 </head>
 <body>
 <div class="container" name="top">
@@ -41,25 +111,34 @@
         </div>
     </form>
 
-    <ul>
-        <th:block th:each="offer : ${offers}">
-            <div class="col-md-3 bottom-grid">
-                <div class="bottom-pad">
-                    <div class="btm-img">
-                        <img th:src="${offer.images[3]}" alt="" />
-                    </div>
-                </div>
-                <div class="offerinfo">
-                 <a th:href="${offer.url}" th:text="${offer.title}">Items</a>
-                    <p th:text="'$'+${offer.price}"></p>
-                </div>
-            </div>
-        </th:block>
-    </ul>
+    <div class="main">
+        <div class="item">
+            <ul id="clear" th:value="${offers.size()}" text="aaa">
+                <li class="myli" id="myli" th:each="offer : ${offers}">
+                    <input type="hidden" value="software engineer"  th:value="${offers.size()}" id="textbox"/>
+                    <div class="col-md-3 bottom-grid">
+                            <div class="bottom-pad">
+                                <div class="btm-img">
+                                    <img th:src="${offer.images[3]}" alt="" />
+                                </div>
+                            </div>
+                            <div class="offerinfo">
+                             <a th:href="${offer.url}" th:text="${offer.title}">Items</a>
+                                <p th:text="'$'+${offer.price}"></p>
+                            </div>
+                        </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <a href="#0" class="cd-top">Top</a>
-
+    <div class="page_btn clear">
+            <span class="page_box">
+                <a class="prev">Previous</a><span class="num"><span class="current_page">1</span><span style="padding:0 3px;">/</span><span class="total"></span></span><a class="next">Next</a>
+            </span>
     </div>
+
             <div class="footer">
             <div class="footer-one">
                 <h2><a href="#">CONNEXITY</a></h2>
@@ -123,5 +202,6 @@
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script th:src="@{/js/main.js}"></script>
+    </div>
 </body>
 </html>

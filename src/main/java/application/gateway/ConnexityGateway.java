@@ -80,8 +80,20 @@ public class ConnexityGateway {
     private Map returnDefaultParameter(){
         Map<String, String> defaultParameter = new HashMap<>();
         defaultParameter.put("offersOnly", "true");
-        defaultParameter.put("results","10");
+        defaultParameter.put("results","100");
         defaultParameter.put("format", "json");
+
+        //for some reason, without these default values
+        //the api call will be unstable
+        defaultParameter.put("start","0");
+        defaultParameter.put("backfillResults","0");
+        defaultParameter.put("startOffers","0");
+        defaultParameter.put("resultsOffers","0");
+        defaultParameter.put("sort","relevancy_desc");
+        defaultParameter.put("resultsAttribute","10");
+        defaultParameter.put("resultsAttributeValues","10");
+        defaultParameter.put("reviews","none");
+        defaultParameter.put("callback","callback");
         return defaultParameter;
     }
 }

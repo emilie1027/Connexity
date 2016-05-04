@@ -28,7 +28,7 @@ public class Offer {
     public String merchantLogoUrl = null;
     public String condition = null;
     public Double relevancy = null;
-    public Double markdownPercent = null;
+    public Double markdownPercent = null; //not sure if this is the discount
 
     public Offer(JSONObject offerJson) throws IOException, NullPointerException {
         //some element may not in every jsonObject (eg. relevancy and upc)
