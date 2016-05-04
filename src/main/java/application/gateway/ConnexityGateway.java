@@ -82,6 +82,7 @@ public class ConnexityGateway {
         defaultParameter.put("offersOnly", "true");
         defaultParameter.put("results","100");
         defaultParameter.put("format", "json");
+        defaultParameter.put("placementId","1");
         return defaultParameter;
     }
 }
