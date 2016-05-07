@@ -24,18 +24,11 @@ public class SearchStrategy {
         return Offer.parseString(searchResult);
     }
     
-    public List<Offer> advancedSearch(String key) throws IOException {
+    public List<Offer> markdownSearch(String key) throws IOException {
         List<Offer> searchResult = basicSearch(key);
         Collections.sort(searchResult, new Comparator<Offer>() {
             public int compare(Offer o1, Offer o2) {
-                if (o1.getMarkdownPercent() == null && o2.getMarkdownPercent() == null)
-                    return 0;
-                else if (o1.getMarkdownPercent() == null)
-                    return -1;
-                else if (o2.getMarkdownPercent() == null)
-                    return 1;
-                else
-                    return Double.compare(o1.getMarkdownPercent(), o2.getRelevancy());
+                return Double.compare(o2.getMarkdownPercent(), o1.getMarkdownPercent());
             }
         });
         return searchResult;
