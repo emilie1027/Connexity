@@ -19,6 +19,7 @@ public class Offer {
     public String title = null;
     public String sku = null;
     public String upc = null;
+    public Long merchantId = null;
     public String description = null;
     public String manufacturer = null;
     public URL url = null;
@@ -45,6 +46,12 @@ public class Offer {
         }
         catch (NullPointerException e) {
             upc = null;
+        }
+        try {
+            merchantId = (Long) offerJson.get("merchantId");
+        }
+        catch (NullPointerException e){
+            merchantId = null;
         }
         try {
             price = new Double((long)(((JSONObject) offerJson.get("price")).get("integral"))/100.0);
