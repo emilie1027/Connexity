@@ -131,7 +131,8 @@
                                 </div>
                             </div>
                             <div class="offerinfo">
-                             <a th:href="${offer.url}" th:text="${offer.title}">Items</a>
+                            <!-- <a th:href="${offer.url}" th:text="${offer.title}">Items</a> -->
+                                <a th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a>
                                 <p th:text="'$'+${offer.price}"></p>
                             </div>
                         </div>
