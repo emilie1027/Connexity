@@ -40,7 +40,7 @@ public class SearchController {
     @RequestMapping("/redirect")
     public String redirect(@RequestParam Map<String, String> requestParams, @CookieValue(value="ConnexityUserID", required=false, defaultValue="connexityuserid") String cookieValue, HttpServletRequest request, HttpServletResponse response) throws Exception{
         //String redirectUrl = request.getScheme() + "://www.google.com";
-        String redirectUrl = request.getScheme() + requestParams.get("url");
+        String redirectUrl = requestParams.get("url");
         String sku = requestParams.get("sku");
         String upc = requestParams.get("upc");
         String merchantId = requestParams.get("merchantId");
