@@ -13,6 +13,8 @@ import org.springframework.util.Assert;
 import javax.annotation.PostConstruct;
 import java.io.IOException;
 import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -34,4 +36,28 @@ public class OfferUnitTest {
         List<Offer> parserReusult = Offer.parseString(testInput);
         Assert.notNull(parserReusult);
     }
+
+    @Test
+    //not strictly a unit test, need to revise
+    public void testParseStringToObjectReturnByProdcutIdSearch() throws IOException{
+        List<Offer> parserReusult = Offer.parseString(testInput);
+        Iterator<Offer> iterator = parserReusult.iterator();
+        List<Offer> finalResult = new ArrayList<>();
+        int i = 0;
+        while(iterator.hasNext()) {
+            Offer offer = iterator.next();
+            String resultString = connexityGateway.getByUpcOrSku(offer.upc, offer.sku, offer.merchantId);
+            if(resultString != null) {
+                Offer result = Offer.parseStringForSingleElement(resultString);
+                if(result != null) {
+                    finalResult.add(result);
+                    i++;
+                }
+            }
+            System.out.println(i);
+        }
+        Assert.notNull(parserReusult);
+        Assert.isTrue(finalResult.size() > 0);
+    }
+
 }
