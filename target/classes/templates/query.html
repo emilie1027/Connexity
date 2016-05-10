@@ -34,7 +34,6 @@
                 animation: false,
                 placement: 'bottom',
                 html: true
-
             };
             $('.bottom-pad').popover(popoverOptions);
         });
@@ -157,11 +156,11 @@
                             </div>
                             <div class="details">
                                 <div class="item-info">
-                                    <p th:text="${offer.title}"></p>
-                                    <p th:text="'$'+${offer.price}"></p>
-                                    <p th:text="${offer.description}"></p>
-                                    <p th:text="${offer.manufacturer}"></p>
-                                    <p th:text="${offer.merchantName}"></p>
+                                    <p th:text="'Item Name: ' + ${offer.title}"></p>
+                                    <p th:text="'Item Price: $'+${offer.price}"></p>
+                                    <!--<p th:text="'Item Description: ' + ${offer.description}"></p>-->
+                                    <p th:text="'Manufacturer: ' + ${offer.manufacturer}"></p>
+                                    <p th:text="'Merchant Name: ' + ${offer.merchantName}"></p>
                                 </div>
                             </div>
                         </div>
