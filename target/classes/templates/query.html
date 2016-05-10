@@ -23,6 +23,27 @@
         }
     </script>
 
+    <script>
+        $(document).ready(function () {
+            popoverOptions = {
+                content: function () {
+                    // Get the content from the hidden sibling.
+                    return $(this).siblings('.details').html();
+                },
+                trigger: 'hover',
+                animation: false,
+                placement: 'bottom',
+                html: true
+
+            };
+            $('.bottom-pad').popover(popoverOptions);
+        });
+    </script>
+    <style type="text/css">
+        .details { display:none; }
+        .popover { max-width: 100% }
+    </style>
+
 
     <script type="text/javascript">
         $(document).ready(function(){
@@ -134,10 +155,21 @@
                              <a th:href="${offer.url}" th:text="${offer.title}">Items</a>
                                 <p th:text="'$'+${offer.price}"></p>
                             </div>
+                            <div class="details">
+                                <div class="item-info">
+                                    <p th:text="${offer.title}"></p>
+                                    <p th:text="'$'+${offer.price}"></p>
+                                    <p th:text="${offer.description}"></p>
+                                    <p th:text="${offer.manufacturer}"></p>
+                                    <p th:text="${offer.merchantName}"></p>
+                                </div>
+                            </div>
                         </div>
                 </li>
             </ul>
         </div>
+
+
     </div>
 
     <div class="page_btn_border">
