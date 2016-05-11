@@ -3,6 +3,7 @@ package application.controller;
 import application.model.Offer;
 import application.model.Query;
 import application.search.SearchStrategy;
+import application.gateway.HistoryGateway;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,6 +26,8 @@ public class SearchController {
     
     @Autowired
     private SearchStrategy searchStrategy;
+    @Autowired
+    private HistoryGateway historyGateway;
     
     @RequestMapping("/*")
     public String search(@RequestParam(value = "key", required = false, defaultValue = "World") String key, Model model) throws IOException {
@@ -50,6 +53,15 @@ public class SearchController {
             response.addCookie(new Cookie("ConnexityUserID", uniqueID));
         }
         // putUserHistoryIntoDB(cookieValue, sku, upc, mercharId);
+        else {
+        		//response.addCookie(new Cookie("ConnexityUserID", cookieValue));
+        		//DO WE NEED TO ADD COOKIES AGAIN? NO?
+        		historyGateway.insertHistory(cookieValue, upc, sku, merchantId);
+//        		//test whether DB stores right
+//        		List<Map<String, String> > ans = historyGateway.findHistory(cookieValue);
+//        		//String firstRecord = ans.iterator().next().get("upc");
+//        		System.out.printf("history size: %d\n", ans.size());
+        }
 
         return "redirect:" + redirectUrl;
     }
