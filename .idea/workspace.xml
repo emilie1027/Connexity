@@ -60,6 +60,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/search.png" afterPath="$PROJECT_DIR$/target/classes/templates/images/search.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/tick.png" afterPath="$PROJECT_DIR$/target/classes/templates/images/tick.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/women.jpg" afterPath="$PROJECT_DIR$/target/classes/templates/images/women.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/css/bootstrap-theme.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/css/bootstrap-theme.css.map" />
@@ -138,8 +139,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+            <state relative-caret-position="270">
+              <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -278,7 +279,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-33" />
+    <option name="x" value="41" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="729" />
@@ -924,15 +925,15 @@
       <workItem from="1462508119539" duration="170000" />
       <workItem from="1462508378020" duration="3558000" />
       <workItem from="1462511998627" duration="971000" />
-      <workItem from="1463031981450" duration="872000" />
+      <workItem from="1463031981450" duration="1327000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14178000" />
+    <option name="totallyTimeSpent" value="14633000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-33" y="23" width="1280" height="729" extended-state="0" />
+    <frame x="41" y="23" width="1280" height="729" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1261,8 +1262,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+        <state relative-caret-position="270">
+          <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
           <folding />
         </state>
       </provider>
