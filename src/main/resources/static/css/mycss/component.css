@@ -8,9 +8,12 @@
 
 .og-grid li {
 	display: inline-block;
-	margin: 10px 5px 0 5px;
+	margin-bottom: 80px;
+	margin-right: 20px;
+	margin-left: 20px;
 	vertical-align: top;
-	height: 250px;
+	height: 200px;
+	width: 200px;
 }
 
 .og-grid li > a,
@@ -110,14 +113,14 @@
 
 .og-details h3 {
 	font-weight: 300;
-	font-size: 52px;
+	font-size: 26px;
 	padding: 40px 0 10px;
 	margin-bottom: 10px;
 }
 
 .og-details p {
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 22px;
 	color: #999;
 }

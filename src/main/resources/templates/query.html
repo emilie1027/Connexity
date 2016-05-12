@@ -127,7 +127,9 @@
                 <li class="myli" id="myli" th:each="offer : ${offers}">
                     <input type="hidden" value="software engineer"  th:value="${offers.size()}" id="textbox"/>
                     <a data-th-attr="href=${offer.url}, data-largesrc=${offer.images[3]}, data-title=${offer.title}, data-description=${offer.description}"></a>
-                    <img th:src="${offer.images[3]}" alt="" />
+                    <img class="grid-img" th:src="${offer.images[3]}" alt="" />
+                    <a class="grid-title" th:href="${offer.url}" th:text="${offer.title}"></a>
+                    <p th:text="'$' + ${offer.price}"></p>
 
                     <div class="og-expander">
                         <div class="og-expander-inner">
@@ -143,10 +145,8 @@
                             </div>
                         </div>
                     </div>
-                    
                 </li>
             </ul>
-        <!--</div>-->
     </div>
 
     <div class="page_btn_border">
