@@ -2,8 +2,118 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1bc116e-8fb2-4ef1-8397-c52e75e7c40a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/img/home.png" afterPath="$PROJECT_DIR$/target/classes/static/css/img/home.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/arrow.png" afterPath="$PROJECT_DIR$/target/classes/static/images/arrow.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/body-bg.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/body-bg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/cart.png" afterPath="$PROJECT_DIR$/target/classes/static/images/cart.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/d5.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/d5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/d6.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/d6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/d7.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/d7.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/d8.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/d8.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/home.png" afterPath="$PROJECT_DIR$/target/classes/static/images/home.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/into.png" afterPath="$PROJECT_DIR$/target/classes/static/images/into.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/mark.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/mark.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/men.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/men.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/menu.png" afterPath="$PROJECT_DIR$/target/classes/static/images/menu.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/pic1.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/pic1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/pic10.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/pic10.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/pic11.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/pic11.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/pic2.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/pic2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/pic4.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/pic4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/pic5.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/pic5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/pic6.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/pic6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/pic7.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/pic7.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/pic8.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/pic8.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/pic9.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/pic9.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/search.png" afterPath="$PROJECT_DIR$/target/classes/static/images/search.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/tick.png" afterPath="$PROJECT_DIR$/target/classes/static/images/tick.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/women.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/women.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/arrow.png" afterPath="$PROJECT_DIR$/target/classes/templates/images/arrow.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/body-bg.jpg" afterPath="$PROJECT_DIR$/target/classes/templates/images/body-bg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/cart.png" afterPath="$PROJECT_DIR$/target/classes/templates/images/cart.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/d5.jpg" afterPath="$PROJECT_DIR$/target/classes/templates/images/d5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/d6.jpg" afterPath="$PROJECT_DIR$/target/classes/templates/images/d6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/d7.jpg" afterPath="$PROJECT_DIR$/target/classes/templates/images/d7.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/d8.jpg" afterPath="$PROJECT_DIR$/target/classes/templates/images/d8.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/into.png" afterPath="$PROJECT_DIR$/target/classes/templates/images/into.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/mark.jpg" afterPath="$PROJECT_DIR$/target/classes/templates/images/mark.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/men.jpg" afterPath="$PROJECT_DIR$/target/classes/templates/images/men.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/menu.png" afterPath="$PROJECT_DIR$/target/classes/templates/images/menu.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/pic1.jpg" afterPath="$PROJECT_DIR$/target/classes/templates/images/pic1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/pic10.jpg" afterPath="$PROJECT_DIR$/target/classes/templates/images/pic10.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/pic11.jpg" afterPath="$PROJECT_DIR$/target/classes/templates/images/pic11.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/pic2.jpg" afterPath="$PROJECT_DIR$/target/classes/templates/images/pic2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/pic4.jpg" afterPath="$PROJECT_DIR$/target/classes/templates/images/pic4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/pic5.jpg" afterPath="$PROJECT_DIR$/target/classes/templates/images/pic5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/pic6.jpg" afterPath="$PROJECT_DIR$/target/classes/templates/images/pic6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/pic7.jpg" afterPath="$PROJECT_DIR$/target/classes/templates/images/pic7.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/pic8.jpg" afterPath="$PROJECT_DIR$/target/classes/templates/images/pic8.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/pic9.jpg" afterPath="$PROJECT_DIR$/target/classes/templates/images/pic9.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/search.png" afterPath="$PROJECT_DIR$/target/classes/templates/images/search.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/tick.png" afterPath="$PROJECT_DIR$/target/classes/templates/images/tick.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/women.jpg" afterPath="$PROJECT_DIR$/target/classes/templates/images/women.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/css/bootstrap-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/css/bootstrap-theme.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/css/bootstrap.css" afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/css/bootstrap.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/fonts/bootstrap.css.map" afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/fonts/bootstrap.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/js/bootstrap.js" afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/js/npm.js" afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-3.3.5-dist/js/npm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/img/cd-top-arrow.svg" afterPath="$PROJECT_DIR$/target/classes/static/css/img/cd-top-arrow.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/mycss/home.css" afterPath="$PROJECT_DIR$/target/classes/static/css/mycss/home.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/css/mycss/style.css" afterPath="$PROJECT_DIR$/target/classes/static/css/mycss/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/images/cd-top-arrow.svg" afterPath="$PROJECT_DIR$/target/classes/static/images/cd-top-arrow.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/bootstrap.js" afterPath="$PROJECT_DIR$/target/classes/static/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/jquery-1.12.3.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/jquery-1.12.3.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/main.js" afterPath="$PROJECT_DIR$/target/classes/static/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/modernizr.js" afterPath="$PROJECT_DIR$/target/classes/static/js/modernizr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/npm.js" afterPath="$PROJECT_DIR$/target/classes/static/js/npm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/partials/_layout.scss" afterPath="$PROJECT_DIR$/target/classes/static/partials/_layout.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/partials/_mixins.scss" afterPath="$PROJECT_DIR$/target/classes/static/partials/_mixins.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/partials/_variables.scss" afterPath="$PROJECT_DIR$/target/classes/static/partials/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/scss/style.scss" afterPath="$PROJECT_DIR$/target/classes/static/scss/style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/bootstrap.min.css" afterPath="$PROJECT_DIR$/target/classes/templates/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/css/bootstrap-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/css/bootstrap-theme.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/css/bootstrap.css" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/css/bootstrap.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/js/bootstrap.js" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/js/npm.js" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-3.3.5-dist/js/npm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/css/img/cd-top-arrow.svg" afterPath="$PROJECT_DIR$/target/classes/templates/css/img/cd-top-arrow.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/css/mycss/home.css" afterPath="$PROJECT_DIR$/target/classes/templates/css/mycss/home.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/css/mycss/mystyle.css" afterPath="$PROJECT_DIR$/target/classes/templates/css/mycss/mystyle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/css/mycss/style.css" afterPath="$PROJECT_DIR$/target/classes/templates/css/mycss/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/home0.html" afterPath="$PROJECT_DIR$/target/classes/templates/home0.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/images/cd-top-arrow.svg" afterPath="$PROJECT_DIR$/target/classes/templates/images/cd-top-arrow.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/js/bootstrap.js" afterPath="$PROJECT_DIR$/target/classes/templates/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/target/classes/templates/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/js/jquery-1.12.3.min.js" afterPath="$PROJECT_DIR$/target/classes/templates/js/jquery-1.12.3.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/js/main.js" afterPath="$PROJECT_DIR$/target/classes/templates/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/js/modernizr.js" afterPath="$PROJECT_DIR$/target/classes/templates/js/modernizr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/js/npm.js" afterPath="$PROJECT_DIR$/target/classes/templates/js/npm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/partials/_layout.scss" afterPath="$PROJECT_DIR$/target/classes/templates/partials/_layout.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/partials/_mixins.scss" afterPath="$PROJECT_DIR$/target/classes/templates/partials/_mixins.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/partials/_variables.scss" afterPath="$PROJECT_DIR$/target/classes/templates/partials/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/scss/style.scss" afterPath="$PROJECT_DIR$/target/classes/templates/scss/style.scss" />
     </list>
     <ignored path="Connexity.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +139,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="98" column="16" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
+            <state relative-caret-position="255">
+              <caret line="46" column="27" selection-start-line="38" selection-start-column="8" selection-end-line="60" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -47,7 +157,7 @@
         <entry file="file://$PROJECT_DIR$/target/classes/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1440">
-              <caret line="96" column="25" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
+              <caret line="112" column="25" selection-start-line="112" selection-start-column="25" selection-end-line="112" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -127,10 +237,11 @@
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" />
-  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -168,6 +279,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-33" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="729" />
@@ -197,8 +309,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -329,7 +440,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -813,15 +925,16 @@
       <workItem from="1462508119539" duration="170000" />
       <workItem from="1462508378020" duration="3558000" />
       <workItem from="1462511998627" duration="971000" />
+      <workItem from="1463031981450" duration="654000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13306000" />
+    <option name="totallyTimeSpent" value="13960000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="729" extended-state="6" />
-    <editor active="true" />
+    <frame x="-33" y="23" width="1280" height="729" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1134,7 +1247,7 @@
     <entry file="file://$PROJECT_DIR$/target/classes/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1440">
-          <caret line="96" column="25" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
+          <caret line="112" column="25" selection-start-line="112" selection-start-column="25" selection-end-line="112" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1149,8 +1262,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="98" column="16" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
+        <state relative-caret-position="255">
+          <caret line="46" column="27" selection-start-line="38" selection-start-column="8" selection-end-line="60" selection-end-column="15" />
           <folding />
         </state>
       </provider>
