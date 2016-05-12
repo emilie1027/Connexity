@@ -4,3 +4,9 @@
 *.jar
 
 *.original
+
+Connexity.iml
+
+.DS_Store
+
+target/
