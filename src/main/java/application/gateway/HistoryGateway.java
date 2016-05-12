@@ -52,7 +52,7 @@ public class HistoryGateway {
         sku = (sku == null? "" : sku);
         merchantId = (merchantId == null? "" : merchantId);
 
-        //create and insert a new doc is id does not exist
+        //create and insert a new doc if id does not exist
         if((result = findHistory(id)) == null) {
             Document doc = new Document("_id",id)
                                 .append("history", asList(new Document()
