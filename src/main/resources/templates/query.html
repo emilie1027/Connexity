@@ -6,7 +6,9 @@
     <link rel="stylesheet" th:href="@{/css/bootstrap-3.3.5-dist/css/bootstrap.css}" />
     <link rel="stylesheet" th:href="@{/css/mycss/style.css}"/>
     <link rel="stylesheet" th:href="@{/css/mycss/mystyle.css}"/>
-    <script th:src="@{/js/modernizr.js}"></script>
+    <link rel="stylesheet" th:href="@{/css/mycss/component.css}"/>
+    <link rel="stylesheet" th:href="@{/css/mycss/default.css}"/>
+    <script th:src="@{/js/modernizr.custom.js}"></script>
     <script th:src="@{/js/jquery-1.12.3.min.js}"></script>
     <script th:src="@{/js/bootstrap.min.js}"></script>
 
@@ -120,25 +122,38 @@
     </div>
 
     <div class="main">
-        <div class="item">
-            <ul id="clear" th:value="${offers.size()}" text="aaa">
+        <!--<div class="item">-->
+            <ul id="og-grid" class="og-grid" th:value="${offers.size()}" text="aaa">
                 <li class="myli" id="myli" th:each="offer : ${offers}">
                     <input type="hidden" value="software engineer"  th:value="${offers.size()}" id="textbox"/>
-                    <div class="col-md-3 bottom-grid">
-                            <div class="bottom-pad">
-                                <div class="btm-img">
-                                    <img th:src="${offer.images[3]}" alt="" />
-                                </div>
+
+                    <!-- TODO: THE FOLLOWING CODE SHOULD BE MOVED SOMEWHERE ELSE -->
+                    <!-- <a th:href="${offer.url}" th:text="${offer.title}">Items</a> -->
+                    <!-- <a th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a> -->
+
+                    <a data-th-attr="href=${offer.url}, data-largesrc=${offer.images[3]}, data-title=${offer.title}, data-description=${offer.description}"></a>
+                    <img class="grid-img" th:src="${offer.images[3]}" alt="" />
+                    <a class="grid-title" th:href="${offer.url}" th:text="${offer.title}"></a>
+                    <p th:text="'$' + ${offer.price}"></p>
+
+                    <div class="og-expander">
+                        <div class="og-expander-inner">
+                            <span class="og-close"></span>
+                            <div class="og-fullimg">
+                                <div class="og-loading"></div>
+                                <img th:src="${offer.images[3]}" alt="" />
                             </div>
-                            <div class="offerinfo">
-                            <!-- <a th:href="${offer.url}" th:text="${offer.title}">Items</a> -->
-                                <a th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a>
-                                <p th:text="'$'+${offer.price}"></p>
+                            <div class="og-details">
+                                <h3 th:text="${offer.title}"></h3>
+                                <p th:text="${offer.description}"></p>
+                                <a th:href="${offer.url}">Visit website</a>
+
+
                             </div>
                         </div>
+                    </div>
                 </li>
             </ul>
-        </div>
     </div>
 
     <div class="page_btn_border">
@@ -212,6 +227,12 @@
             <div class="clearfix"></div>
     </div>
     <script th:src="@{/js/main.js}"></script>
+    <script th:src="@{/js/grid.js}"></script>
+    <script>
+        $(function() {
+            Grid.init();
+        });
+    </script>
     </div>
 </body>
 </html>

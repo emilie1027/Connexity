@@ -12,3 +12,7 @@
 .idea/workspace.xml
 
 Connexity.iml
+
+.DS_Store
+
+target/
