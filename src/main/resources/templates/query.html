@@ -173,6 +173,11 @@
             <ul id="og-grid" class="og-grid" th:value="${offers.size()}" text="aaa">
                 <li class="myli" id="myli" th:each="offer : ${offers}">
                     <input type="hidden" value="software engineer"  th:value="${offers.size()}" id="textbox"/>
+
+                    <!-- TODO: THE FOLLOWING CODE SHOULD BE MOVED SOMEWHERE ELSE -->
+                    <!-- <a th:href="${offer.url}" th:text="${offer.title}">Items</a> -->
+                    <!-- <a th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a> -->
+
                     <a data-th-attr="href=${offer.url}, data-largesrc=${offer.images[3]}, data-title=${offer.title}, data-description=${offer.description}"></a>
                     <img class="grid-img" th:src="${offer.images[3]}" alt="" />
                     <a class="grid-title" th:href="${offer.url}" th:text="${offer.title}"></a>
@@ -189,6 +194,8 @@
                                 <h3 th:text="${offer.title}"></h3>
                                 <p th:text="${offer.description}"></p>
                                 <a th:href="${offer.url}">Visit website</a>
+
+
                             </div>
                         </div>
                     </div>
