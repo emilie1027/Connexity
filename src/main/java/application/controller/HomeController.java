@@ -5,6 +5,7 @@ package application.controller;
  */
 import application.model.Offer;
 import application.search.SearchStrategy;
+import application.gateway.ConnexityGateway;
 import application.gateway.HistoryGateway;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,8 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
@@ -27,7 +30,8 @@ import java.util.UUID;
 @Controller
 @RequestMapping("/home")
 public class HomeController {
-	
+    @Autowired
+    private SearchStrategy searchStrategy;
 	@Autowired
     private HistoryGateway historyGateway;
 
@@ -39,8 +43,14 @@ public class HomeController {
         }
         else {
             //    model.addAttribute("history",getUserHistoryFromDB());
+        		// written by xiangning on 5/12
+        		List<List<Offer> > historyOffers = new ArrayList();
         		List<Map<String, String>> historyResult = historyGateway.findHistory(cookieValue);
-        		model.addAttribute("history", historyResult);	
+        		for (Iterator it = historyResult.iterator(); it.hasNext();) {
+        			Map<String, String> history = (Map<String, String>) it.next();
+        			historyOffers.add(searchStrategy.historySearch(history));
+        		}
+        		model.addAttribute("historyOffers", historyOffers);	
         }
         return "home";
     }
