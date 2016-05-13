@@ -10,3 +10,5 @@ Connexity.iml
 .DS_Store
 
 target/
+
+.idea/
