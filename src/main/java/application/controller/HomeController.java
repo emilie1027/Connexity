@@ -44,11 +44,11 @@ public class HomeController {
         else {
             //    model.addAttribute("history",getUserHistoryFromDB());
         		// written by xiangning on 5/12
-        		List<List<Offer> > historyOffers = new ArrayList();
+        		List<Offer> historyOffers = new ArrayList();
         		List<Map<String, String>> historyResult = historyGateway.findHistory(cookieValue);
         		for (Iterator it = historyResult.iterator(); it.hasNext();) {
         			Map<String, String> history = (Map<String, String>) it.next();
-        			historyOffers.add(searchStrategy.historySearch(history));
+        			historyOffers.addAll(searchStrategy.historySearch(history));
         		}
         		model.addAttribute("historyOffers", historyOffers);	
         }
