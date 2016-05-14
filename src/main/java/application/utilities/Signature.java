@@ -1,14 +1,12 @@
-package utilities;
+package application.utilities;
 
 import java.io.UnsupportedEncodingException;
-import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.SortedMap;
@@ -20,6 +18,7 @@ import javax.crypto.spec.SecretKeySpec;
 
 import org.apache.commons.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 public class Signature {
   @Value("${amazon.associateId}")
@@ -29,11 +28,8 @@ public class Signature {
   private static final String REQUEST_URI = "/onca/xml";
   private static final String REQUEST_METHOD = "GET";
 
-  @Value("${amazon.hostAddress}")
   private String endpoint;
-  @Value("${amazon.accessKey}")
   private String awsAccessKeyId;
-  @Value("${amazon.secretKey}")
   private String awsSecretKey;
 
   private SecretKeySpec secretKeySpec = null;
@@ -42,7 +38,11 @@ public class Signature {
   private Map<String, String> params;
 
   //constructor
-  public Signature() throws UnsupportedEncodingException, NoSuchAlgorithmException, InvalidKeyException {
+  public Signature(String hostAddress, String accessKey, String secretKey, String associateId) throws UnsupportedEncodingException, NoSuchAlgorithmException, InvalidKeyException {
+    endpoint = hostAddress;
+    awsAccessKeyId = accessKey;
+    awsSecretKey = secretKey;
+    this.associateId = associateId;
     byte[] secretyKeyBytes = awsSecretKey.getBytes(UTF8_CHARSET);
     secretKeySpec =
       new SecretKeySpec(secretyKeyBytes, HMAC_SHA256_ALGORITHM);
