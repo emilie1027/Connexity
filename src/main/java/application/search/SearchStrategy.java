@@ -33,5 +33,15 @@ public class SearchStrategy {
         });
         return searchResult;
     }
+   
+    //added by xiangning on 5/12 to allow history offer search
+    public List<Offer> historySearch(Map<String, String> history) throws IOException {
+            String upc = history.get("upc");
+            String sku = history.get("sku");
+            String merchantId = history.get("merchantId");
+            String searchResult = connexityGateway.getByUpcOrSku(upc, sku, merchantId);
+        if(searchResult != null) return Offer.parseString(searchResult);
+        else return null;
+    }
     
 }

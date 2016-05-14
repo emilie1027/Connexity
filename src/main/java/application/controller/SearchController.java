@@ -54,8 +54,6 @@ public class SearchController {
         }
         // putUserHistoryIntoDB(cookieValue, sku, upc, mercharId);
         else {
-        		//response.addCookie(new Cookie("ConnexityUserID", cookieValue));
-        		//DO WE NEED TO ADD COOKIES AGAIN? NO?
         		historyGateway.insertHistory(cookieValue, upc, sku, merchantId);
 //        		//test whether DB stores right
 //        		List<Map<String, String> > ans = historyGateway.findHistory(cookieValue);
