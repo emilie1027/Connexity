@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <link rel="stylesheet" th:href="@{/css/mycss/component.css}"/>
+    <link rel="stylesheet" th:href="@{/css/mycss/default.css}"/>
+    <link rel="stylesheet" th:href="@{/css/bootstrap-3.3.5-dist/css/bootstrap.css}" />
+    <link rel="stylesheet" th:href="@{/css/mycss/style.css}"/>
+    <link rel="stylesheet" th:href="@{/css/mycss/mystyle.css}"/>
+    <script th:src="@{/js/modernizr.custom.js}"></script>
+    <script th:src="@{/js/jquery-1.12.3.min.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+
+
+    <title>Connexity</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script>
+        function validateForm() {
+            var x = document.forms["myform"]["key"].value;
+            if (x == null || x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+    </script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".myli:gt(11)").hide();
+            var total_q=$(".myli").index()+1;
+            var current_page=12;
+            var current_num=1;
+            var total_page = Math.floor(document.getElementById("textbox").value/current_page)+1;
+            var next=$(".next");
+            var prev=$(".prev");
+            $(".total").text(total_page);
+            $(".current_page").text(current_num);
+
+            $(".next").click(function(){
+                if(current_num==total_page){
+                    return false;
+                }
+                else{
+                    $(".current_page").text(++current_num);
+                    $.each($('.myli'),function(index,item){
+                        var start = current_page* (current_num-1);
+                        var end = current_page * current_num;
+                        if(index >= start){
+                            if(end > index) {
+                                $(this).show();
+                            }else{
+                                $(this).hide();
+                            }
+                        }else {
+                            $(this).hide();
+                        }
+                    });
+                }
+                document.getElementById("totop").click();
+            });
+
+            $(".prev").click(function(){
+                if(current_num==1){
+                    return false;
+                }else{
+                    $(".current_page").text(--current_num);
+                    $.each($('.myli'),function(index,item){
+                        var start = current_page* (current_num-1);
+                        var end = current_page * current_num;
+                        if(index >= start){
+                            if( end >index) {
+                                $(this).show();
+                            }else {
+                                $(this).hide();
+                            }
+                        }else {
+                            $(this).hide();
+                        }
+                    });
+                }
+                document.getElementById("totop").click();
+            })
+
+        })
+    </script>
+    <style type="text/css">
+        .item{overflow:hidden;}
+        .clear{zoom:1;}
+        .clear:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+        .page_btn{padding-top:20px;}
+        .page_btn a{cursor:pointer;padding:5px;border:solid 1px #ccc;font-size:12px;}
+        .page_box{float:right;}
+        .num{padding:0 10px;}
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="container" name="top">
+        <div class="page-header">
+            <h1 class="myheader" onclick="location.href = '/home.html'">Connexity</h1>
+        </div>
+
+        <a href="#0" class="cd-top">Top</a>
+
+
+        <form method="GET" action="/search/query.html"  onsubmit="return validateForm()" name="myform"  >
+            <div class="col-md-12">
+                <div class="input-group">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Smart
+                            <span class="caret"></span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <li><a class="dropdown-item" herf="#"> Price</a></li>
+                            <li><a class="dropdown-item" herf="#"> Popular</a></li>
+                            <div role="separator" class="dropdown-divider"></div>
+                            <li><a class="dropdown-item" href="#"> Sparated link</a></li>
+                        </div>
+                    </div>
+                    <input name="key" type="text" class="form-control input-lg" placeholder="Search for product" />
+				          <span class="input-group-btn">
+					        <button class="btn btn-info btn-lg" type="submit">
+					          <i class="glyphicon glyphicon-search"></i></button>
+						  </span>
+                </div>
+            </div>
+        </form>
+
+
+
+        <div class="page_btn_border">
+            <div class="page_btn clear">
+            <span class="page_box">
+                <a class="prev">Previous</a><span class="num"><span class="current_page">1</span><span style="padding:0 3px;">/</span><span class="total"></span></span><a class="next">Next</a>
+            </span>
+            </div>
+        </div>
+
+
+
+
+        <div class="main" >
+            <div class="item">
+                <!--<ul id="clear" th:value="${offers.size()}" text="aaa">-->
+                    <!--<li class="myli" id="myli" th:each="offer : ${offers}">-->
+                        <!--<input type="hidden" value="software engineer"  th:value="${offers.size()}" id="textbox"/>-->
+                        <!--<div class="col-md-3 bottom-grid">-->
+                            <!--<div class="bottom-pad">-->
+                                <!--<div class="btm-img">-->
+                                    <!--<img th:src="${offer.images[3]}" alt="" />-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="offerinfo">-->
+                                <!--&lt;!&ndash; <a th:href="${offer.url}" th:text="${offer.title}">Items</a> &ndash;&gt;-->
+                                <!--<a th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a>-->
+                                <!--<p th:text="'$'+${offer.price}"></p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                <!--</ul>-->
+
+                <ul id="og-grid" class="og-grid" th:value="${offers.size()}" text="aaa">
+                    <li class="myli" id="myli" th:each="offer : ${offers}">
+                        <input type="hidden" value="software engineer"  th:value="${offers.size()}" id="textbox"/>
+
+                        <a data-th-attr="href=@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}, data-largesrc=${offer.images[3]}, data-title=${offer.title}, data-description=${offer.description}"></a>
+                        <img class="grid-img" th:src="${offer.images[3]}" alt="" />
+                        <a class="grid-title" th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}"></a>
+                        <p th:text="'$' + ${offer.price}"></p>
+
+                        <div class="og-expander">
+                            <div class="og-expander-inner">
+                                <span class="og-close"></span>
+                                <div class="og-fullimg">
+                                    <div class="og-loading"></div>
+                                    <img th:src="${offer.images[3]}" alt="" />
+                                </div>
+                                <div class="og-details">
+                                    <h3 th:text="${offer.title}"></h3>
+                                    <p th:text="${offer.description}"></p>
+                                    <a th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Visit website</a>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="page_btn_border">
+            <div class="page_btn clear">
+            <span class="page_box">
+                <a class="prev">Previous</a><span class="num"><span class="current_page">1</span><span style="padding:0 3px;">/</span><span class="total"></span></span><a class="next">Next</a>
+            </span>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-one">
+                <h2><a href="#">CONNEXITY</a></h2>
+                <p>Copyright &copy; 2016. Support By Connexity TEAM3.</p>
+                <p><a href="https://github.com/emilie1027/Connexity">Contact us</a></p>
+            </div>
+            <div class="footer-two">
+                <h4>MAN</h4>
+                <ul>
+                    <li><a href="/search/query.html?key=jackets">Jackets</a></li>
+                    <li><a href="/search/query.html?key=blazers+man">Blazers</a></li>
+                    <li><a href="/search/query.html?key=man+suits">Suits</a></li>
+                    <li><a href="/search/query.html?key=man+trousers">Trousers</a></li>
+                    <li><a href="/search/query.html?key=man+jeans">Jeans</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/search/query.html?key=man+denim">Denim</a></li>
+                    <li><a href="/search/query.html?key=man+shorts">Shorts</a></li>
+                    <li><a href="/search/query.html?key=man+shirt">Shirts</a></li>
+                    <li><a href="/search/query.html?key=man+t-shirt">T-shirts</a></li>
+                    <li><a href="/search/query.html?key=man+polo">Polo</a></li>
+                </ul>
+            </div>
+            <div class="footer-two">
+                <h4>WOMAN</h4>
+                <ul>
+                    <li><a href="/search/query.html?key=woman+coat">Coats</a></li>
+                    <li><a href="/search/query.html?key=woman+jacket">Jackets</a></li>
+                    <li><a href="/search/query.html?key=dresses">Dresses</a></li>
+                    <li><a href="/search/query.html?key=jumpsuit">Jumpsuits</a></li>
+                    <li><a href="/search/query.html?key=woman+top">Tops</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/search/query.html?key=woman+leather">Leather</a></li>
+                    <li><a href="/search/query.html?key=woman+trouser">Trousers</a></li>
+                    <li><a href="/search/query.html?key=woman+shorts">Shorts</a></li>
+                    <li><a href="/search/query.html?key=woman+jeans">Jeans</a></li>
+                    <li><a href="/search/query.html?key=woman+denim">Denim</a></li>
+                </ul>
+            </div>
+            <div class="footer-three">
+                <h4>KID</h4>
+                <ul>
+                    <li><a href="/search/query.html?key=girl">Girl</a></li>
+                    <li><a href="/search/query.html?key=boy">Boy</a></li>
+                    <li><a href="/search/query.html?key=baby+girl">Baby girl</a></li>
+                    <li><a href="/search/query.html?key=baby+boy">Baby boy</a></li>
+                    <li><a href="#">Min</a></li>
+                </ul>
+            </div>
+            <div class="footer-three">
+                <h4>SHOES &amp; BAGS</h4>
+                <ul>
+                    <li><a href="/search/query.html?key=woman+shoe+or+bag">Woman</a></li>
+                    <li><a href="/search/query.html?key=man+bag+or+shoe">Man</a></li>
+                    <li><a href="/search/query.html?key=girl+bag">Girl</a></li>
+                    <li><a href="/search/query.html?key=shoe+boy">Boy</a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <a href="#0" class="cd-top">Top</a>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script th:src="@{/js/main.js}"></script>
+        <script th:src="@{/js/grid.js}"></script>
+        <script>
+            $(function() {
+                Grid.init();
+            });
+        </script>
+    </div>
+</body>
+</html>
+
+

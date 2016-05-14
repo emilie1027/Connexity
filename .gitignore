@@ -5,10 +5,10 @@
 
 *.original
 
-.idea/libraries/Maven__org_mongodb_mongo_java_driver_3_2_2.xml
-
-.idea/uiDesigner.xml
-
-.idea/workspace.xml
-
 Connexity.iml
+
+.DS_Store
+
+target/
+
+.idea/
