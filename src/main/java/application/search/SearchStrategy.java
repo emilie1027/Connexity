@@ -40,7 +40,8 @@ public class SearchStrategy {
     		String sku = history.get("sku");
     		String merchantId = history.get("merchantId");
     		String searchResult = connexityGateway.getByUpcOrSku(upc, sku, merchantId);
-        return Offer.parseString(searchResult);
+        if(searchResult != null) return Offer.parseString(searchResult);
+        else return null;
     }
     
 }

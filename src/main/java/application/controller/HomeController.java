@@ -46,9 +46,12 @@ public class HomeController {
         		// written by xiangning on 5/12
         		List<Offer> historyOffers = new ArrayList();
         		List<Map<String, String>> historyResult = historyGateway.findHistory(cookieValue);
-        		for (Iterator it = historyResult.iterator(); it.hasNext();) {
-        			Map<String, String> history = (Map<String, String>) it.next();
-        			historyOffers.addAll(searchStrategy.historySearch(history));
+        		if (historyResult != null) {
+        			for (Iterator it = historyResult.iterator(); it.hasNext();) {
+            			Map<String, String> history = (Map<String, String>) it.next();
+            			List<Offer> historyOffer = searchStrategy.historySearch(history);
+            			if (historyOffer != null) historyOffers.addAll(historyOffer);
+            		}
         		}
         		model.addAttribute("historyOffers", historyOffers);	
         }
