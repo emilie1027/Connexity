@@ -12,3 +12,7 @@ Connexity.iml
 target/
 
 .idea/
+
+src/main/resources/application.properties
+
+*.properties
