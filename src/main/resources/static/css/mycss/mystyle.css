@@ -87,5 +87,8 @@
         padding: 1em;
         margin: 1em;
     }
+    .categoryImg{
+        width: 90%;
+    }
 
 }
