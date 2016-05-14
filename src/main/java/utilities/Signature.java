@@ -21,7 +21,7 @@ import javax.crypto.spec.SecretKeySpec;
 import org.apache.commons.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Value;
 
-public class signature {
+public class Signature {
   @Value("${amazon.associateId}")
   private static String associateId;
   private static final String UTF8_CHARSET = "UTF-8";
