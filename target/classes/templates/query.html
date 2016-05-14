@@ -102,55 +102,8 @@
     <div class="page-header">
         <h1 class="myheader" onclick="location.href = '/home.html'">Connexity</h1>
     </div>
-    <form method="GET" action="query.html" onsubmit="return validateForm()" name="myform"  >
-        <div class="col-md-12">
-            <div class="input-group">
-                <div class="input-group-btn">
-                    <button type="button" class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Smart
-                        <span class="caret"></span>
-                    </button>
-                    <div class="dropdown-menu">
-                        <li><a class="dropdown-item" herf="#"> Price</a></li>
-                        <li><a class="dropdown-item" herf="#"> Popular</a></li>
-                        <div role="separator" class="dropdown-divider"></div>
-                        <li><a class="dropdown-item" href="#"> Sparated link</a></li>
-                    </div>
-                </div>
-                <input name="key" type="text" class="form-control input-lg" placeholder="Search for product" />
-				          <span class="input-group-btn">
-					        <button class="btn btn-info btn-lg" type="submit">
-					          <i class="glyphicon glyphicon-search"></i></button>
-						  </span>
-            </div>
-        </div>
-    </form>
-<!--
+
     <form name="myform" method="GET" action="query.html" onsubmit="return validateForm()"   >
-        <div class="col-md-12">
-            <div class="input-group">
-                <div class="input-group-btn">
-                    <button type="button" class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Smart
-                        <span class="caret"></span>
-                    </button>
-                    <div class="dropdown-menu">
-                        <li><a class="dropdown-item" herf="#"> Price</a></li>
-                        <li><a class="dropdown-item" herf="#"> Popular</a></li>
-                        <div role="separator" class="dropdown-divider"></div>
-                        <li><a class="dropdown-item" href="#"> Sparated link</a></li>
-                    </div>
-                </div>
-                <input name="key" type="text" class="form-control input-lg" placeholder="Search for product" />
-				          <span class="input-group-btn">
-					        <button class="btn btn-info btn-lg" type="submit">
-					          <i class="glyphicon glyphicon-search"></i></button>
-						  </span>
-            </div>
-        </div>
-    </form>
-    -->
-        <!--
         <div class="input-group col-md-12">
             <input name="key" type="text"  class="form-control input-lg"  placeholder="Search for product"/>
             <span class="input-group-btn">
@@ -159,7 +112,7 @@
             </span>
         </div>
     </form>
--->
+
     <div class="page_btn_border">
     <div class="page_btn clear">
             <span class="page_box">
@@ -173,6 +126,11 @@
             <ul id="og-grid" class="og-grid" th:value="${offers.size()}" text="aaa">
                 <li class="myli" id="myli" th:each="offer : ${offers}">
                     <input type="hidden" value="software engineer"  th:value="${offers.size()}" id="textbox"/>
+
+                    <!-- TODO: THE FOLLOWING CODE SHOULD BE MOVED SOMEWHERE ELSE -->
+                    <!-- <a th:href="${offer.url}" th:text="${offer.title}">Items</a> -->
+                    <!-- <a th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a> -->
+
                     <a data-th-attr="href=${offer.url}, data-largesrc=${offer.images[3]}, data-title=${offer.title}, data-description=${offer.description}"></a>
                     <img class="grid-img" th:src="${offer.images[3]}" alt="" />
                     <a class="grid-title" th:href="${offer.url}" th:text="${offer.title}"></a>
@@ -189,6 +147,8 @@
                                 <h3 th:text="${offer.title}"></h3>
                                 <p th:text="${offer.description}"></p>
                                 <a th:href="${offer.url}">Visit website</a>
+
+
                             </div>
                         </div>
                     </div>

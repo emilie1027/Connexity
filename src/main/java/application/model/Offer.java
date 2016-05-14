@@ -4,21 +4,18 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import org.springframework.stereotype.Component;
 
-import java.awt.Image;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.imageio.ImageIO;
 
 public class Offer {
     static private JSONParser jsonParser = new JSONParser();
     public String title = null;
     public String sku = null;
     public String upc = null;
+    public String merchantId = null;
     public String description = null;
     public String manufacturer = null;
     public URL url = null;
@@ -45,6 +42,12 @@ public class Offer {
         }
         catch (NullPointerException e) {
             upc = null;
+        }
+        try {
+            merchantId = ((Long) offerJson.get("merchantId")).toString();
+        }
+        catch (NullPointerException e){
+            merchantId = null;
         }
         try {
             price = new Double((long)(((JSONObject) offerJson.get("price")).get("integral"))/100.0);
@@ -114,6 +117,17 @@ public class Offer {
         }
     }
 
+
+    static  public Offer parseStringForSingleElement(String input) throws IOException {
+        List<Offer> result = parseString(input);
+        if(result.size() == 0) {
+            return null;
+        }
+        else if (result.size() != 1) {
+            System.out.println("Warning: parseStringForSingleElement receive more than one result");
+        }
+        return result.get(0);
+    }
 
     static public List<Offer> parseString(String input) throws IOException {
         try {
