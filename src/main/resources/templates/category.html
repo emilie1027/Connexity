@@ -26,11 +26,9 @@
     </script>
 
     <script>
-
         function changePara(element){
             document.getElementById("category").value = element.getAttribute("value");
-            document.getElementById('form-id').submit();
-            $(window).colorbox.close();
+            document.getElementById("myform").submit();
         }
     </script>
 
@@ -39,8 +37,8 @@
 <body>
 <div class="container" name="top">
 <h1> How do you categorize yourself? </h1>
-            <form id="form-id" method="GET" >
-                <input type="hidden" value="empty" id="category"  name="myCategory"/>
+            <form id="myform" method="POST" name="myform">
+                <input name="category" type="hidden"  id="category" value="empty"/>
                 <table>
                 <tbody>
                 <tr>

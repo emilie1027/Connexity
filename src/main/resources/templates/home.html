@@ -25,32 +25,73 @@
 			}
 		</script>
 
-	</head>
-	<body>
-		<span id="seconds" value="1"></span>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="http://www.jacklmoore.com/colorbox/jquery.colorbox.js"></script>
-		<script>
-			function openColorBox(){
-				$.colorbox({iframe:true, width:"80%", height:"95%", href: "/category.html"});
-			}
 
-			function countDown(){
-				seconds--
-				$("#seconds").text(seconds);
-				if (seconds === 0){
-					openColorBox();
-					clearInterval(i);
+
+
+
+
+		<script type="text/javascript">
+			$( document ).ready(
+				function changeBGColor() {
+					$('body').css('background-image', 'url("http://www.wallpaperup.com/uploads/wallpapers/2013/01/29/31922/a0229a4b888b13c924b53e6999d3da11.jpg")');
 				}
-			}
-
-			var seconds = 1,
-					i = setInterval(countDown, 1000);
+			)
 		</script>
+
+		<script type="text/javascript">
+			$( document ).ready(
+			function changeFontColor() {
+				var cols =    document.getElementsByClassName("styleClass");
+				var urls =    document.getElementsByClassName("myUrl");
+				for(var i=0; cols.length>i; i++) {
+					cols[i].style.color = 'black';
+					document.getElementById("myBotton").style.color = 'black';
+//					if (document.getElementById("sytle").value =="business")
+				}
+				for(var i=0; urls.length>i; i++) {
+					urls[i].style.color = 'black';
+				}
+			})
+		</script>
+
+
+
+	</head>
+	<body class="myBody">
+
+
+	<!--these parts should be moved to body later-->
+	<script>
+		function openColorBox(){
+			var a = 1;
+			if(a==1)
+				$.colorbox({iframe:true, width:"80%", height:"95%", href: "/category.html"});
+		}
+
+		function countDown(){
+			seconds--
+			$("#seconds").text(seconds);
+			if (seconds === 0){
+				openColorBox();
+				clearInterval(i);
+			}
+		}
+
+		var seconds = 1,
+				i = setInterval(countDown, 1000);
+	</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://www.jacklmoore.com/colorbox/jquery.colorbox.js"></script>
+
+
+
+	<span id="seconds" value="1"></span>
+		<input name="style" id= "style" value="programmer" type="hidden"/>
+
 
 		<div class="container" name="top">
 			<div class="page-header">
-				<h1 class="myheader" onclick="location.href = '/home.html'">Connexity</h1>
+				<h1 class="styleClass" onclick="location.href = '/home.html'">Connexity</h1>
 			</div>
 
 			<a href="#0" class="cd-top">Top</a>
@@ -72,8 +113,8 @@
 							</div>
 						</div>
 						<input name="key" type="text" class="form-control input-lg" placeholder="Search for product" />
-				          <span class="input-group-btn">
-					        <button class="btn btn-info btn-lg" type="submit">
+				          <span class="input-group-btn" id="myBotton">
+					        <button class="btn btn-info btn-lg" type="submit" >
 					          <i class="glyphicon glyphicon-search"></i></button>
 						  </span>
 					</div>
@@ -82,7 +123,7 @@
 
 			<div class="threeColumn">
 				<div class="banner-bottom">
-					<h2 class="mytitle"> Trending</h2>
+					<h2 class="styleClass" name="styleClass"> Trending</h2>
 					<ul th:value="${historyOffers.size()}" text="aaa">
 						<li  th:each="offer : ${historyOffers}">
 							<div class="col-md-3 bottom-grid">
@@ -93,7 +134,7 @@
 								</div>
 								<div class="offerinfo">
 									<!-- <a th:href="${offer.url}" th:text="${offer.title}">Items</a> -->
-									<a th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a>
+									<a class="myUrl" th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a>
 									<p th:text="'$'+${offer.price}"></p>
 								</div>
 							</div>
@@ -102,7 +143,7 @@
 				</div>
 
 				<div class="banner-bottom">
-					<h2 class="mytitle"> History</h2>
+					<h2 class="styleClass"> History</h2>
 					<ul th:value="${historyOffers.size()}" text="aaa">
 						<li  th:each="offer : ${historyOffers}">
 							<div class="col-md-3 bottom-grid">
@@ -113,7 +154,7 @@
 								</div>
 								<div class="offerinfo">
 									<!-- <a th:href="${offer.url}" th:text="${offer.title}">Items</a> -->
-									<a th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a>
+									<a class="myUrl" th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a>
 									<p th:text="'$'+${offer.price}"></p>
 								</div>
 							</div>
@@ -122,7 +163,7 @@
 				</div>
 
 				<div class="banner-bottom" >
-					<h2 class="mytitle"> Trending</h2>
+					<h2 class="styleClass"> Trending</h2>
 					<ul th:value="${historyOffers.size()}" text="aaa">
 						<li  th:each="offer : ${historyOffers}">
 							<div class="col-md-3 bottom-grid">
@@ -133,7 +174,7 @@
 								</div>
 								<div class="offerinfo">
 									<!-- <a th:href="${offer.url}" th:text="${offer.title}">Items</a> -->
-									<a th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a>
+									<a class="myUrl" th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a>
 									<p th:text="'$'+${offer.price}"></p>
 								</div>
 							</div>
@@ -144,7 +185,7 @@
 
 			<div class="footer">
 				<div class="footer-one">
-					<h2><a href="#">CONNEXITY</a></h2>
+					<h2 name="styleClass"><a href="#" >CONNEXITY</a></h2>
 					<p>Copyright &copy; 2016. Support By Connexity TEAM3.</p>
 					<p><a href="https://github.com/emilie1027/Connexity">Contact us</a></p>
 				</div>

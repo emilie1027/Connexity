@@ -27,7 +27,10 @@ import java.util.UUID;
 @RequestMapping("/category")
 public class CategoryController {
     @RequestMapping("")
-    public String CategoryController() throws IOException{
+    public String category(@RequestParam(value = "category", required = false, defaultValue = "default") String category) throws IOException{
         return "category";
     }
 }
+
+
+
