@@ -26,14 +26,25 @@
 		</script>
 
 
-
-
-
-
 		<script type="text/javascript">
 			$( document ).ready(
 				function changeBGColor() {
-					$('body').css('background-image', 'url("http://www.wallpaperup.com/uploads/wallpapers/2013/01/29/31922/a0229a4b888b13c924b53e6999d3da11.jpg")');
+					var a = 4;
+					if(a==1) {
+						$('body').css('background-image', 'url("http://www.wallpaperup.com/uploads/wallpapers/2013/01/29/31922/a0229a4b888b13c924b53e6999d3da11.jpg")');
+					}
+					else if(a==2) {
+						$('body').css('background-image', 'url("http://wallpapercave.com/wp/lU6Rg4h.jpg")');
+						document.body.style.opacity = "0.9";
+						document.body.style.filter  = 'alpha(opacity=90)'; // IE fallback
+					}
+					else if(a==3) {
+						$('body').css('background-image', 'url("http://www.ffkngpu.ru/wp-content/uploads/2015/03/white-business-background.jpg")');
+						document.body.style.opacity = "0.9";
+						document.body.style.filter  = 'alpha(opacity=80)'; // IE fallback
+					}
+					else
+						$('body').css('background-image', 'url("http://images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg")');
 				}
 			)
 		</script>
@@ -41,16 +52,58 @@
 		<script type="text/javascript">
 			$( document ).ready(
 			function changeFontColor() {
-				var cols =    document.getElementsByClassName("styleClass");
-				var urls =    document.getElementsByClassName("myUrl");
-				for(var i=0; cols.length>i; i++) {
-					cols[i].style.color = 'black';
-					document.getElementById("myBotton").style.color = 'black';
+				var a = 4;
+				if(a==1) {
+					var cols = document.getElementsByClassName("styleClass");
+					var urls = document.getElementsByClassName("myUrl");
+					for (var i = 0; cols.length > i; i++) {
+						cols[i].style.color = 'black';
+						document.getElementById("myBotton").style.color = 'black';
 //					if (document.getElementById("sytle").value =="business")
+					}
+					for (var i = 0; urls.length > i; i++) {
+						urls[i].style.color = 'black';
+					}
 				}
-				for(var i=0; urls.length>i; i++) {
-					urls[i].style.color = 'black';
+				else if(a==2)
+				{
+					var cols = document.getElementsByClassName("styleClass");
+					var urls = document.getElementsByClassName("myUrl");
+					for (var i = 0; cols.length > i; i++) {
+						cols[i].style.color = '#e8bbf4';
+						document.getElementById("myBotton").style.color = '#e8bbf4';
+//					if (document.getElementById("sytle").value =="business")
+					}
+					for (var i = 0; urls.length > i; i++) {
+						urls[i].style.color = '#e8bbf4';
+					}
 				}
+				else if(a==3){
+					var cols = document.getElementsByClassName("styleClass");
+					var urls = document.getElementsByClassName("myUrl");
+					for (var i = 0; cols.length > i; i++) {
+						cols[i].style.color = '#687478';
+						document.getElementById("myBotton").style.color = '#687478';
+//					if (document.getElementById("sytle").value =="business")
+					}
+					for (var i = 0; urls.length > i; i++) {
+						urls[i].style.color = '#512e3a';
+					}
+				}
+				else
+				{
+					var cols = document.getElementsByClassName("styleClass");
+					var urls = document.getElementsByClassName("myUrl");
+					for (var i = 0; cols.length > i; i++) {
+						cols[i].style.color = '#5bc0de';
+						document.getElementById("myBotton").style.color = '#5bc0de';
+//					if (document.getElementById("sytle").value =="business")
+					}
+					for (var i = 0; urls.length > i; i++) {
+						urls[i].style.color = '#5bc0de';
+					}
+				}
+
 			})
 		</script>
 
