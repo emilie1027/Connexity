@@ -10,8 +10,6 @@ import org.springframework.util.Assert;
 import java.io.IOException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
-import java.util.ArrayList;
-import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = application.Application.class, loader = AnnotationConfigContextLoader.class)
@@ -26,16 +24,27 @@ public class AmazonGatewayUnitTest {
     }
 
     @Test
-    public void looukupInValidUCP() throws NoSuchAlgorithmException, InvalidKeyException, IOException {
+    public void lookupInValidUCP() throws NoSuchAlgorithmException, InvalidKeyException, IOException {
         String result = amazonGateway.lookupASINByUPC("Invalid");
         Assert.isNull(result);
     }
 
     @Test
-    public void similarityCheckForSingleASIN() throws NoSuchAlgorithmException, InvalidKeyException, IOException {
-        List<String> list = new ArrayList<>();
-        list.add("B00OTXG05S");
-        String result = amazonGateway.similarityLookupByASIN(list);
+    public void lookupValidSKU() throws NoSuchAlgorithmException, InvalidKeyException, IOException {
+        String result = amazonGateway.lookupASINBySKU("MD785LLB");
+        Assert.isTrue(result.equals("B00G2TK76A"), result);
+    }
+
+    @Test
+    public void lookupInvalidSKU() throws NoSuchAlgorithmException, InvalidKeyException, IOException {
+        String result = amazonGateway.lookupASINBySKU("invalidSKU");
         Assert.isNull(result);
     }
+
+    @Test
+    public void lookupBySKUAndUPC() throws NoSuchAlgorithmException, InvalidKeyException, IOException {
+        String result = amazonGateway.lookupASINbyUPCorSKU("888462021852","MD785LLB");
+        Assert.isTrue(result.equals("B00OTXG05S"),result);
+    }
+
 }

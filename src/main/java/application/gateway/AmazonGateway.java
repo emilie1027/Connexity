@@ -120,7 +120,7 @@ public class AmazonGateway {
         }
     }
 
-    public String similarityLookupByASIN(List<String> ASINs) throws IOException, NoSuchAlgorithmException, InvalidKeyException {
+    private String similarityLookupByASIN(List<String> ASINs) throws IOException, NoSuchAlgorithmException, InvalidKeyException {
         Signature sig = new Signature(hostAddress,accessKey,secretKey,associateId);
         String operation = "SimilarityLookup";
         String timeStamp = sig.timestamp();
