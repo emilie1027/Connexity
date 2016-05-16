@@ -27,5 +27,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/Users/yeungtszsing/Desktop/dom4j-1.6.1/dom4j-1.6.1.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
