@@ -32,12 +32,18 @@
         }
     </script>
 
+    <script type="text/javascript">
+        function closeSelf (f) {
+            parent.$.fn.colorbox.close();
+            parent.jQuery.colorbox.close();
+        }
+    </script>
 
 </head>
 <body>
 <div class="container" name="top">
 <h1> How do you categorize yourself? </h1>
-            <form id="myform" method="POST" name="myform">
+            <form id="myform" method="POST" name="myform" onsubmit="return closeSelf(this);">
                 <input name="category" type="hidden"  id="category" value="empty"/>
                 <table>
                 <tbody>
