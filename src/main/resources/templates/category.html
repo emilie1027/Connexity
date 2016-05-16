@@ -43,7 +43,7 @@
 <body>
 <div class="container" name="top">
 <h1> How do you categorize yourself? </h1>
-            <form id="myform" method="POST" name="myform" onsubmit="return closeSelf(this);">
+            <form id="myform" method="POST" name="myform"  onClick='parent.jQuery.fn.colorbox.close();'>
                 <input name="category" type="hidden"  id="category" value="empty"/>
                 <table>
                 <tbody>

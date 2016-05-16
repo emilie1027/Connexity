@@ -117,6 +117,9 @@
 	<body class="myBody">
 
 
+	<input name="style" id= "style" value="programmer" type="hidden"/>
+
+
 	<!--these parts should be moved to body later-->
 	<!--gategory info can now be sent to backend, but they haven't stored it...-->
 	<script>
@@ -129,24 +132,20 @@
 		}
 
 		function countDown(){
+			var seconds = 1;
 			seconds--
-			$("#seconds").text(seconds);
+
 			if (seconds === 0){
 				openColorBox();
 				clearInterval(i);
 			}
 		}
 
-		var seconds = 1,
+		 seconds = 1,
 				i = setInterval(countDown, 1000);
 	</script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="http://www.jacklmoore.com/colorbox/jquery.colorbox.js"></script>
-
-
-
-	<span id="seconds" value="1"></span>
-		<input name="style" id= "style" value="programmer" type="hidden"/>
 
 
 		<div class="container" name="top">
