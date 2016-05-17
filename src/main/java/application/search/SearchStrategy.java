@@ -23,6 +23,24 @@ public class SearchStrategy {
         String searchResult = connexityGateway.getByKeyWord(key, overrideParameter);
         return Offer.parseString(searchResult);
     }
+
+    public List<Offer> advancedSearch(Map<String, String> searchParams) throws IOException {
+        String key = searchParams.get("key");
+        String sort = searchParams.get("sort");
+        if (sort == null)
+            return basicSearch(key);
+        else {
+            switch (sort) {
+                case "discount_desc":
+                    return markdownSearch(key);
+                case "price_desc":
+                case "price_asc":
+                    return basicSearch(key, searchParams);
+                default:
+                    return basicSearch(key);
+            }
+        }
+    }
     
     public List<Offer> markdownSearch(String key) throws IOException {
         List<Offer> searchResult = basicSearch(key);
