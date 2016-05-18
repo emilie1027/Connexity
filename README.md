@@ -18,6 +18,8 @@ Connexity is a Technology-driven marketing solutions company which connect retai
 
 **Version 1 (Mid-term Demo):** Include a search utility that ranks the products according to prices.
 
+**Version 2 (Final Demo):** Trending & user recommendation based on user search history. Smart search.
+
 # Git Control Flow
 
 We would like to keep a `dev` branch which is where all the development will be merged into. There would also be a `backend` branch and a `frontend` branch that will contain different parts of the project. The `release` branch will contain our working prototypes and will be updated with new features.
