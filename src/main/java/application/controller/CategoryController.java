@@ -35,7 +35,6 @@ public class CategoryController {
     public String addUserCategory(@RequestParam(value = "category", required = false, defaultValue = "default") String category) throws IOException{
         return "category";
     }
-
 }
 
 
