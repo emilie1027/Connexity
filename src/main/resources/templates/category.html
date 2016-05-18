@@ -6,8 +6,9 @@
     <title>ColorBox demo</title>
     <link rel="stylesheet" th:href="@{/css/bootstrap-3.3.5-dist/css/bootstrap.css}" />
     <link rel="stylesheet" th:href="@{/css/mycss/style.css}"/>
+    <link rel="stylesheet" th:href="@{/css/mycss/colorbox.css}"/>
     <link rel="stylesheet" th:href="@{/css/mycss/mystyle.css}"/>
-    <link rel="stylesheet" th:href="@{http://www.jacklmoore.com/colorbox/example1/colorbox.css}" />
+    <!--<link rel="stylesheet" th:href="@{http://www.jacklmoore.com/colorbox/example1/colorbox.css}" />-->
 
     <script th:src="@{js/modernizr.custom.js}"></script>
     <script th:src="@{/js/jquery-1.12.3.min.js}"></script>
@@ -41,32 +42,35 @@
 
 </head>
 <body>
-<div class="container" name="top">
-<h1> How do you categorize yourself? </h1>
-            <form id="myform" method="POST" name="myform"  onClick='parent.jQuery.fn.colorbox.close();'>
+    <div class="container" name="top">
+       <div class="categoryBoarder">
+            <h1> How do you categorize yourself? </h1>
+            <form id="myform" method="POST" name="myform"  onClick='parent.jQuery.fn.colorbox.close();' action="/category/getCategory">
                 <input name="category" type="hidden"  id="category" value="empty"/>
-                <table>
-                <tbody>
-                <tr>
-                    <td onclick="changePara(this)" value="programmer">
-                        <img class="categoryImg"  src="http://2.bp.blogspot.com/-9xNnsKG2iVA/VipCEjh7v8I/AAAAAAAAClc/e-CnHs3v6IA/s1600/ThinkstockPhotos-460930919.jpg"/>
-                    </td>
-                    <td onclick="changePara(this)" value="business">
-                        <img class="categoryImg" src="http://plymouthministorage.com/wp-content/uploads/2016/03/business-people-business-people.jpg" />
-                    </td>
-                </tr>
-                <tr>
-                    <td onclick="changePara(this)" value="fashion">
-                        <img class="categoryImg" src="https://microsoftstudios.com/hololens/wp-content/uploads/sites/4/2015/12/Fashion-And-Modern-Youth.jpg"/>
-                    </td>
-                    <td onclick="changePara(this)" value="student">
-                        <img class="categoryImg" src="http://capacityofmind.com/wp-content/uploads/2015/05/Sometimes-All-a-Students-Needs-is-a-Single-Motivational-Quote1.jpg"/>
-                    </td>
-                </tr>
-                </tbody>
-                </table>
+                <div class="lineBoarder">
+                    <div class="span1" onclick="changePara(this)" value="programmer" width="80%">
+                        <div class="categoryWord" id="Tech">
+                            <p>Tech</p> <p>Nerd</p>
+                        </div>
+                    </div>
+                    <div class="span1" onclick="changePara(this)" value="business">
+                        <div class="categoryWord" id="Book">
+                            <p>Book</p> <p>Fanatic</p>
+                        </div>
+                    </div>
+                </div>                    <div class="span3" onclick="changePara(this)" value="programmer" width="80%">
+                <div class="categoryWord" id="Tech1">
+                    <p>Tech</p> <p>Nerd</p>
+                </div>
+            </div>
+                <div class="span3" onclick="changePara(this)" value="business">
+                    <div class="categoryWord" id="Book1">
+                        <p>Book</p> <p>Fanatic</p>
+                    </div>
+                </div>
+
             </form>
         </div>
-
+    </div>
 </body>
 </html>

@@ -7,7 +7,8 @@
 		<link rel="stylesheet" th:href="@{/css/bootstrap-3.3.5-dist/css/bootstrap.css}" />
 		<link rel="stylesheet" th:href="@{/css/mycss/style.css}"/>
 		<link rel="stylesheet" th:href="@{/css/mycss/mystyle.css}"/>
-		<link rel="stylesheet" th:href="@{http://www.jacklmoore.com/colorbox/example1/colorbox.css}" />
+		<link rel="stylesheet" th:href="@{/css/mycss/colorbox.css}"/>
+		<!--<link rel="stylesheet" th:href="@{http://www.jacklmoore.com/colorbox/example1/colorbox.css}" />-->
 
 		<script th:src="@{js/modernizr.custom.js}"></script>
 		<script th:src="@{/js/jquery-1.12.3.min.js}"></script>
@@ -126,7 +127,7 @@
 		function openColorBox(){
 			var a = 1;// if doesn't have cookie before
 			if(a==1)
-				$.colorbox({iframe:true, width:"80%", height:"95%", href: "/category.html"});
+				$.colorbox({iframe:true, width:"50%", height:"50%", href: "/category.html"});
 //			$(".chpic").colorbox({width:"80%", height:"80%", iframe:true, href: "/category.html",
 //				onClosed:function(){ location.reload(true); } });
 		}

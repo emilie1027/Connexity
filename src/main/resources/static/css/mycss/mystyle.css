@@ -87,8 +87,44 @@
         padding: 1em;
         margin: 1em;
     }
-    .categoryImg{
-        width: 90%;
-    }
 
+
+
+}
+
+.categoryBoarder{
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    margin:0.5em 0.5em 0.5em 0.5em;
+}
+
+.categoryImg{
+    width: 80%;
+}
+
+#Outdoor{
+    color: #2b542c;
+}
+
+#Book{
+    color: #b69b2b;
+
+}
+
+#Tech{
+    color: #4b1a3a  ;
+}
+
+#Fashion{
+    color: #ac2925;
+}
+
+.categoryWord{
+    font-family: 'Helvetica Neue', sans-serif; font-size: 50px; font-weight: bold;
+    line-height: 1;
+    text-align: center;
+}
+
+.lineBoarder{
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
 }

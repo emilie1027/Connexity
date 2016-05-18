@@ -30,6 +30,12 @@ public class CategoryController {
     public String category(@RequestParam(value = "category", required = false, defaultValue = "default") String category) throws IOException{
         return "category";
     }
+
+    @RequestMapping("/getCategory")
+    public String addUserCategory(@RequestParam(value = "category", required = false, defaultValue = "default") String category) throws IOException{
+        return "category";
+    }
+
 }
 
 
