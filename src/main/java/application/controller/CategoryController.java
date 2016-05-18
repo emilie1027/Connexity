@@ -27,12 +27,15 @@ import java.util.UUID;
 @RequestMapping("/category")
 public class CategoryController {
     @RequestMapping("")
-    public String category(@RequestParam(value = "category", required = false, defaultValue = "default") String category) throws IOException{
+    public String category() throws IOException{
         return "category";
     }
 
     @RequestMapping("/getCategory")
-    public String addUserCategory(@RequestParam(value = "category", required = false, defaultValue = "default") String category) throws IOException{
+    public String addUserCategroy(@RequestParam(value = "category", required = false, defaultValue = "default") String category, @CookieValue(value="ConnexityUserCategory", required=false, defaultValue="connexityusercategory") String cookieValue,HttpServletResponse response) throws IOException{
+        if ("connexityusercategory".equals(cookieValue) || !cookieValue.equals(category)) {
+            response.addCookie(new Cookie("ConnexityUserCategory", category));
+        }
         return "category";
     }
 }

@@ -18,10 +18,12 @@ import static java.util.Arrays.asList;
 
 @Component
 public class HistoryGateway {
+    /*
     @Value("${mongo.address}")
     private String host;
     @Value("${mongo.port}")
     private int port;
+    */
     @Value("${mongo.db}")
     private  String db;
     @Value("${history.maxNumberOfRecord}")
@@ -38,7 +40,8 @@ public class HistoryGateway {
 
     @PostConstruct
     public void init() {
-        MongoClient mongoClient = new MongoClient( host , port);
+        MongoClient mongoClient = DBManager.INSTANCE.getClient();
+        //MongoClient mongoClient = new MongoClient( host , port);
         collection = mongoClient.getDatabase(db).getCollection("history");
     }
 
