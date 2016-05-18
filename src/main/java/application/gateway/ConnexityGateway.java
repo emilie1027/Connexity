@@ -56,8 +56,8 @@ public class ConnexityGateway {
 
         if(sku != null && !sku.equals("") && merchantId != null && !merchantId.equals(""))
             return getBySku(sku, merchantId);
-        else
-            throw new IllegalArgumentException("No enough information provided");
+
+        return null;
     }
 
     public String getByKeyWord(String key) throws IOException {

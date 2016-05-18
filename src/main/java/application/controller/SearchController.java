@@ -4,6 +4,7 @@ import application.model.Offer;
 import application.model.Query;
 import application.search.SearchStrategy;
 import application.gateway.HistoryGateway;
+import org.codehaus.groovy.tools.shell.IO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -30,14 +31,22 @@ public class SearchController {
     private HistoryGateway historyGateway;
     
     @RequestMapping("/*")
+    /*
     public String search(@RequestParam(value = "key", required = false, defaultValue = "World") String key, Model model) throws IOException {
         List<Offer> searchResult = searchStrategy.basicSearch(key);
         model.addAttribute("offers", searchResult);
         return "query";
     }
-    
+    */
+    /*
     public String search(@ModelAttribute("Query") Query query, Model model) throws IOException{
         return search(query.getSingleParam("keyword"), model);
+    }
+    */
+    public String advancedSearch(@RequestParam Map<String, String> requestParams, Model model) throws IOException {
+        List<Offer> searchResult = searchStrategy.advancedSearch(requestParams);
+        model.addAttribute("offers", searchResult);
+        return "query";
     }
 
     @RequestMapping("/redirect")

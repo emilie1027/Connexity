@@ -37,6 +37,7 @@ public class HomeController {
 
     @RequestMapping("")
     public String HomeController(@CookieValue(value="ConnexityUserID", required=false, defaultValue="connexityuserid") String cookieValue, Model model, HttpServletResponse response) throws IOException{
+        List<Offer> historyOffers = new ArrayList();
         if (cookieValue.equals("connexityuserid")) {
             String uniqueID = UUID.randomUUID().toString();
             response.addCookie(new Cookie("ConnexityUserID", uniqueID));
@@ -44,7 +45,6 @@ public class HomeController {
         else {
             //    model.addAttribute("history",getUserHistoryFromDB());
                 // written by xiangning on 5/12
-                List<Offer> historyOffers = new ArrayList();
                 List<Map<String, String>> historyResult = historyGateway.findHistory(cookieValue);
                 if (historyResult != null) {
                     for (Iterator it = historyResult.iterator(); it.hasNext();) {
@@ -53,8 +53,8 @@ public class HomeController {
                         if (historyOffer != null) historyOffers.addAll(historyOffer);
                     }
                 }
-                model.addAttribute("historyOffers", historyOffers); 
         }
+        model.addAttribute("historyOffers", historyOffers);
         return "home";
     }
 }
