@@ -96,6 +96,8 @@
         .num{padding:0 10px;}
     </style>
 
+
+
 </head>
 
 
@@ -201,23 +203,6 @@
 
         <div class="main" >
             <div class="item">
-                <!--<ul id="clear" th:value="${offers.size()}" text="aaa">-->
-                    <!--<li class="myli" id="myli" th:each="offer : ${offers}">-->
-                        <!--<input type="hidden" value="software engineer"  th:value="${offers.size()}" id="textbox"/>-->
-                        <!--<div class="col-md-3 bottom-grid">-->
-                            <!--<div class="bottom-pad">-->
-                                <!--<div class="btm-img">-->
-                                    <!--<img th:src="${offer.images[3]}" alt="" />-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="offerinfo">-->
-                                <!--&lt;!&ndash; <a th:href="${offer.url}" th:text="${offer.title}">Items</a> &ndash;&gt;-->
-                                <!--<a th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a>-->
-                                <!--<p th:text="'$'+${offer.price}"></p>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</li>-->
-                <!--</ul>-->
 
                 <ul id="og-grid" class="og-grid" th:value="${offers.size()}" text="aaa">
                     <li class="myli" id="myli" th:each="offer : ${offers}">

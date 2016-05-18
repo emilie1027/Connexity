@@ -1,0 +1,78 @@
+
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>ColorBox demo</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap-3.3.5-dist/css/bootstrap.css}" />
+    <link rel="stylesheet" th:href="@{/css/mycss/style.css}"/>
+    <link rel="stylesheet" th:href="@{/css/mycss/colorbox.css}"/>
+    <link rel="stylesheet" th:href="@{/css/mycss/mystyle.css}"/>
+    <!--<link rel="stylesheet" th:href="@{http://www.jacklmoore.com/colorbox/example1/colorbox.css}" />-->
+
+    <script th:src="@{js/modernizr.custom.js}"></script>
+    <script th:src="@{/js/jquery-1.12.3.min.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script>
+        function validateForm() {
+            var x = document.forms["myform"]["key"].value;
+            if (x == null || x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+    </script>
+
+    <script>
+        function changePara(element){
+            document.getElementById("category").value = element.getAttribute("value");
+            document.getElementById("myform").submit();
+        }
+    </script>
+
+    <script type="text/javascript">
+        function closeSelf (f) {
+            parent.$.fn.colorbox.close();
+            parent.jQuery.colorbox.close();
+        }
+    </script>
+
+</head>
+<body>
+    <div class="container" name="top">
+       <div class="categoryBoarder">
+            <h1> How do you categorize yourself? </h1>
+            <form id="myform" method="POST" name="myform"  onClick='parent.jQuery.fn.colorbox.close();' action="/category/getCategory">
+                <input name="category" type="hidden"  id="category" value="empty"/>
+                <div class="lineBoarder">
+                    <div style="width: 50%; float:left" onclick="changePara(this)" value="tech">
+                        <div class="categoryWord" id="Tech">
+                            <p>Tech</p> <p>Nerd</p>
+                        </div>
+                    </div>
+                    <div style="width: 50%; float:right" onclick="changePara(this)" value="book">
+                        <div class="categoryWord" id="Book">
+                            <p>Book</p> <p>Fanatic</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lineBoarder">
+                <div style="width: 50%; float:left" onclick="changePara(this)" value="outdoor">
+                <div class="categoryWord" id="Outdoor">
+                    <p>Outdoor</p> <p>Geek</p>
+                </div>
+            </div>
+                <div style="width: 50%; float:right" onclick="changePara(this)" value="fashion">
+                    <div class="categoryWord" id="Fashion">
+                        <p>Fashion</p> <p>People</p>
+                    </div>
+                </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
