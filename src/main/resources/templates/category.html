@@ -48,27 +48,29 @@
             <form id="myform" method="POST" name="myform"  onClick='parent.jQuery.fn.colorbox.close();' action="/category/getCategory">
                 <input name="category" type="hidden"  id="category" value="empty"/>
                 <div class="lineBoarder">
-                    <div class="span1" onclick="changePara(this)" value="programmer" width="80%">
+                    <div style="width: 50%; float:left" onclick="changePara(this)" value="tech">
                         <div class="categoryWord" id="Tech">
                             <p>Tech</p> <p>Nerd</p>
                         </div>
                     </div>
-                    <div class="span1" onclick="changePara(this)" value="business">
+                    <div style="width: 50%; float:right" onclick="changePara(this)" value="book">
                         <div class="categoryWord" id="Book">
                             <p>Book</p> <p>Fanatic</p>
                         </div>
                     </div>
-                </div>                    <div class="span3" onclick="changePara(this)" value="programmer" width="80%">
-                <div class="categoryWord" id="Tech1">
-                    <p>Tech</p> <p>Nerd</p>
+                </div>
+                <div class="lineBoarder">
+                <div style="width: 50%; float:left" onclick="changePara(this)" value="outdoor">
+                <div class="categoryWord" id="Outdoor">
+                    <p>Outdoor</p> <p>Geek</p>
                 </div>
             </div>
-                <div class="span3" onclick="changePara(this)" value="business">
-                    <div class="categoryWord" id="Book1">
-                        <p>Book</p> <p>Fanatic</p>
+                <div style="width: 50%; float:right" onclick="changePara(this)" value="fashion">
+                    <div class="categoryWord" id="Fashion">
+                        <p>Fashion</p> <p>People</p>
                     </div>
                 </div>
-
+                </div>
             </form>
         </div>
     </div>

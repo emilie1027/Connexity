@@ -112,21 +112,38 @@
 			})
 		</script>
 
+		<script>
+			function readCookie(name) {
+			var nameEQ = name + "=";
+			var ca = document.cookie.split(';');
+			for(var i=0; ca.length>1 ;i++) {
+			var c = ca[i];
+			while (c.charAt(0)==' ') c = c.substring(1,c.length);
+			if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+			}
+			return null;
+			}
+		</script>
 
+		<script type="text/javascript"
+				src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
 	</head>
 	<body class="myBody">
-
+	<input  id="test" type="hidden"/>
 
 	<input name="style" id= "style" value="programmer" type="hidden"/>
 
+	<script>
+		document.getElementById("test").value = $.cookie("ConnexityUserCategory"); //readCookie('ConnexityUserID');
+	</script>
 
 	<!--these parts should be moved to body later-->
 	<!--category info can now be sent to backend, but they haven't stored it...-->
 	<script>
 		function openColorBox(){
-			var a = 1;// if doesn't have cookie before
-			if(a==1)
+			var a =document.getElementById("test").value ;// if doesn't have cookie before
+			if(a=="undefined")
 				$.colorbox({iframe:true, width:"50%", height:"50%", href: "/category.html"});
 //			$(".chpic").colorbox({width:"80%", height:"80%", iframe:true, href: "/category.html",
 //				onClosed:function(){ location.reload(true); } });
