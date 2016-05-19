@@ -1,15 +1,12 @@
 package application.controller;
 
 import application.model.Offer;
-import application.model.Query;
 import application.search.SearchStrategy;
 import application.gateway.HistoryGateway;
-import org.codehaus.groovy.tools.shell.IO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.CookieValue;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -51,7 +48,6 @@ public class SearchController {
 
     @RequestMapping("/redirect")
     public String redirect(@RequestParam Map<String, String> requestParams, @CookieValue(value="ConnexityUserID", required=false, defaultValue="connexityuserid") String cookieValue, HttpServletRequest request, HttpServletResponse response) throws Exception{
-        //String redirectUrl = request.getScheme() + "://www.google.com";
         String redirectUrl = requestParams.get("url");
         String sku = requestParams.get("sku");
         String upc = requestParams.get("upc");
@@ -61,7 +57,6 @@ public class SearchController {
             String uniqueID = UUID.randomUUID().toString();
             response.addCookie(new Cookie("ConnexityUserID", uniqueID));
         }
-        // putUserHistoryIntoDB(cookieValue, sku, upc, mercharId);
         else {
         		historyGateway.insertHistory(cookieValue, upc, sku, merchantId);
 //        		//test whether DB stores right

@@ -5,17 +5,13 @@ package application.controller;
  */
 import application.model.Offer;
 import application.search.SearchStrategy;
-import application.gateway.ConnexityGateway;
 import application.gateway.HistoryGateway;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
@@ -40,7 +36,9 @@ public class HomeController {
         List<Offer> historyOffers = new ArrayList();
         if (cookieValue.equals("connexityuserid")) {
             String uniqueID = UUID.randomUUID().toString();
-            response.addCookie(new Cookie("ConnexityUserID", uniqueID));
+            Cookie cookie = new Cookie("ConnexityUserID", uniqueID);
+            cookie.setPath("/");
+            response.addCookie(cookie);
         }
         else {
             //    model.addAttribute("history",getUserHistoryFromDB());
