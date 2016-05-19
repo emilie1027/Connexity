@@ -178,25 +178,62 @@
 				<div class="col-md-12">
 					<div class="input-group">
 						<div class="input-group-btn">
-							<button type="button" class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Smart
+							<input class="ranking" type="hidden" name="sort" id="sort" />
+							<button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span data-bind="label">Smart</span>&nbsp;
 								<span class="caret"></span>
 							</button>
-							<div class="dropdown-menu">
-								<li><a class="dropdown-item" herf="#"> Price</a></li>
-								<li><a class="dropdown-item" herf="#"> Popular</a></li>
-								<div role="separator" class="dropdown-divider"></div>
-								<li><a class="dropdown-item" href="#"> Sparated link</a></li>
-							</div>
+							<!--<input class="span2" id="sort" name="sort" type="hidden"> -->
+							<ul id="def" class="dropdown-menu">
+								<!--
+                                <li class="dropdown-item" onclick="$('#sort').val('price_asc')">Price up</li> -->
+								<li><a class="dropdown-item" id ="relevancy_desc" onclick="mydef(this);" > Smart</a></li>
+								<li><a class="dropdown-item" id ="price_desc" onclick="mydef(this);" > Price down</a></li>
+								<li><a class="dropdown-item" id ="price_asc" onclick="mydef(this);" > Price up</a></li>
+								<li><a class="dropdown-item" id ="discount_desc" onclick="mydef(this);" > Sales</a></li>
+							</ul>
 						</div>
 						<input name="key" type="text" class="form-control input-lg" placeholder="Search for product" />
-				          <span class="input-group-btn" id="myBotton">
-					        <button class="btn btn-info btn-lg" type="submit" >
+
+				          <span class="input-group-btn">
+					        <button class="btn btn-info btn-lg" type="submit">
 					          <i class="glyphicon glyphicon-search"></i></button>
 						  </span>
 					</div>
 				</div>
 			</form>
+
+			<!--
+            <script>
+                (function($){
+                    $('.input-group-btn .dropdown-menu a').click(function(e){
+                        e.preventDefault();
+                        $(this).closest('.input-group-btn').find('input').val(($this).data('value'));
+                        $(this).closest('form').submit();
+
+                    });
+                })(jQuery);
+            </script>
+             -->
+			<script>
+				$( document.body).on('click', '.dropdown-menu li', function(event)
+				{
+					var $target = $( event.currentTarget);
+					$target.closest('.input-group-btn')
+							.find( '[data-bind="label"]').text($target.text())
+							.end()
+							.children( '.dropdown-toggle' ).dropdown( 'toggle' );
+					return false;
+
+				});
+
+				function mydef(obj)
+				{
+					document.getElementById("sort").value = obj.id;
+
+				}
+
+			</script>
 
 			<div class="threeColumn">
 				<div class="banner-bottom">
