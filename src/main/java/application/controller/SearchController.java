@@ -7,8 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.CookieValue;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -59,13 +61,16 @@ public class SearchController {
         }
         else {
         		historyGateway.insertHistory(cookieValue, upc, sku, merchantId);
-//        		//test whether DB stores right
-//        		List<Map<String, String> > ans = historyGateway.findHistory(cookieValue);
-//        		//String firstRecord = ans.iterator().next().get("upc");
-//        		System.out.printf("history size: %d\n", ans.size());
         }
 
         return "redirect:" + redirectUrl;
     }
-    
+
+    @ExceptionHandler(IllegalArgumentException.class)
+    public String handleIllegalArgumentException(IllegalArgumentException e) {
+        if (e.getMessage().equals("search key should not be empty nor null")) {
+            return "redirect:/";
+        }
+        throw e;
+    }
 }
