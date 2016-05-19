@@ -3,8 +3,10 @@ package application.controller;
 /**
  * Created by lijiayu on 4/30/16.
  */
+import application.model.AmazonOffer;
 import application.model.Offer;
 import application.search.SearchStrategy;
+import application.gateway.AmazonGateway;
 import application.gateway.HistoryGateway;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +19,8 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -30,9 +34,11 @@ public class HomeController {
     private SearchStrategy searchStrategy;
 	@Autowired
     private HistoryGateway historyGateway;
+	@Autowired
+	private AmazonGateway amazonGateway;
 
     @RequestMapping("")
-    public String HomeController(@CookieValue(value="ConnexityUserID", required=false, defaultValue="connexityuserid") String cookieValue, Model model, HttpServletResponse response) throws IOException{
+    public String HomeController(@CookieValue(value="ConnexityUserID", required=false, defaultValue="connexityuserid") String cookieValue, Model model, HttpServletResponse response) throws IOException, InvalidKeyException, NoSuchAlgorithmException{
         List<Offer> historyOffers = new ArrayList();
         if (cookieValue.equals("connexityuserid")) {
             String uniqueID = UUID.randomUUID().toString();
@@ -53,6 +59,12 @@ public class HomeController {
                 }
         }
         model.addAttribute("historyOffers", historyOffers);
+        //below: check amazon return results
+        List<String> list = new ArrayList<>();
+        list.add("B000W7JWUA");
+        String xml = amazonGateway.similarityLookupByASIN(list);
+        List<AmazonOffer> amazonOffers = AmazonOffer.parseString(xml);
+        model.addAttribute("amazonOffers", amazonOffers);
         return "home";
     }
 }

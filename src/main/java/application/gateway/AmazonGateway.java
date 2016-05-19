@@ -120,12 +120,13 @@ public class AmazonGateway {
         }
     }
 
-    private String similarityLookupByASIN(List<String> ASINs) throws IOException, NoSuchAlgorithmException, InvalidKeyException {
+    public String similarityLookupByASIN(List<String> ASINs) throws IOException, NoSuchAlgorithmException, InvalidKeyException {
         Signature sig = new Signature(hostAddress,accessKey,secretKey,associateId);
         String operation = "SimilarityLookup";
         String timeStamp = sig.timestamp();
         String signaturedUrl;
         String ItemId = "";
+        String ResponseGroup = " Images,ItemAttributes"; //added for extracting images
         for (String asin : ASINs) ItemId = ItemId + asin + ",";
         ItemId = ItemId.substring(0, ItemId.length() - 1);
 
@@ -135,6 +136,7 @@ public class AmazonGateway {
         queryParam.put("AssociateTag", associateId);
         queryParam.put("Operation", operation);
         queryParam.put("ItemId", ItemId);
+        queryParam.put("ResponseGroup", ResponseGroup);
         queryParam.put("Timestamp", timeStamp);
         signaturedUrl = sig.sign(queryParam);
         HttpClient client = new HttpClient();
