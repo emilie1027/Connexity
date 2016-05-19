@@ -1,0 +1,368 @@
+
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>ColorBox demo</title>
+		<link rel="stylesheet" th:href="@{/css/bootstrap-3.3.5-dist/css/bootstrap.css}" />
+		<link rel="stylesheet" th:href="@{/css/mycss/style.css}"/>
+		<link rel="stylesheet" th:href="@{/css/mycss/mystyle.css}"/>
+		<link rel="stylesheet" th:href="@{/css/mycss/colorbox.css}"/>
+		<!--<link rel="stylesheet" th:href="@{http://www.jacklmoore.com/colorbox/example1/colorbox.css}" />-->
+
+		<script th:src="@{js/modernizr.custom.js}"></script>
+		<script th:src="@{/js/jquery-1.12.3.min.js}"></script>
+		<script th:src="@{/js/bootstrap.min.js}"></script>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<script>
+			function validateForm() {
+				var x = document.forms["myform"]["key"].value;
+				if (x == null || x == "") {
+					alert("Name must be filled out");
+					return false;
+				}
+			}
+
+			function getRandomInt(min, max) {
+				return Math.floor(Math.random() * (max - min)) + min;
+			}
+		</script>
+
+
+		<script type="text/javascript">
+			$( document ).ready(
+				function changeBGColor() {
+					var a = getRandomInt(1,5);
+					if(a==1) {
+						$('body').css('background-image', 'url("http://images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg")');
+					}
+					else if(a==2) {
+						$('body').css('background-image', 'url("http://images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg")');
+						document.body.style.opacity = "0.9";
+						document.body.style.filter  = 'alpha(opacity=90)'; // IE fallback
+					}
+					else if(a==3) {
+						$('body').css('background-image', 'url("http://images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg")');
+						document.body.style.opacity = "0.9";
+						document.body.style.filter  = 'alpha(opacity=80)'; // IE fallback
+					}
+					else
+						$('body').css('background-image', 'url("http://images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg")');
+				}
+			)
+		</script>
+
+		<script type="text/javascript">
+			$( document ).ready(
+			function changeFontColor() {
+				var a = getRandomInt(1,5);
+				if(a==1) {
+					var cols = document.getElementsByClassName("styleClass");
+					var urls = document.getElementsByClassName("myUrl");
+					for (var i = 0; cols.length > i; i++) {
+						cols[i].style.color = 'black';
+						document.getElementById("myBotton").style.color = 'black';
+//					if (document.getElementById("sytle").value =="business")
+					}
+					for (var i = 0; urls.length > i; i++) {
+						urls[i].style.color = 'black';
+					}
+				}
+				else if(a==2)
+				{
+					var cols = document.getElementsByClassName("styleClass");
+					var urls = document.getElementsByClassName("myUrl");
+					for (var i = 0; cols.length > i; i++) {
+						cols[i].style.color = '#e8bbf4';
+						document.getElementById("myBotton").style.color = '#e8bbf4';
+//					if (document.getElementById("sytle").value =="business")
+					}
+					for (var i = 0; urls.length > i; i++) {
+						urls[i].style.color = '#e8bbf4';
+					}
+				}
+				else if(a==3){
+					var cols = document.getElementsByClassName("styleClass");
+					var urls = document.getElementsByClassName("myUrl");
+					for (var i = 0; cols.length > i; i++) {
+						cols[i].style.color = '#687478';
+						document.getElementById("myBotton").style.color = '#687478';
+//					if (document.getElementById("sytle").value =="business")
+					}
+					for (var i = 0; urls.length > i; i++) {
+						urls[i].style.color = '#512e3a';
+					}
+				}
+				else
+				{
+					var cols = document.getElementsByClassName("styleClass");
+					var urls = document.getElementsByClassName("myUrl");
+					for (var i = 0; cols.length > i; i++) {
+						cols[i].style.color = '#5bc0de';
+						document.getElementById("myBotton").style.color = '#5bc0de';
+//					if (document.getElementById("sytle").value =="business")
+					}
+					for (var i = 0; urls.length > i; i++) {
+						urls[i].style.color = '#5bc0de';
+					}
+				}
+
+			})
+		</script>
+
+		<script>
+			function readCookie(name) {
+			var nameEQ = name + "=";
+			var ca = document.cookie.split(';');
+			for(var i=0; ca.length>1 ;i++) {
+			var c = ca[i];
+			while (c.charAt(0)==' ') c = c.substring(1,c.length);
+			if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+			}
+			return null;
+			}
+		</script>
+
+		<script type="text/javascript"
+				src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+	</head>
+	<body class="myBody">
+	<input  id="test" type="hidden"/>
+
+	<input name="style" id= "style" value="programmer" type="hidden"/>
+
+	<script>
+		document.getElementById("test").value = $.cookie("ConnexityUserCategory"); //readCookie('ConnexityUserID');
+	</script>
+
+	<!--these parts should be moved to body later-->
+	<!--category info can now be sent to backend, but they haven't stored it...-->
+	<script>
+		function openColorBox(){
+			var a =document.getElementById("test").value ;// if doesn't have cookie before
+			if(a=="undefined")
+				$.colorbox({iframe:true, width:"70%", height:"80%", href: "/category.html"});
+//			$(".chpic").colorbox({width:"80%", height:"80%", iframe:true, href: "/category.html",
+//				onClosed:function(){ location.reload(true); } });
+		}
+
+		function countDown(){
+			var seconds = 1;
+			seconds--
+
+			if (seconds === 0){
+				openColorBox();
+				clearInterval(i);
+			}
+		}
+
+		 seconds = 1,
+				i = setInterval(countDown, 1000);
+	</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://www.jacklmoore.com/colorbox/jquery.colorbox.js"></script>
+
+
+		<div class="container" name="top">
+			<div class="page-header">
+				<h1 class="styleClass" onclick="location.href = '/home.html'">Connexity</h1>
+			</div>
+
+			<a href="#0" class="cd-top">Top</a>
+
+
+			<form method="GET" action="/search/query.html"  onsubmit="return validateForm()" name="myform"  >
+				<div class="col-md-12">
+					<div class="input-group">
+						<div class="input-group-btn">
+							<input class="ranking" type="hidden" name="sort" id="sort" />
+							<button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span data-bind="label">Smart</span>&nbsp;
+								<span class="caret"></span>
+							</button>
+							<!--<input class="span2" id="sort" name="sort" type="hidden"> -->
+							<ul id="def" class="dropdown-menu">
+								<!--
+                                <li class="dropdown-item" onclick="$('#sort').val('price_asc')">Price up</li> -->
+								<li><a class="dropdown-item" id ="relevancy_desc" onclick="mydef(this);" > Smart</a></li>
+								<li><a class="dropdown-item" id ="price_desc" onclick="mydef(this);" > Price down</a></li>
+								<li><a class="dropdown-item" id ="price_asc" onclick="mydef(this);" > Price up</a></li>
+								<li><a class="dropdown-item" id ="discount_desc" onclick="mydef(this);" > Sales</a></li>
+							</ul>
+						</div>
+						<input name="key" type="text" class="form-control input-lg" placeholder="Search for product" />
+
+				          <span class="input-group-btn">
+					        <button class="btn btn-info btn-lg" type="submit">
+					          <i class="glyphicon glyphicon-search"></i></button>
+						  </span>
+					</div>
+				</div>
+			</form>
+
+			<!--
+            <script>
+                (function($){
+                    $('.input-group-btn .dropdown-menu a').click(function(e){
+                        e.preventDefault();
+                        $(this).closest('.input-group-btn').find('input').val(($this).data('value'));
+                        $(this).closest('form').submit();
+
+                    });
+                })(jQuery);
+            </script>
+             -->
+			<script>
+				$( document.body).on('click', '.dropdown-menu li', function(event)
+				{
+					var $target = $( event.currentTarget);
+					$target.closest('.input-group-btn')
+							.find( '[data-bind="label"]').text($target.text())
+							.end()
+							.children( '.dropdown-toggle' ).dropdown( 'toggle' );
+					return false;
+
+				});
+
+				function mydef(obj)
+				{
+					document.getElementById("sort").value = obj.id;
+
+				}
+
+			</script>
+
+			<div class="threeColumn">
+				<div class="banner-bottom">
+					<h2 class="styleClass" name="styleClass"> Trending</h2>
+					<ul th:value="${historyOffers.size()}" text="aaa">
+						<li  th:each="offer : ${historyOffers}">
+							<div class="col-md-3 bottom-grid">
+								<div class="bottom-pad">
+									<div class="btm-img">
+										<img th:src="${offer.images[3]}" alt="" />
+									</div>
+								</div>
+								<div class="offerinfo">
+									<!-- <a th:href="${offer.url}" th:text="${offer.title}">Items</a> -->
+									<a class="myUrl" th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a>
+									<p th:text="'$'+${offer.price}"></p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="banner-bottom">
+					<h2 class="styleClass"> History</h2>
+					<ul th:value="${historyOffers.size()}" text="aaa">
+						<li  th:each="offer : ${historyOffers}">
+							<div class="col-md-3 bottom-grid">
+								<div class="bottom-pad">
+									<div class="btm-img">
+										<img th:src="${offer.images[3]}" alt="" />
+									</div>
+								</div>
+								<div class="offerinfo">
+									<!-- <a th:href="${offer.url}" th:text="${offer.title}">Items</a> -->
+									<a class="myUrl" th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a>
+									<p th:text="'$'+${offer.price}"></p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="banner-bottom" >
+					<h2 class="styleClass"> Trending</h2>
+					<ul th:value="${historyOffers.size()}" text="aaa">
+						<li  th:each="offer : ${historyOffers}">
+							<div class="col-md-3 bottom-grid">
+								<div class="bottom-pad">
+									<div class="btm-img">
+										<img th:src="${offer.images[3]}" alt="" />
+									</div>
+								</div>
+								<div class="offerinfo">
+									<!-- <a th:href="${offer.url}" th:text="${offer.title}">Items</a> -->
+									<a class="myUrl" th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a>
+									<p th:text="'$'+${offer.price}"></p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer">
+				<div class="footer-one">
+					<h2 name="styleClass"><a href="#" >CONNEXITY</a></h2>
+					<p>Copyright &copy; 2016. Support By Connexity TEAM3.</p>
+					<p><a href="https://github.com/emilie1027/Connexity">Contact us</a></p>
+				</div>
+				<div class="footer-two">
+					<h4>MAN</h4>
+					<ul>
+						<li><a href="/search/query.html?key=jackets">Jackets</a></li>
+						<li><a href="/search/query.html?key=blazers+man">Blazers</a></li>
+						<li><a href="/search/query.html?key=man+suits">Suits</a></li>
+						<li><a href="/search/query.html?key=man+trousers">Trousers</a></li>
+						<li><a href="/search/query.html?key=man+jeans">Jeans</a></li>
+					</ul>
+					<ul>
+						<li><a href="/search/query.html?key=man+denim">Denim</a></li>
+						<li><a href="/search/query.html?key=man+shorts">Shorts</a></li>
+						<li><a href="/search/query.html?key=man+shirt">Shirts</a></li>
+						<li><a href="/search/query.html?key=man+t-shirt">T-shirts</a></li>
+						<li><a href="/search/query.html?key=man+polo">Polo</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-two">
+					<h4>WOMAN</h4>
+					<ul>
+						<li><a href="/search/query.html?key=woman+coat">Coats</a></li>
+						<li><a href="/search/query.html?key=woman+jacket">Jackets</a></li>
+						<li><a href="/search/query.html?key=dresses">Dresses</a></li>
+						<li><a href="/search/query.html?key=jumpsuit">Jumpsuits</a></li>
+						<li><a href="/search/query.html?key=woman+top">Tops</a></li>
+					</ul>
+					<ul>
+						<li><a href="/search/query.html?key=woman+leather">Leather</a></li>
+						<li><a href="/search/query.html?key=woman+trouser">Trousers</a></li>
+						<li><a href="/search/query.html?key=woman+shorts">Shorts</a></li>
+						<li><a href="/search/query.html?key=woman+jeans">Jeans</a></li>
+						<li><a href="/search/query.html?key=woman+denim">Denim</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-three">
+					<h4>KID</h4>
+					<ul>
+						<li><a href="/search/query.html?key=girl">Girl</a></li>
+						<li><a href="/search/query.html?key=boy">Boy</a></li>
+						<li><a href="/search/query.html?key=baby+girl">Baby girl</a></li>
+						<li><a href="/search/query.html?key=baby+boy">Baby boy</a></li>
+						<li><a href="#">Min</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-three">
+					<h4>SHOES &amp;	BAGS</h4>
+					<ul>
+						<li><a href="/search/query.html?key=woman+shoe+or+bag">Woman</a></li>
+						<li><a href="/search/query.html?key=man+bag+or+shoe">Man</a></li>
+						<li><a href="/search/query.html?key=girl+bag">Girl</a></li>
+						<li><a href="/search/query.html?key=shoe+boy">Boy</a></li>
+					</ul>
+				</div>
+			</div>
+			<a href="#0" class="cd-top">Top</a>
+			<script th:src="@{/js/main.js}"></script>
+
+		</div>
+	</body>
+</html>

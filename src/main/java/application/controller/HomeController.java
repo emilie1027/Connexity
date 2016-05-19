@@ -40,6 +40,7 @@ public class HomeController {
     @RequestMapping("")
     public String HomeController(@CookieValue(value="ConnexityUserID", required=false, defaultValue="connexityuserid") String cookieValue, Model model, HttpServletResponse response) throws IOException, InvalidKeyException, NoSuchAlgorithmException{
         List<Offer> historyOffers = new ArrayList();
+        List<AmazonOffer> amazonOffers = new ArrayList();
         if (cookieValue.equals("connexityuserid")) {
             String uniqueID = UUID.randomUUID().toString();
             Cookie cookie = new Cookie("ConnexityUserID", uniqueID);
@@ -57,13 +58,21 @@ public class HomeController {
                         if (historyOffer != null) historyOffers.addAll(historyOffer);
                     }
                 }
+                //from historyOffers to amazonOffers 
+                List<String> ASINs = new ArrayList<>();
+                Iterator it = historyOffers.iterator();
+                int num = 3;//up to 3 ASINs
+                while (it.hasNext() && num>0) {
+                		num--;
+                		Offer history = (Offer) it.next();
+                		String asin = amazonGateway.lookupASINbyUPCorSKU(history.upc, history.sku);
+                		if (asin != null) ASINs.add(asin);
+                }  
+                String xml = amazonGateway.similarityLookupByASIN(ASINs);
+                //System.out.println(xml);
+                amazonOffers.addAll(AmazonOffer.parseString(xml));
         }
         model.addAttribute("historyOffers", historyOffers);
-        //below: check amazon return results
-        List<String> list = new ArrayList<>();
-        list.add("B000W7JWUA");
-        String xml = amazonGateway.similarityLookupByASIN(list);
-        List<AmazonOffer> amazonOffers = AmazonOffer.parseString(xml);
         model.addAttribute("amazonOffers", amazonOffers);
         return "home";
     }

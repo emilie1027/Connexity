@@ -1,0 +1,2890 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SimilarityLookupResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2011-08-01">
+  <OperationRequest>
+    <HTTPHeaders>
+      <Header Name="UserAgent" Value="Jakarta Commons-HttpClient/3.1"/>
+    </HTTPHeaders>
+    <RequestId>5c577c83-32a8-4075-9522-a4dddda66008</RequestId>
+    <Arguments>
+      <Argument Name="AWSAccessKeyId" Value="AKIAIIZDMTEMK7GMAUNQ"/>
+      <Argument Name="AssociateTag" Value="ucla130connex-20"/>
+      <Argument Name="ItemId" Value="B00N3RFFZ2"/>
+      <Argument Name="Operation" Value="SimilarityLookup"/>
+      <Argument Name="ResponseGroup" Value=" Images,ItemAttributes"/>
+      <Argument Name="Service" Value="AWSECommerceService"/>
+      <Argument Name="Timestamp" Value="2016-05-19T22:57:40Z"/>
+      <Argument Name="Signature" Value="bJxJ/gkw8jF3fktxBKk00hLAoaFaj3eT5Un7LmShKLc="/>
+    </Arguments>
+    <RequestProcessingTime>0.1142257910000000</RequestProcessingTime>
+  </OperationRequest>
+  <Items>
+    <Request>
+      <IsValid>True</IsValid>
+      <SimilarityLookupRequest>
+        <ItemId>B00N3RFFZ2</ItemId>
+        <ResponseGroup>Images</ResponseGroup>
+        <ResponseGroup>ItemAttributes</ResponseGroup>
+      </SimilarityLookupRequest>
+    </Request>
+    <Item>
+      <ASIN>B018033IV6</ASIN>
+      <ParentASIN>B0187WANTK</ParentASIN>
+      <DetailPageURL>http://www.amazon.com/Comply-Foam-Earphone-Tips-Isolation/dp/B018033IV6%3Fpsc%3D1%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB018033IV6</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Comply-Foam-Earphone-Tips-Isolation/dp/tech-data/B018033IV6%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB018033IV6</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB018033IV6%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB018033IV6</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB018033IV6%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB018033IV6</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB018033IV6%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB018033IV6</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B018033IV6%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB018033IV6</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B018033IV6%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB018033IV6</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B018033IV6%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB018033IV6</URL>
+        </ItemLink>
+      </ItemLinks>
+      <SmallImage>
+        <URL>http://ecx.images-amazon.com/images/I/417M5CnUJrL._SL75_.jpg</URL>
+        <Height Units="pixels">63</Height>
+        <Width Units="pixels">75</Width>
+      </SmallImage>
+      <MediumImage>
+        <URL>http://ecx.images-amazon.com/images/I/417M5CnUJrL._SL160_.jpg</URL>
+        <Height Units="pixels">133</Height>
+        <Width Units="pixels">160</Width>
+      </MediumImage>
+      <LargeImage>
+        <URL>http://ecx.images-amazon.com/images/I/417M5CnUJrL.jpg</URL>
+        <Height Units="pixels">417</Height>
+        <Width Units="pixels">500</Width>
+      </LargeImage>
+      <ImageSets>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/41D6p%2BNUkJL._SL30_.jpg</URL>
+            <Height Units="pixels">19</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/41D6p%2BNUkJL._SL75_.jpg</URL>
+            <Height Units="pixels">48</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/41D6p%2BNUkJL._SL75_.jpg</URL>
+            <Height Units="pixels">48</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/41D6p%2BNUkJL._SL110_.jpg</URL>
+            <Height Units="pixels">71</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/41D6p%2BNUkJL._SL160_.jpg</URL>
+            <Height Units="pixels">103</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/41D6p%2BNUkJL.jpg</URL>
+            <Height Units="pixels">321</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/41w42DL7riL._SL30_.jpg</URL>
+            <Height Units="pixels">20</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/41w42DL7riL._SL75_.jpg</URL>
+            <Height Units="pixels">50</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/41w42DL7riL._SL75_.jpg</URL>
+            <Height Units="pixels">50</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/41w42DL7riL._SL110_.jpg</URL>
+            <Height Units="pixels">73</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/41w42DL7riL._SL160_.jpg</URL>
+            <Height Units="pixels">107</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/41w42DL7riL.jpg</URL>
+            <Height Units="pixels">333</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/41I8mHskvML._SL30_.jpg</URL>
+            <Height Units="pixels">17</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/41I8mHskvML._SL75_.jpg</URL>
+            <Height Units="pixels">42</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/41I8mHskvML._SL75_.jpg</URL>
+            <Height Units="pixels">42</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/41I8mHskvML._SL110_.jpg</URL>
+            <Height Units="pixels">62</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/41I8mHskvML._SL160_.jpg</URL>
+            <Height Units="pixels">90</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/41I8mHskvML.jpg</URL>
+            <Height Units="pixels">281</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="primary">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/417M5CnUJrL._SL30_.jpg</URL>
+            <Height Units="pixels">25</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/417M5CnUJrL._SL75_.jpg</URL>
+            <Height Units="pixels">63</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/417M5CnUJrL._SL75_.jpg</URL>
+            <Height Units="pixels">63</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/417M5CnUJrL._SL110_.jpg</URL>
+            <Height Units="pixels">92</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/417M5CnUJrL._SL160_.jpg</URL>
+            <Height Units="pixels">133</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/417M5CnUJrL.jpg</URL>
+            <Height Units="pixels">417</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+      </ImageSets>
+      <ItemAttributes>
+        <Binding>Electronics</Binding>
+        <Brand>Comply</Brand>
+        <Color>Black</Color>
+        <EAN>0655942171457</EAN>
+        <EANList>
+          <EANListElement>0655942171457</EANListElement>
+        </EANList>
+        <Feature>The original foam earphone tips. Made in the USA.</Feature>
+        <Feature>Proprietary memory foam engineered for a custom fit to block out noise and keep earphones in place.</Feature>
+        <Feature>The perfect seal provides a superior audio experience and enhanced bass.</Feature>
+        <Feature>Super-soft memory foam reduces earphone irritation and fatigue.</Feature>
+        <Feature>Compatibility: 4 models to fit all major earphone brands (100, 200, 400, and 500). See compatiblity chart here: Complyfoam.com/Compatibility</Feature>
+        <ItemDimensions>
+          <Height Units="hundredths-inches">200</Height>
+          <Length Units="hundredths-inches">225</Length>
+          <Weight Units="hundredths-pounds">2</Weight>
+          <Width Units="hundredths-inches">75</Width>
+        </ItemDimensions>
+        <Label>Hearing Components</Label>
+        <ListPrice>
+          <Amount>1295</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$12.95</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Hearing Components</Manufacturer>
+        <Model>17-16403-11</Model>
+        <MPN>17-16403-11</MPN>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">70</Height>
+          <Length Units="hundredths-inches">210</Length>
+          <Weight Units="hundredths-pounds">2</Weight>
+          <Width Units="hundredths-inches">200</Width>
+        </PackageDimensions>
+        <PackageQuantity>1</PackageQuantity>
+        <PartNumber>17-16403-11</PartNumber>
+        <ProductGroup>CE</ProductGroup>
+        <ProductTypeName>HEADPHONES</ProductTypeName>
+        <Publisher>Hearing Components</Publisher>
+        <Size>Large</Size>
+        <Studio>Hearing Components</Studio>
+        <Title>Comply Foam Earphone Tips - Isolation T-150 (Black, 2 Pairs, Large)</Title>
+        <UPC>655942171457</UPC>
+        <UPCList>
+          <UPCListElement>655942171457</UPCListElement>
+        </UPCList>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B005N8W27I</ASIN>
+      <ParentASIN>B00OOOYXA6</ParentASIN>
+      <DetailPageURL>http://www.amazon.com/Sennheiser-IE80-Headphone/dp/B005N8W27I%3Fpsc%3D1%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB005N8W27I</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Sennheiser-IE80-Headphone/dp/tech-data/B005N8W27I%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB005N8W27I</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB005N8W27I%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB005N8W27I</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB005N8W27I%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB005N8W27I</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB005N8W27I%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB005N8W27I</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B005N8W27I%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB005N8W27I</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B005N8W27I%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB005N8W27I</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B005N8W27I%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB005N8W27I</URL>
+        </ItemLink>
+      </ItemLinks>
+      <SmallImage>
+        <URL>http://ecx.images-amazon.com/images/I/41N47%2B9s9oL._SL75_.jpg</URL>
+        <Height Units="pixels">75</Height>
+        <Width Units="pixels">70</Width>
+      </SmallImage>
+      <MediumImage>
+        <URL>http://ecx.images-amazon.com/images/I/41N47%2B9s9oL._SL160_.jpg</URL>
+        <Height Units="pixels">160</Height>
+        <Width Units="pixels">150</Width>
+      </MediumImage>
+      <LargeImage>
+        <URL>http://ecx.images-amazon.com/images/I/41N47%2B9s9oL.jpg</URL>
+        <Height Units="pixels">500</Height>
+        <Width Units="pixels">470</Width>
+      </LargeImage>
+      <ImageSets>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/31Vd4iyKAvL._SL30_.jpg</URL>
+            <Height Units="pixels">9</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/31Vd4iyKAvL._SL75_.jpg</URL>
+            <Height Units="pixels">22</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/31Vd4iyKAvL._SL75_.jpg</URL>
+            <Height Units="pixels">22</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/31Vd4iyKAvL._SL110_.jpg</URL>
+            <Height Units="pixels">33</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/31Vd4iyKAvL._SL160_.jpg</URL>
+            <Height Units="pixels">47</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/31Vd4iyKAvL.jpg</URL>
+            <Height Units="pixels">148</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/41XEPJYmAZL._SL30_.jpg</URL>
+            <Height Units="pixels">30</Height>
+            <Width Units="pixels">9</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/41XEPJYmAZL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">22</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/41XEPJYmAZL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">22</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/41XEPJYmAZL._SL110_.jpg</URL>
+            <Height Units="pixels">110</Height>
+            <Width Units="pixels">33</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/41XEPJYmAZL._SL160_.jpg</URL>
+            <Height Units="pixels">160</Height>
+            <Width Units="pixels">48</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/41XEPJYmAZL.jpg</URL>
+            <Height Units="pixels">500</Height>
+            <Width Units="pixels">150</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/3116BXSbrjL._SL30_.jpg</URL>
+            <Height Units="pixels">30</Height>
+            <Width Units="pixels">22</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/3116BXSbrjL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">55</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/3116BXSbrjL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">55</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/3116BXSbrjL._SL110_.jpg</URL>
+            <Height Units="pixels">110</Height>
+            <Width Units="pixels">81</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/3116BXSbrjL._SL160_.jpg</URL>
+            <Height Units="pixels">160</Height>
+            <Width Units="pixels">117</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/3116BXSbrjL.jpg</URL>
+            <Height Units="pixels">500</Height>
+            <Width Units="pixels">367</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/41uYUw8IogL._SL30_.jpg</URL>
+            <Height Units="pixels">20</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/41uYUw8IogL._SL75_.jpg</URL>
+            <Height Units="pixels">50</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/41uYUw8IogL._SL75_.jpg</URL>
+            <Height Units="pixels">50</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/41uYUw8IogL._SL110_.jpg</URL>
+            <Height Units="pixels">73</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/41uYUw8IogL._SL160_.jpg</URL>
+            <Height Units="pixels">106</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/41uYUw8IogL.jpg</URL>
+            <Height Units="pixels">332</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/41Ek41G0F6L._SL30_.jpg</URL>
+            <Height Units="pixels">30</Height>
+            <Width Units="pixels">28</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/41Ek41G0F6L._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">70</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/41Ek41G0F6L._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">70</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/41Ek41G0F6L._SL110_.jpg</URL>
+            <Height Units="pixels">110</Height>
+            <Width Units="pixels">103</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/41Ek41G0F6L._SL160_.jpg</URL>
+            <Height Units="pixels">160</Height>
+            <Width Units="pixels">149</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/41Ek41G0F6L.jpg</URL>
+            <Height Units="pixels">500</Height>
+            <Width Units="pixels">466</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/41d9RsnZZ9L._SL30_.jpg</URL>
+            <Height Units="pixels">20</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/41d9RsnZZ9L._SL75_.jpg</URL>
+            <Height Units="pixels">50</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/41d9RsnZZ9L._SL75_.jpg</URL>
+            <Height Units="pixels">50</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/41d9RsnZZ9L._SL110_.jpg</URL>
+            <Height Units="pixels">73</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/41d9RsnZZ9L._SL160_.jpg</URL>
+            <Height Units="pixels">106</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/41d9RsnZZ9L.jpg</URL>
+            <Height Units="pixels">332</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/41wT53d8H9L._SL30_.jpg</URL>
+            <Height Units="pixels">30</Height>
+            <Width Units="pixels">22</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/41wT53d8H9L._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">55</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/41wT53d8H9L._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">55</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/41wT53d8H9L._SL110_.jpg</URL>
+            <Height Units="pixels">110</Height>
+            <Width Units="pixels">80</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/41wT53d8H9L._SL160_.jpg</URL>
+            <Height Units="pixels">160</Height>
+            <Width Units="pixels">116</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/41wT53d8H9L.jpg</URL>
+            <Height Units="pixels">500</Height>
+            <Width Units="pixels">364</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/31O5lsvymhL._SL30_.jpg</URL>
+            <Height Units="pixels">30</Height>
+            <Width Units="pixels">9</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/31O5lsvymhL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">22</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/31O5lsvymhL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">22</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/31O5lsvymhL._SL110_.jpg</URL>
+            <Height Units="pixels">110</Height>
+            <Width Units="pixels">32</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/31O5lsvymhL._SL160_.jpg</URL>
+            <Height Units="pixels">160</Height>
+            <Width Units="pixels">47</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/31O5lsvymhL.jpg</URL>
+            <Height Units="pixels">500</Height>
+            <Width Units="pixels">146</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/51J1Lgldv5L._SL30_.jpg</URL>
+            <Height Units="pixels">30</Height>
+            <Width Units="pixels">22</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/51J1Lgldv5L._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">56</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/51J1Lgldv5L._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">56</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/51J1Lgldv5L._SL110_.jpg</URL>
+            <Height Units="pixels">110</Height>
+            <Width Units="pixels">82</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/51J1Lgldv5L._SL160_.jpg</URL>
+            <Height Units="pixels">160</Height>
+            <Width Units="pixels">120</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/51J1Lgldv5L.jpg</URL>
+            <Height Units="pixels">500</Height>
+            <Width Units="pixels">375</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="primary">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/41N47%2B9s9oL._SL30_.jpg</URL>
+            <Height Units="pixels">30</Height>
+            <Width Units="pixels">28</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/41N47%2B9s9oL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">70</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/41N47%2B9s9oL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">70</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/41N47%2B9s9oL._SL110_.jpg</URL>
+            <Height Units="pixels">110</Height>
+            <Width Units="pixels">103</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/41N47%2B9s9oL._SL160_.jpg</URL>
+            <Height Units="pixels">160</Height>
+            <Width Units="pixels">150</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/41N47%2B9s9oL.jpg</URL>
+            <Height Units="pixels">500</Height>
+            <Width Units="pixels">470</Width>
+          </LargeImage>
+        </ImageSet>
+      </ImageSets>
+      <ItemAttributes>
+        <Binding>Electronics</Binding>
+        <Brand>Sennheiser</Brand>
+        <CatalogNumberList>
+          <CatalogNumberListElement>IE80</CatalogNumberListElement>
+          <CatalogNumberListElement>##-SENNHEISER-CASQUE-504739</CatalogNumberListElement>
+          <CatalogNumberListElement>##-SENNHEISER-CASQUE-504771</CatalogNumberListElement>
+          <CatalogNumberListElement>504771</CatalogNumberListElement>
+        </CatalogNumberList>
+        <Color>Black/Silver</Color>
+        <EAN>0033171312887</EAN>
+        <EANList>
+          <EANListElement>0033171312887</EANListElement>
+          <EANListElement>8902329503526</EANListElement>
+          <EANListElement>4044155071665</EANListElement>
+          <EANListElement>0615104218130</EANListElement>
+          <EANListElement>4044155071672</EANListElement>
+        </EANList>
+        <Feature>Dynamic speaker systems with powerful neodymium magnets ensure outstanding sonic accuracy and clarity</Feature>
+        <Feature>Excellent attenuation of ambient noise of up to 20 dB</Feature>
+        <Feature>Extremely durable housing and rugged, interchangeable cable</Feature>
+        <Feature>Sleek ergonomic design of ear-canal phones</Feature>
+        <Feature>Manual Language - English</Feature>
+        <IsAutographed>0</IsAutographed>
+        <ItemDimensions>
+          <Height Units="hundredths-inches">580</Height>
+          <Length Units="hundredths-inches">250</Length>
+          <Weight Units="hundredths-pounds">30</Weight>
+          <Width Units="hundredths-inches">112</Width>
+        </ItemDimensions>
+        <Label>Sennheiser</Label>
+        <Languages>
+          <Language>
+            <Name>Spanish</Name>
+            <Type>Manual</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>French</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>Spanish</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Unknown</Type>
+          </Language>
+        </Languages>
+        <LegalDisclaimer>US Only 18 over only</LegalDisclaimer>
+        <Manufacturer>Sennheiser</Manufacturer>
+        <Model>IE80</Model>
+        <MPN>IE80</MPN>
+        <NumberOfItems>1</NumberOfItems>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">228</Height>
+          <Length Units="hundredths-inches">693</Length>
+          <Weight Units="hundredths-pounds">79</Weight>
+          <Width Units="hundredths-inches">528</Width>
+        </PackageDimensions>
+        <PackageQuantity>1</PackageQuantity>
+        <PartNumber>IE80</PartNumber>
+        <ProductGroup>CE</ProductGroup>
+        <ProductTypeName>HEADPHONES</ProductTypeName>
+        <Publisher>Sennheiser</Publisher>
+        <ReleaseDate>2014-06-04</ReleaseDate>
+        <Studio>Sennheiser</Studio>
+        <Title>Sennheiser IE80 Headphone</Title>
+        <UPC>615104218130</UPC>
+        <UPCList>
+          <UPCListElement>615104218130</UPCListElement>
+          <UPCListElement>033171312887</UPCListElement>
+        </UPCList>
+        <Warranty>2 yrs</Warranty>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B00SL2YX02</ASIN>
+      <ParentASIN>B00X958NF2</ParentASIN>
+      <DetailPageURL>http://www.amazon.com/Sennheiser-Momentum-2-0-Apple-Devices/dp/B00SL2YX02%3Fpsc%3D1%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00SL2YX02</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Sennheiser-Momentum-2-0-Apple-Devices/dp/tech-data/B00SL2YX02%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00SL2YX02</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB00SL2YX02%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00SL2YX02</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB00SL2YX02%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00SL2YX02</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB00SL2YX02%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00SL2YX02</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B00SL2YX02%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00SL2YX02</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B00SL2YX02%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00SL2YX02</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B00SL2YX02%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00SL2YX02</URL>
+        </ItemLink>
+      </ItemLinks>
+      <SmallImage>
+        <URL>http://ecx.images-amazon.com/images/I/41%2Bl-KR%2BwSL._SL75_.jpg</URL>
+        <Height Units="pixels">75</Height>
+        <Width Units="pixels">68</Width>
+      </SmallImage>
+      <MediumImage>
+        <URL>http://ecx.images-amazon.com/images/I/41%2Bl-KR%2BwSL._SL160_.jpg</URL>
+        <Height Units="pixels">160</Height>
+        <Width Units="pixels">146</Width>
+      </MediumImage>
+      <LargeImage>
+        <URL>http://ecx.images-amazon.com/images/I/41%2Bl-KR%2BwSL.jpg</URL>
+        <Height Units="pixels">500</Height>
+        <Width Units="pixels">456</Width>
+      </LargeImage>
+      <ImageSets>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/41H0Bacg1UL._SL30_.jpg</URL>
+            <Height Units="pixels">22</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/41H0Bacg1UL._SL75_.jpg</URL>
+            <Height Units="pixels">56</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/41H0Bacg1UL._SL75_.jpg</URL>
+            <Height Units="pixels">56</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/41H0Bacg1UL._SL110_.jpg</URL>
+            <Height Units="pixels">82</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/41H0Bacg1UL._SL160_.jpg</URL>
+            <Height Units="pixels">120</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/41H0Bacg1UL.jpg</URL>
+            <Height Units="pixels">375</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/31s2zh%2BWpuL._SL30_.jpg</URL>
+            <Height Units="pixels">30</Height>
+            <Width Units="pixels">14</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/31s2zh%2BWpuL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">35</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/31s2zh%2BWpuL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">35</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/31s2zh%2BWpuL._SL110_.jpg</URL>
+            <Height Units="pixels">110</Height>
+            <Width Units="pixels">51</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/31s2zh%2BWpuL._SL160_.jpg</URL>
+            <Height Units="pixels">160</Height>
+            <Width Units="pixels">75</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/31s2zh%2BWpuL.jpg</URL>
+            <Height Units="pixels">500</Height>
+            <Width Units="pixels">234</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/41jPAOMe2HL._SL30_.jpg</URL>
+            <Height Units="pixels">26</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/41jPAOMe2HL._SL75_.jpg</URL>
+            <Height Units="pixels">64</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/41jPAOMe2HL._SL75_.jpg</URL>
+            <Height Units="pixels">64</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/41jPAOMe2HL._SL110_.jpg</URL>
+            <Height Units="pixels">94</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/41jPAOMe2HL._SL160_.jpg</URL>
+            <Height Units="pixels">137</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/41jPAOMe2HL.jpg</URL>
+            <Height Units="pixels">429</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/41tDpxh7YrL._SL30_.jpg</URL>
+            <Height Units="pixels">22</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/41tDpxh7YrL._SL75_.jpg</URL>
+            <Height Units="pixels">56</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/41tDpxh7YrL._SL75_.jpg</URL>
+            <Height Units="pixels">56</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/41tDpxh7YrL._SL110_.jpg</URL>
+            <Height Units="pixels">82</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/41tDpxh7YrL._SL160_.jpg</URL>
+            <Height Units="pixels">119</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/41tDpxh7YrL.jpg</URL>
+            <Height Units="pixels">372</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/41z2rG-DXFL._SL30_.jpg</URL>
+            <Height Units="pixels">25</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/41z2rG-DXFL._SL75_.jpg</URL>
+            <Height Units="pixels">63</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/41z2rG-DXFL._SL75_.jpg</URL>
+            <Height Units="pixels">63</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/41z2rG-DXFL._SL110_.jpg</URL>
+            <Height Units="pixels">92</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/41z2rG-DXFL._SL160_.jpg</URL>
+            <Height Units="pixels">134</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/41z2rG-DXFL.jpg</URL>
+            <Height Units="pixels">420</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/41Vz5f4%2BSrL._SL30_.jpg</URL>
+            <Height Units="pixels">30</Height>
+            <Width Units="pixels">26</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/41Vz5f4%2BSrL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">64</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/41Vz5f4%2BSrL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">64</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/41Vz5f4%2BSrL._SL110_.jpg</URL>
+            <Height Units="pixels">110</Height>
+            <Width Units="pixels">94</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/41Vz5f4%2BSrL._SL160_.jpg</URL>
+            <Height Units="pixels">160</Height>
+            <Width Units="pixels">137</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/41Vz5f4%2BSrL.jpg</URL>
+            <Height Units="pixels">500</Height>
+            <Width Units="pixels">428</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="primary">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/41%2Bl-KR%2BwSL._SL30_.jpg</URL>
+            <Height Units="pixels">30</Height>
+            <Width Units="pixels">27</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/41%2Bl-KR%2BwSL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">68</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/41%2Bl-KR%2BwSL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">68</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/41%2Bl-KR%2BwSL._SL110_.jpg</URL>
+            <Height Units="pixels">110</Height>
+            <Width Units="pixels">100</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/41%2Bl-KR%2BwSL._SL160_.jpg</URL>
+            <Height Units="pixels">160</Height>
+            <Width Units="pixels">146</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/41%2Bl-KR%2BwSL.jpg</URL>
+            <Height Units="pixels">500</Height>
+            <Width Units="pixels">456</Width>
+          </LargeImage>
+        </ImageSet>
+      </ImageSets>
+      <ItemAttributes>
+        <Binding>Electronics</Binding>
+        <Brand>Sennheiser</Brand>
+        <Color>Black</Color>
+        <EAN>0615104258037</EAN>
+        <EANList>
+          <EANListElement>0615104258037</EANListElement>
+        </EANList>
+        <Feature>Closed back, over-ear model provides noise isolation and listening comfort in a compact, lightweight design</Feature>
+        <Feature>Made For iPod/iPhone cable with integrated 3 button smart remote and microphone</Feature>
+        <Feature>Sennheiser engineered 18-ohm transducers deliver wide frequency response and high output levels when connected to portable audio devices</Feature>
+        <Feature>Foldable stainless steel headband makes it easy to pack and store so Momentum can travel with you.</Feature>
+        <Feature>Two year warranty when purchased from an authorized Sennheiser dealer</Feature>
+        <Format>CD-ROM</Format>
+        <IsAutographed>0</IsAutographed>
+        <ItemDimensions>
+          <Height Units="hundredths-inches">990</Height>
+          <Length Units="hundredths-inches">670</Length>
+          <Weight Units="hundredths-pounds">160</Weight>
+          <Width Units="hundredths-inches">400</Width>
+        </ItemDimensions>
+        <Label>Sennheiser</Label>
+        <Languages>
+          <Language>
+            <Name>English</Name>
+            <Type>Unknown</Type>
+          </Language>
+        </Languages>
+        <ListPrice>
+          <Amount>34995</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$349.95</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Sennheiser</Manufacturer>
+        <Model>506249</Model>
+        <MPN>M2 AEi Black</MPN>
+        <NumberOfItems>1</NumberOfItems>
+        <OperatingSystem>N/A</OperatingSystem>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">380</Height>
+          <Length Units="hundredths-inches">900</Length>
+          <Weight Units="hundredths-pounds">164</Weight>
+          <Width Units="hundredths-inches">750</Width>
+        </PackageDimensions>
+        <PackageQuantity>1</PackageQuantity>
+        <PartNumber>M2 AEi Black</PartNumber>
+        <ProductGroup>CE</ProductGroup>
+        <ProductTypeName>HEADPHONES</ProductTypeName>
+        <Publisher>Sennheiser</Publisher>
+        <Studio>Sennheiser</Studio>
+        <Title>Sennheiser Momentum 2.0 for Apple Devices - Black</Title>
+        <UPC>615104258037</UPC>
+        <UPCList>
+          <UPCListElement>615104258037</UPCListElement>
+        </UPCList>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B018033IWU</ASIN>
+      <ParentASIN>B0187WANTK</ParentASIN>
+      <DetailPageURL>http://www.amazon.com/Comply-Foam-Earphone-Tips-Isolation/dp/B018033IWU%3Fpsc%3D1%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB018033IWU</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Comply-Foam-Earphone-Tips-Isolation/dp/tech-data/B018033IWU%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB018033IWU</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB018033IWU%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB018033IWU</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB018033IWU%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB018033IWU</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB018033IWU%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB018033IWU</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B018033IWU%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB018033IWU</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B018033IWU%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB018033IWU</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B018033IWU%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB018033IWU</URL>
+        </ItemLink>
+      </ItemLinks>
+      <SmallImage>
+        <URL>http://ecx.images-amazon.com/images/I/51HRnGJIE8L._SL75_.jpg</URL>
+        <Height Units="pixels">53</Height>
+        <Width Units="pixels">75</Width>
+      </SmallImage>
+      <MediumImage>
+        <URL>http://ecx.images-amazon.com/images/I/51HRnGJIE8L._SL160_.jpg</URL>
+        <Height Units="pixels">112</Height>
+        <Width Units="pixels">160</Width>
+      </MediumImage>
+      <LargeImage>
+        <URL>http://ecx.images-amazon.com/images/I/51HRnGJIE8L.jpg</URL>
+        <Height Units="pixels">351</Height>
+        <Width Units="pixels">500</Width>
+      </LargeImage>
+      <ImageSets>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/41D6p%2BNUkJL._SL30_.jpg</URL>
+            <Height Units="pixels">19</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/41D6p%2BNUkJL._SL75_.jpg</URL>
+            <Height Units="pixels">48</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/41D6p%2BNUkJL._SL75_.jpg</URL>
+            <Height Units="pixels">48</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/41D6p%2BNUkJL._SL110_.jpg</URL>
+            <Height Units="pixels">71</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/41D6p%2BNUkJL._SL160_.jpg</URL>
+            <Height Units="pixels">103</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/41D6p%2BNUkJL.jpg</URL>
+            <Height Units="pixels">321</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/41w42DL7riL._SL30_.jpg</URL>
+            <Height Units="pixels">20</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/41w42DL7riL._SL75_.jpg</URL>
+            <Height Units="pixels">50</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/41w42DL7riL._SL75_.jpg</URL>
+            <Height Units="pixels">50</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/41w42DL7riL._SL110_.jpg</URL>
+            <Height Units="pixels">73</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/41w42DL7riL._SL160_.jpg</URL>
+            <Height Units="pixels">107</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/41w42DL7riL.jpg</URL>
+            <Height Units="pixels">333</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/41I8mHskvML._SL30_.jpg</URL>
+            <Height Units="pixels">17</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/41I8mHskvML._SL75_.jpg</URL>
+            <Height Units="pixels">42</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/41I8mHskvML._SL75_.jpg</URL>
+            <Height Units="pixels">42</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/41I8mHskvML._SL110_.jpg</URL>
+            <Height Units="pixels">62</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/41I8mHskvML._SL160_.jpg</URL>
+            <Height Units="pixels">90</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/41I8mHskvML.jpg</URL>
+            <Height Units="pixels">281</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="primary">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/51HRnGJIE8L._SL30_.jpg</URL>
+            <Height Units="pixels">21</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/51HRnGJIE8L._SL75_.jpg</URL>
+            <Height Units="pixels">53</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/51HRnGJIE8L._SL75_.jpg</URL>
+            <Height Units="pixels">53</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/51HRnGJIE8L._SL110_.jpg</URL>
+            <Height Units="pixels">77</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/51HRnGJIE8L._SL160_.jpg</URL>
+            <Height Units="pixels">112</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/51HRnGJIE8L.jpg</URL>
+            <Height Units="pixels">351</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+      </ImageSets>
+      <ItemAttributes>
+        <Binding>Electronics</Binding>
+        <Brand>Comply</Brand>
+        <Color>Black</Color>
+        <EAN>0655942171433</EAN>
+        <EANList>
+          <EANListElement>0655942171433</EANListElement>
+        </EANList>
+        <Feature>The original foam earphone tips. Made in the USA.</Feature>
+        <Feature>Proprietary memory foam engineered for a custom fit to block out noise and keep earphones in place.</Feature>
+        <Feature>The perfect seal provides a superior audio experience and enhanced bass.</Feature>
+        <Feature>Super-soft memory foam reduces earphone irritation and fatigue.</Feature>
+        <Feature>Compatibility: 4 models to fit all major earphone brands (100, 200, 400, and 500). See compatiblity chart here: Complyfoam.com/Compatibility</Feature>
+        <ItemDimensions>
+          <Height Units="hundredths-inches">200</Height>
+          <Length Units="hundredths-inches">225</Length>
+          <Weight Units="hundredths-pounds">2</Weight>
+          <Width Units="hundredths-inches">75</Width>
+        </ItemDimensions>
+        <Label>Hearing Components</Label>
+        <ListPrice>
+          <Amount>1295</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$12.95</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Hearing Components</Manufacturer>
+        <Model>17-16401-11</Model>
+        <MPN>17-16401-11</MPN>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">8</Height>
+          <Length Units="hundredths-inches">160</Length>
+          <Weight Units="hundredths-pounds">5</Weight>
+          <Width Units="hundredths-inches">140</Width>
+        </PackageDimensions>
+        <PackageQuantity>1</PackageQuantity>
+        <PartNumber>17-16401-11</PartNumber>
+        <ProductGroup>CE</ProductGroup>
+        <ProductTypeName>HEADPHONES</ProductTypeName>
+        <Publisher>Hearing Components</Publisher>
+        <Size>Small</Size>
+        <Studio>Hearing Components</Studio>
+        <Title>Comply Foam Earphone Tips - Isolation T-150 (Black, 2 Pairs, Small)</Title>
+        <UPC>655942171433</UPC>
+        <UPCList>
+          <UPCListElement>655942171433</UPCListElement>
+        </UPCList>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B005N8W23C</ASIN>
+      <ParentASIN>B00OYY3834</ParentASIN>
+      <DetailPageURL>http://www.amazon.com/Sennheiser-IE60-Headphone/dp/B005N8W23C%3Fpsc%3D1%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB005N8W23C</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Sennheiser-IE60-Headphone/dp/tech-data/B005N8W23C%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB005N8W23C</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB005N8W23C%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB005N8W23C</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB005N8W23C%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB005N8W23C</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB005N8W23C%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB005N8W23C</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B005N8W23C%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB005N8W23C</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B005N8W23C%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB005N8W23C</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B005N8W23C%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB005N8W23C</URL>
+        </ItemLink>
+      </ItemLinks>
+      <SmallImage>
+        <URL>http://ecx.images-amazon.com/images/I/212vI0itE1L._SL75_.jpg</URL>
+        <Height Units="pixels">75</Height>
+        <Width Units="pixels">75</Width>
+      </SmallImage>
+      <MediumImage>
+        <URL>http://ecx.images-amazon.com/images/I/212vI0itE1L._SL160_.jpg</URL>
+        <Height Units="pixels">160</Height>
+        <Width Units="pixels">160</Width>
+      </MediumImage>
+      <LargeImage>
+        <URL>http://ecx.images-amazon.com/images/I/212vI0itE1L.jpg</URL>
+        <Height Units="pixels">300</Height>
+        <Width Units="pixels">300</Width>
+      </LargeImage>
+      <ImageSets>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/21KIMdUlftL._SL30_.jpg</URL>
+            <Height Units="pixels">11</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/21KIMdUlftL._SL75_.jpg</URL>
+            <Height Units="pixels">28</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/21KIMdUlftL._SL75_.jpg</URL>
+            <Height Units="pixels">28</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/21KIMdUlftL._SL110_.jpg</URL>
+            <Height Units="pixels">42</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/21KIMdUlftL._SL160_.jpg</URL>
+            <Height Units="pixels">61</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/21KIMdUlftL.jpg</URL>
+            <Height Units="pixels">129</Height>
+            <Width Units="pixels">340</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/31PIb1eGf9L._SL30_.jpg</URL>
+            <Height Units="pixels">21</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/31PIb1eGf9L._SL75_.jpg</URL>
+            <Height Units="pixels">52</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/31PIb1eGf9L._SL75_.jpg</URL>
+            <Height Units="pixels">52</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/31PIb1eGf9L._SL110_.jpg</URL>
+            <Height Units="pixels">77</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/31PIb1eGf9L._SL160_.jpg</URL>
+            <Height Units="pixels">112</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/31PIb1eGf9L.jpg</URL>
+            <Height Units="pixels">237</Height>
+            <Width Units="pixels">340</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/31W4HnCSVBL._SL30_.jpg</URL>
+            <Height Units="pixels">20</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/31W4HnCSVBL._SL75_.jpg</URL>
+            <Height Units="pixels">49</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/31W4HnCSVBL._SL75_.jpg</URL>
+            <Height Units="pixels">49</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/31W4HnCSVBL._SL110_.jpg</URL>
+            <Height Units="pixels">72</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/31W4HnCSVBL._SL160_.jpg</URL>
+            <Height Units="pixels">104</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/31W4HnCSVBL.jpg</URL>
+            <Height Units="pixels">222</Height>
+            <Width Units="pixels">340</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/21s-SNzHouL._SL30_.jpg</URL>
+            <Height Units="pixels">30</Height>
+            <Width Units="pixels">10</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/21s-SNzHouL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">26</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/21s-SNzHouL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">26</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/21s-SNzHouL._SL110_.jpg</URL>
+            <Height Units="pixels">110</Height>
+            <Width Units="pixels">38</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/21s-SNzHouL._SL160_.jpg</URL>
+            <Height Units="pixels">160</Height>
+            <Width Units="pixels">55</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/21s-SNzHouL.jpg</URL>
+            <Height Units="pixels">300</Height>
+            <Width Units="pixels">104</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/2114I%2Bc3uZL._SL30_.jpg</URL>
+            <Height Units="pixels">30</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/2114I%2Bc3uZL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">74</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/2114I%2Bc3uZL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">74</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/2114I%2Bc3uZL._SL110_.jpg</URL>
+            <Height Units="pixels">110</Height>
+            <Width Units="pixels">109</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/2114I%2Bc3uZL._SL160_.jpg</URL>
+            <Height Units="pixels">160</Height>
+            <Width Units="pixels">158</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/2114I%2Bc3uZL.jpg</URL>
+            <Height Units="pixels">300</Height>
+            <Width Units="pixels">296</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="primary">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/212vI0itE1L._SL30_.jpg</URL>
+            <Height Units="pixels">30</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/212vI0itE1L._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/212vI0itE1L._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/212vI0itE1L._SL110_.jpg</URL>
+            <Height Units="pixels">110</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/212vI0itE1L._SL160_.jpg</URL>
+            <Height Units="pixels">160</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/212vI0itE1L.jpg</URL>
+            <Height Units="pixels">300</Height>
+            <Width Units="pixels">300</Width>
+          </LargeImage>
+        </ImageSet>
+      </ImageSets>
+      <ItemAttributes>
+        <Binding>Electronics</Binding>
+        <Brand>Sennheiser</Brand>
+        <CatalogNumberList>
+          <CatalogNumberListElement>LN49920</CatalogNumberListElement>
+          <CatalogNumberListElement>##-SENNHEISER-CASQUE-504769</CatalogNumberListElement>
+          <CatalogNumberListElement>##-SENNHEISER-CASQUE-504771</CatalogNumberListElement>
+        </CatalogNumberList>
+        <Color>Black</Color>
+        <EAN>0615104218116</EAN>
+        <EANList>
+          <EANListElement>0615104218116</EANListElement>
+          <EANListElement>4044155071658</EANListElement>
+          <EANListElement>0798304329193</EANListElement>
+        </EANList>
+        <Feature>Dynamic speaker systems with powerful neodymium magnets deliver greater sound definition and enhanced bass</Feature>
+        <Feature>Excellent attenuation of ambient noise of up to 20dB</Feature>
+        <Feature>Extremely durable housing and rugged cable</Feature>
+        <Feature>Sleek ergonomic design of ear-canal phones</Feature>
+        <Feature>2-year warranty</Feature>
+        <IsAutographed>0</IsAutographed>
+        <IsEligibleForTradeIn>1</IsEligibleForTradeIn>
+        <ItemDimensions>
+          <Height Units="hundredths-inches">580</Height>
+          <Length Units="hundredths-inches">250</Length>
+          <Weight Units="hundredths-pounds">30</Weight>
+          <Width Units="hundredths-inches">112</Width>
+        </ItemDimensions>
+        <Label>Sennheiser</Label>
+        <Languages>
+          <Language>
+            <Name>Spanish</Name>
+            <Type>Manual</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>French</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>Spanish</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Unknown</Type>
+          </Language>
+        </Languages>
+        <Manufacturer>Sennheiser</Manufacturer>
+        <Model>IE60</Model>
+        <MPN>IE60</MPN>
+        <NumberOfItems>1</NumberOfItems>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">228</Height>
+          <Length Units="hundredths-inches">701</Length>
+          <Weight Units="hundredths-pounds">49</Weight>
+          <Width Units="hundredths-inches">520</Width>
+        </PackageDimensions>
+        <PackageQuantity>1</PackageQuantity>
+        <PartNumber>IE60</PartNumber>
+        <ProductGroup>CE</ProductGroup>
+        <ProductTypeName>HEADPHONES</ProductTypeName>
+        <Publisher>Sennheiser</Publisher>
+        <Studio>Sennheiser</Studio>
+        <Title>Sennheiser IE60 Headphone</Title>
+        <TradeInValue>
+          <Amount>5359</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$53.59</FormattedPrice>
+        </TradeInValue>
+        <UPC>615104218116</UPC>
+        <UPCList>
+          <UPCListElement>615104218116</UPCListElement>
+          <UPCListElement>798304329193</UPCListElement>
+        </UPCList>
+        <Warranty>2 yrs</Warranty>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B018033IMU</ASIN>
+      <ParentASIN>B0187WANTK</ParentASIN>
+      <DetailPageURL>http://www.amazon.com/Comply-T-150-Isolation-Earphone-Medium/dp/B018033IMU%3Fpsc%3D1%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB018033IMU</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Comply-T-150-Isolation-Earphone-Medium/dp/tech-data/B018033IMU%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB018033IMU</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB018033IMU%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB018033IMU</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB018033IMU%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB018033IMU</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB018033IMU%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB018033IMU</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B018033IMU%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB018033IMU</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B018033IMU%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB018033IMU</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B018033IMU%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB018033IMU</URL>
+        </ItemLink>
+      </ItemLinks>
+      <SmallImage>
+        <URL>http://ecx.images-amazon.com/images/I/51aUh7MaJQL._SL75_.jpg</URL>
+        <Height Units="pixels">50</Height>
+        <Width Units="pixels">75</Width>
+      </SmallImage>
+      <MediumImage>
+        <URL>http://ecx.images-amazon.com/images/I/51aUh7MaJQL._SL160_.jpg</URL>
+        <Height Units="pixels">107</Height>
+        <Width Units="pixels">160</Width>
+      </MediumImage>
+      <LargeImage>
+        <URL>http://ecx.images-amazon.com/images/I/51aUh7MaJQL.jpg</URL>
+        <Height Units="pixels">335</Height>
+        <Width Units="pixels">500</Width>
+      </LargeImage>
+      <ImageSets>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/41D6p%2BNUkJL._SL30_.jpg</URL>
+            <Height Units="pixels">19</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/41D6p%2BNUkJL._SL75_.jpg</URL>
+            <Height Units="pixels">48</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/41D6p%2BNUkJL._SL75_.jpg</URL>
+            <Height Units="pixels">48</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/41D6p%2BNUkJL._SL110_.jpg</URL>
+            <Height Units="pixels">71</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/41D6p%2BNUkJL._SL160_.jpg</URL>
+            <Height Units="pixels">103</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/41D6p%2BNUkJL.jpg</URL>
+            <Height Units="pixels">321</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/41w42DL7riL._SL30_.jpg</URL>
+            <Height Units="pixels">20</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/41w42DL7riL._SL75_.jpg</URL>
+            <Height Units="pixels">50</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/41w42DL7riL._SL75_.jpg</URL>
+            <Height Units="pixels">50</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/41w42DL7riL._SL110_.jpg</URL>
+            <Height Units="pixels">73</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/41w42DL7riL._SL160_.jpg</URL>
+            <Height Units="pixels">107</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/41w42DL7riL.jpg</URL>
+            <Height Units="pixels">333</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/41I8mHskvML._SL30_.jpg</URL>
+            <Height Units="pixels">17</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/41I8mHskvML._SL75_.jpg</URL>
+            <Height Units="pixels">42</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/41I8mHskvML._SL75_.jpg</URL>
+            <Height Units="pixels">42</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/41I8mHskvML._SL110_.jpg</URL>
+            <Height Units="pixels">62</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/41I8mHskvML._SL160_.jpg</URL>
+            <Height Units="pixels">90</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/41I8mHskvML.jpg</URL>
+            <Height Units="pixels">281</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="primary">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/51aUh7MaJQL._SL30_.jpg</URL>
+            <Height Units="pixels">20</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/51aUh7MaJQL._SL75_.jpg</URL>
+            <Height Units="pixels">50</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/51aUh7MaJQL._SL75_.jpg</URL>
+            <Height Units="pixels">50</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/51aUh7MaJQL._SL110_.jpg</URL>
+            <Height Units="pixels">74</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/51aUh7MaJQL._SL160_.jpg</URL>
+            <Height Units="pixels">107</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/51aUh7MaJQL.jpg</URL>
+            <Height Units="pixels">335</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+      </ImageSets>
+      <ItemAttributes>
+        <Binding>Electronics</Binding>
+        <Brand>Comply</Brand>
+        <Color>Black</Color>
+        <EAN>0655942178630</EAN>
+        <EANList>
+          <EANListElement>0655942178630</EANListElement>
+        </EANList>
+        <Feature>The original foam earphone tips. Made in the USA.</Feature>
+        <Feature>Proprietary memory foam engineered for a custom fit to block out noise and keep earphones in place.</Feature>
+        <Feature>The perfect seal provides a superior audio experience and enhanced bass.</Feature>
+        <Feature>Super-soft memory foam reduces earphone irritation and fatigue.</Feature>
+        <Feature>Compatibility: 4 models to fit all major earphone brands (100, 200, 400, and 500). See compatiblity chart here: Complyfoam.com/Compatibility</Feature>
+        <ItemDimensions>
+          <Height Units="hundredths-inches">200</Height>
+          <Length Units="hundredths-inches">225</Length>
+          <Weight Units="hundredths-pounds">2</Weight>
+          <Width Units="hundredths-inches">75</Width>
+        </ItemDimensions>
+        <Label>Hearing Components</Label>
+        <ListPrice>
+          <Amount>1295</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$12.95</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Hearing Components</Manufacturer>
+        <Model>Comply(TM) T-150 BLK-MED 2pr</Model>
+        <MPN>Comply(TM) T-150 BLK-MED 2pr</MPN>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">100</Height>
+          <Length Units="hundredths-inches">218</Length>
+          <Weight Units="hundredths-pounds">2</Weight>
+          <Width Units="hundredths-inches">214</Width>
+        </PackageDimensions>
+        <PackageQuantity>1</PackageQuantity>
+        <PartNumber>Comply(TM) T-150 BLK-MED 2pr</PartNumber>
+        <ProductGroup>CE</ProductGroup>
+        <ProductTypeName>HEADPHONES</ProductTypeName>
+        <Publisher>Hearing Components</Publisher>
+        <Size>Medium</Size>
+        <Studio>Hearing Components</Studio>
+        <Title>Comply T-150 Isolation Foam Earphone Tips (Black, 2 Pairs, Medium)</Title>
+        <UPC>655942178630</UPC>
+        <UPCList>
+          <UPCListElement>655942178630</UPCListElement>
+        </UPCList>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B00Y4YH8Y4</ASIN>
+      <DetailPageURL>http://www.amazon.com/Isolation-Replacement-Sennheiser-Momentum-Earphones/dp/B00Y4YH8Y4%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00Y4YH8Y4</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Isolation-Replacement-Sennheiser-Momentum-Earphones/dp/tech-data/B00Y4YH8Y4%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00Y4YH8Y4</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB00Y4YH8Y4%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00Y4YH8Y4</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB00Y4YH8Y4%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00Y4YH8Y4</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB00Y4YH8Y4%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00Y4YH8Y4</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B00Y4YH8Y4%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00Y4YH8Y4</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B00Y4YH8Y4%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00Y4YH8Y4</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B00Y4YH8Y4%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00Y4YH8Y4</URL>
+        </ItemLink>
+      </ItemLinks>
+      <SmallImage>
+        <URL>http://ecx.images-amazon.com/images/I/513hg28fAaL._SL75_.jpg</URL>
+        <Height Units="pixels">56</Height>
+        <Width Units="pixels">75</Width>
+      </SmallImage>
+      <MediumImage>
+        <URL>http://ecx.images-amazon.com/images/I/513hg28fAaL._SL160_.jpg</URL>
+        <Height Units="pixels">120</Height>
+        <Width Units="pixels">160</Width>
+      </MediumImage>
+      <LargeImage>
+        <URL>http://ecx.images-amazon.com/images/I/513hg28fAaL.jpg</URL>
+        <Height Units="pixels">375</Height>
+        <Width Units="pixels">500</Width>
+      </LargeImage>
+      <ImageSets>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/51JXvHuSQSL._SL30_.jpg</URL>
+            <Height Units="pixels">22</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/51JXvHuSQSL._SL75_.jpg</URL>
+            <Height Units="pixels">56</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/51JXvHuSQSL._SL75_.jpg</URL>
+            <Height Units="pixels">56</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/51JXvHuSQSL._SL110_.jpg</URL>
+            <Height Units="pixels">82</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/51JXvHuSQSL._SL160_.jpg</URL>
+            <Height Units="pixels">120</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/51JXvHuSQSL.jpg</URL>
+            <Height Units="pixels">375</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/51D30O9PlpL._SL30_.jpg</URL>
+            <Height Units="pixels">23</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/51D30O9PlpL._SL75_.jpg</URL>
+            <Height Units="pixels">57</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/51D30O9PlpL._SL75_.jpg</URL>
+            <Height Units="pixels">57</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/51D30O9PlpL._SL110_.jpg</URL>
+            <Height Units="pixels">83</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/51D30O9PlpL._SL160_.jpg</URL>
+            <Height Units="pixels">121</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/51D30O9PlpL.jpg</URL>
+            <Height Units="pixels">377</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/51161Z1vQ1L._SL30_.jpg</URL>
+            <Height Units="pixels">22</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/51161Z1vQ1L._SL75_.jpg</URL>
+            <Height Units="pixels">56</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/51161Z1vQ1L._SL75_.jpg</URL>
+            <Height Units="pixels">56</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/51161Z1vQ1L._SL110_.jpg</URL>
+            <Height Units="pixels">82</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/51161Z1vQ1L._SL160_.jpg</URL>
+            <Height Units="pixels">120</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/51161Z1vQ1L.jpg</URL>
+            <Height Units="pixels">375</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/51zooT5YcKL._SL30_.jpg</URL>
+            <Height Units="pixels">22</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/51zooT5YcKL._SL75_.jpg</URL>
+            <Height Units="pixels">56</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/51zooT5YcKL._SL75_.jpg</URL>
+            <Height Units="pixels">56</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/51zooT5YcKL._SL110_.jpg</URL>
+            <Height Units="pixels">82</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/51zooT5YcKL._SL160_.jpg</URL>
+            <Height Units="pixels">120</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/51zooT5YcKL.jpg</URL>
+            <Height Units="pixels">375</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/51Sn6T-c12L._SL30_.jpg</URL>
+            <Height Units="pixels">22</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/51Sn6T-c12L._SL75_.jpg</URL>
+            <Height Units="pixels">56</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/51Sn6T-c12L._SL75_.jpg</URL>
+            <Height Units="pixels">56</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/51Sn6T-c12L._SL110_.jpg</URL>
+            <Height Units="pixels">82</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/51Sn6T-c12L._SL160_.jpg</URL>
+            <Height Units="pixels">120</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/51Sn6T-c12L.jpg</URL>
+            <Height Units="pixels">375</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/41XYXaZmMOL._SL30_.jpg</URL>
+            <Height Units="pixels">22</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/41XYXaZmMOL._SL75_.jpg</URL>
+            <Height Units="pixels">56</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/41XYXaZmMOL._SL75_.jpg</URL>
+            <Height Units="pixels">56</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/41XYXaZmMOL._SL110_.jpg</URL>
+            <Height Units="pixels">82</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/41XYXaZmMOL._SL160_.jpg</URL>
+            <Height Units="pixels">120</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/41XYXaZmMOL.jpg</URL>
+            <Height Units="pixels">375</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/41ZNKy0eVxL._SL30_.jpg</URL>
+            <Height Units="pixels">22</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/41ZNKy0eVxL._SL75_.jpg</URL>
+            <Height Units="pixels">56</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/41ZNKy0eVxL._SL75_.jpg</URL>
+            <Height Units="pixels">56</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/41ZNKy0eVxL._SL110_.jpg</URL>
+            <Height Units="pixels">82</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/41ZNKy0eVxL._SL160_.jpg</URL>
+            <Height Units="pixels">120</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/41ZNKy0eVxL.jpg</URL>
+            <Height Units="pixels">375</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="primary">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/513hg28fAaL._SL30_.jpg</URL>
+            <Height Units="pixels">22</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/513hg28fAaL._SL75_.jpg</URL>
+            <Height Units="pixels">56</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/513hg28fAaL._SL75_.jpg</URL>
+            <Height Units="pixels">56</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/513hg28fAaL._SL110_.jpg</URL>
+            <Height Units="pixels">82</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/513hg28fAaL._SL160_.jpg</URL>
+            <Height Units="pixels">120</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/513hg28fAaL.jpg</URL>
+            <Height Units="pixels">375</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+      </ImageSets>
+      <ItemAttributes>
+        <Binding>Electronics</Binding>
+        <Brand>Unbranded</Brand>
+        <Color>CL</Color>
+        <EAN>0702380905745</EAN>
+        <EANList>
+          <EANListElement>0702380905745</EANListElement>
+        </EANList>
+        <Feature>16pcs= 4XS / 4S / 4M / 4L Comfort Noise Isolation Replacement Eartips Earbuds</Feature>
+        <Feature>COMES WITH PROTECTIVE DURABLE BOX ORGANIZER: KEEPS YOUR ACCESSORIES FROM GETTING LOST AND BEING ALL OVER THE PLACE</Feature>
+        <Feature>Compatible with the listed Earphones models !!</Feature>
+        <Feature>As Pictured Above. In-Ear Earphones are not included !</Feature>
+        <Feature>Check Product Description for Additional Information</Feature>
+        <Label>Unbranded</Label>
+        <Manufacturer>Unbranded</Manufacturer>
+        <MPN>N.T.A.P</MPN>
+        <PartNumber>N.T.A.P</PartNumber>
+        <ProductGroup>CE</ProductGroup>
+        <ProductTypeName>HEADPHONES</ProductTypeName>
+        <Publisher>Unbranded</Publisher>
+        <Studio>Unbranded</Studio>
+        <Title>16pcs- XS/S/M/L (CL-NSEN) Comfort Noise Isolation Replacement Eartips Earbuds for Sennheiser Momentum I and Momentum G In Ear Earphones</Title>
+        <UPC>702380905745</UPC>
+        <UPCList>
+          <UPCListElement>702380905745</UPCListElement>
+        </UPCList>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B004HD4L2E</ASIN>
+      <ParentASIN>B00QJDAWS2</ParentASIN>
+      <DetailPageURL>http://www.amazon.com/Sennheiser-MM-30i-MM30i-Headphones/dp/B004HD4L2E%3Fpsc%3D1%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB004HD4L2E</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Sennheiser-MM-30i-MM30i-Headphones/dp/tech-data/B004HD4L2E%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB004HD4L2E</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB004HD4L2E%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB004HD4L2E</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB004HD4L2E%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB004HD4L2E</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB004HD4L2E%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB004HD4L2E</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B004HD4L2E%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB004HD4L2E</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B004HD4L2E%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB004HD4L2E</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B004HD4L2E%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB004HD4L2E</URL>
+        </ItemLink>
+      </ItemLinks>
+      <SmallImage>
+        <URL>http://ecx.images-amazon.com/images/I/41%2Be4XAWm9L._SL75_.jpg</URL>
+        <Height Units="pixels">75</Height>
+        <Width Units="pixels">47</Width>
+      </SmallImage>
+      <MediumImage>
+        <URL>http://ecx.images-amazon.com/images/I/41%2Be4XAWm9L._SL160_.jpg</URL>
+        <Height Units="pixels">160</Height>
+        <Width Units="pixels">100</Width>
+      </MediumImage>
+      <LargeImage>
+        <URL>http://ecx.images-amazon.com/images/I/41%2Be4XAWm9L.jpg</URL>
+        <Height Units="pixels">500</Height>
+        <Width Units="pixels">311</Width>
+      </LargeImage>
+      <ImageSets>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/31-mlbif2-L._SL30_.jpg</URL>
+            <Height Units="pixels">30</Height>
+            <Width Units="pixels">14</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/31-mlbif2-L._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">34</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/31-mlbif2-L._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">34</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/31-mlbif2-L._SL110_.jpg</URL>
+            <Height Units="pixels">110</Height>
+            <Width Units="pixels">50</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/31-mlbif2-L._SL160_.jpg</URL>
+            <Height Units="pixels">160</Height>
+            <Width Units="pixels">73</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/31-mlbif2-L.jpg</URL>
+            <Height Units="pixels">500</Height>
+            <Width Units="pixels">227</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/31f1dar5ZeL._SL30_.jpg</URL>
+            <Height Units="pixels">30</Height>
+            <Width Units="pixels">15</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/31f1dar5ZeL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">39</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/31f1dar5ZeL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">39</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/31f1dar5ZeL._SL110_.jpg</URL>
+            <Height Units="pixels">110</Height>
+            <Width Units="pixels">57</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/31f1dar5ZeL._SL160_.jpg</URL>
+            <Height Units="pixels">160</Height>
+            <Width Units="pixels">82</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/31f1dar5ZeL.jpg</URL>
+            <Height Units="pixels">500</Height>
+            <Width Units="pixels">257</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/21%2BU7LGu9NL._SL30_.jpg</URL>
+            <Height Units="pixels">10</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/21%2BU7LGu9NL._SL75_.jpg</URL>
+            <Height Units="pixels">26</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/21%2BU7LGu9NL._SL75_.jpg</URL>
+            <Height Units="pixels">26</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/21%2BU7LGu9NL._SL110_.jpg</URL>
+            <Height Units="pixels">38</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/21%2BU7LGu9NL._SL160_.jpg</URL>
+            <Height Units="pixels">55</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/21%2BU7LGu9NL.jpg</URL>
+            <Height Units="pixels">173</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/31y2R0QNenL._SL30_.jpg</URL>
+            <Height Units="pixels">9</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/31y2R0QNenL._SL75_.jpg</URL>
+            <Height Units="pixels">24</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/31y2R0QNenL._SL75_.jpg</URL>
+            <Height Units="pixels">24</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/31y2R0QNenL._SL110_.jpg</URL>
+            <Height Units="pixels">35</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/31y2R0QNenL._SL160_.jpg</URL>
+            <Height Units="pixels">50</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/31y2R0QNenL.jpg</URL>
+            <Height Units="pixels">157</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="primary">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/41%2Be4XAWm9L._SL30_.jpg</URL>
+            <Height Units="pixels">30</Height>
+            <Width Units="pixels">19</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/41%2Be4XAWm9L._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">47</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/41%2Be4XAWm9L._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">47</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/41%2Be4XAWm9L._SL110_.jpg</URL>
+            <Height Units="pixels">110</Height>
+            <Width Units="pixels">68</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/41%2Be4XAWm9L._SL160_.jpg</URL>
+            <Height Units="pixels">160</Height>
+            <Width Units="pixels">100</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/41%2Be4XAWm9L.jpg</URL>
+            <Height Units="pixels">500</Height>
+            <Width Units="pixels">311</Width>
+          </LargeImage>
+        </ImageSet>
+      </ImageSets>
+      <ItemAttributes>
+        <Binding>Electronics</Binding>
+        <Brand>Sennheiser</Brand>
+        <CatalogNumberList>
+          <CatalogNumberListElement>ASC850500AIN02</CatalogNumberListElement>
+          <CatalogNumberListElement>##-SENNHEISER-CASQUE-504739</CatalogNumberListElement>
+          <CatalogNumberListElement>RG6743</CatalogNumberListElement>
+          <CatalogNumberListElement>504739</CatalogNumberListElement>
+          <CatalogNumberListElement>##-SENNHEISER-CASQUE-502555</CatalogNumberListElement>
+          <CatalogNumberListElement>MSS932795I01</CatalogNumberListElement>
+        </CatalogNumberList>
+        <Color>Black</Color>
+        <EAN>4044155061543</EAN>
+        <EANList>
+          <EANListElement>4044155061543</EANListElement>
+          <EANListElement>5055410459035</EANListElement>
+          <EANListElement>0615104200067</EANListElement>
+          <EANListElement>5055817914960</EANListElement>
+          <EANListElement>0033171308606</EANListElement>
+          <EANListElement>0887476809784</EANListElement>
+          <EANListElement>5052883376333</EANListElement>
+          <EANListElement>8859051658898</EANListElement>
+          <EANListElement>8859094942848</EANListElement>
+          <EANListElement>8902325600496</EANListElement>
+          <EANListElement>8859056147885</EANListElement>
+          <EANListElement>0804067187588</EANListElement>
+          <EANListElement>5052883483369</EANListElement>
+          <EANListElement>0808112928263</EANListElement>
+          <EANListElement>0001910133239</EANListElement>
+          <EANListElement>6524301276901</EANListElement>
+        </EANList>
+        <Feature>Smart in-line remote control with microphone change volume, skip tracks, answer or end calls and active Voice Control,from a sleek built-in unit</Feature>
+        <Feature>Effective noise isolation: ear-canal design for effective passive attenuation of ambient noise</Feature>
+        <Feature>Comfortable custom fit: three sizes of ear sleeves (S/M/L) supplied</Feature>
+        <Feature>Made for the latest generations of iPod, iPhone and iPad</Feature>
+        <Feature>Includes a two-year international warranty</Feature>
+        <Feature>Change the volume, skip tracks, answer or end calls and active Voice Control, all from a sleek built-in unit</Feature>
+        <IsAdultProduct>0</IsAdultProduct>
+        <IsAutographed>0</IsAutographed>
+        <IsMemorabilia>0</IsMemorabilia>
+        <ItemDimensions>
+          <Height Units="hundredths-inches">122</Height>
+          <Length Units="hundredths-inches">276</Length>
+          <Weight Units="hundredths-pounds">7</Weight>
+          <Width Units="hundredths-inches">630</Width>
+        </ItemDimensions>
+        <Label>Sennheiser</Label>
+        <Languages>
+          <Language>
+            <Name>Spanish</Name>
+            <Type>Manual</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>French</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>Spanish</Name>
+            <Type>Original Language</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Unknown</Type>
+          </Language>
+        </Languages>
+        <Manufacturer>Sennheiser</Manufacturer>
+        <Model>MM 30i</Model>
+        <MPN>MM 30i</MPN>
+        <NumberOfItems>1</NumberOfItems>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">126</Height>
+          <Length Units="hundredths-inches">591</Length>
+          <Weight Units="hundredths-pounds">13</Weight>
+          <Width Units="hundredths-inches">276</Width>
+        </PackageDimensions>
+        <PackageQuantity>1</PackageQuantity>
+        <PartNumber>MM 30i</PartNumber>
+        <Platform>Windows</Platform>
+        <ProductGroup>CE</ProductGroup>
+        <ProductTypeName>HEADPHONES</ProductTypeName>
+        <Publisher>Sennheiser</Publisher>
+        <Studio>Sennheiser</Studio>
+        <Title>Sennheiser MM30i Headphones</Title>
+        <UPC>804067187588</UPC>
+        <UPCList>
+          <UPCListElement>804067187588</UPCListElement>
+          <UPCListElement>001910133239</UPCListElement>
+          <UPCListElement>615104200067</UPCListElement>
+          <UPCListElement>033171308606</UPCListElement>
+          <UPCListElement>887476809784</UPCListElement>
+          <UPCListElement>808112928263</UPCListElement>
+        </UPCList>
+        <Warranty>2 years</Warranty>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B00NAPQM6S</ASIN>
+      <ParentASIN>B00WU2W11W</ParentASIN>
+      <DetailPageURL>http://www.amazon.com/beyerdynamic-iDX-160-iE-In-Ear/dp/B00NAPQM6S%3Fpsc%3D1%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00NAPQM6S</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/beyerdynamic-iDX-160-iE-In-Ear/dp/tech-data/B00NAPQM6S%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00NAPQM6S</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB00NAPQM6S%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00NAPQM6S</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB00NAPQM6S%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00NAPQM6S</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB00NAPQM6S%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00NAPQM6S</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B00NAPQM6S%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00NAPQM6S</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B00NAPQM6S%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00NAPQM6S</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B00NAPQM6S%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00NAPQM6S</URL>
+        </ItemLink>
+      </ItemLinks>
+      <SmallImage>
+        <URL>http://ecx.images-amazon.com/images/I/412hp8ts8OL._SL75_.jpg</URL>
+        <Height Units="pixels">75</Height>
+        <Width Units="pixels">55</Width>
+      </SmallImage>
+      <MediumImage>
+        <URL>http://ecx.images-amazon.com/images/I/412hp8ts8OL._SL160_.jpg</URL>
+        <Height Units="pixels">160</Height>
+        <Width Units="pixels">117</Width>
+      </MediumImage>
+      <LargeImage>
+        <URL>http://ecx.images-amazon.com/images/I/412hp8ts8OL.jpg</URL>
+        <Height Units="pixels">500</Height>
+        <Width Units="pixels">366</Width>
+      </LargeImage>
+      <ImageSets>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/31DpOltOScL._SL30_.jpg</URL>
+            <Height Units="pixels">21</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/31DpOltOScL._SL75_.jpg</URL>
+            <Height Units="pixels">53</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/31DpOltOScL._SL75_.jpg</URL>
+            <Height Units="pixels">53</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/31DpOltOScL._SL110_.jpg</URL>
+            <Height Units="pixels">78</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/31DpOltOScL._SL160_.jpg</URL>
+            <Height Units="pixels">113</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/31DpOltOScL.jpg</URL>
+            <Height Units="pixels">354</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/31aHs8xkeXL._SL30_.jpg</URL>
+            <Height Units="pixels">14</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/31aHs8xkeXL._SL75_.jpg</URL>
+            <Height Units="pixels">34</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/31aHs8xkeXL._SL75_.jpg</URL>
+            <Height Units="pixels">34</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/31aHs8xkeXL._SL110_.jpg</URL>
+            <Height Units="pixels">50</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/31aHs8xkeXL._SL160_.jpg</URL>
+            <Height Units="pixels">72</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/31aHs8xkeXL.jpg</URL>
+            <Height Units="pixels">226</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/317DtE-waZL._SL30_.jpg</URL>
+            <Height Units="pixels">6</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/317DtE-waZL._SL75_.jpg</URL>
+            <Height Units="pixels">16</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/317DtE-waZL._SL75_.jpg</URL>
+            <Height Units="pixels">16</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/317DtE-waZL._SL110_.jpg</URL>
+            <Height Units="pixels">23</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/317DtE-waZL._SL160_.jpg</URL>
+            <Height Units="pixels">33</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/317DtE-waZL.jpg</URL>
+            <Height Units="pixels">104</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="primary">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/412hp8ts8OL._SL30_.jpg</URL>
+            <Height Units="pixels">30</Height>
+            <Width Units="pixels">22</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/412hp8ts8OL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">55</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/412hp8ts8OL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">55</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/412hp8ts8OL._SL110_.jpg</URL>
+            <Height Units="pixels">110</Height>
+            <Width Units="pixels">81</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/412hp8ts8OL._SL160_.jpg</URL>
+            <Height Units="pixels">160</Height>
+            <Width Units="pixels">117</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/412hp8ts8OL.jpg</URL>
+            <Height Units="pixels">500</Height>
+            <Width Units="pixels">366</Width>
+          </LargeImage>
+        </ImageSet>
+      </ImageSets>
+      <ItemAttributes>
+        <AspectRatio>Unknown</AspectRatio>
+        <Binding>Electronics</Binding>
+        <Brand>beyerdynamic</Brand>
+        <Color>Black</Color>
+        <EAN>4010118715723</EAN>
+        <EANList>
+          <EANListElement>4010118715723</EANListElement>
+        </EANList>
+        <Feature>Neodymium HD acoustic drivers for excellent, detailed sound</Feature>
+        <Feature>Rugged all-metal housing with aluminum rings, tangle-free flat cables</Feature>
+        <Feature>3 button remote control and microphone for phone calls and media playback</Feature>
+        <Feature>Compatible with Apple and Android devices such as iPods, iPhones, iPads</Feature>
+        <Feature>2-year manufacturer warranty only when purchased from an authorized beyerdynamic dealer.</Feature>
+        <IsAutographed>0</IsAutographed>
+        <ItemDimensions>
+          <Height Units="hundredths-inches">700</Height>
+          <Length Units="hundredths-inches">400</Length>
+          <Weight Units="hundredths-pounds">100</Weight>
+          <Width Units="hundredths-inches">200</Width>
+        </ItemDimensions>
+        <Label>Beyerdynamic, Inc.</Label>
+        <Languages>
+          <Language>
+            <Name>English</Name>
+            <Type>Unknown</Type>
+          </Language>
+        </Languages>
+        <LegalDisclaimer>Beyerdynamic USA Authorized Dealer</LegalDisclaimer>
+        <Manufacturer>Beyerdynamic, Inc.</Manufacturer>
+        <Model>715727</Model>
+        <MPN>715727</MPN>
+        <NumberOfItems>1</NumberOfItems>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">170</Height>
+          <Length Units="hundredths-inches">680</Length>
+          <Weight Units="hundredths-pounds">25</Weight>
+          <Width Units="hundredths-inches">400</Width>
+        </PackageDimensions>
+        <PackageQuantity>1</PackageQuantity>
+        <PartNumber>715727</PartNumber>
+        <ProductGroup>CE</ProductGroup>
+        <ProductTypeName>HEADPHONES</ProductTypeName>
+        <Publisher>Beyerdynamic, Inc.</Publisher>
+        <Studio>Beyerdynamic, Inc.</Studio>
+        <Title>beyerdynamic iDX 160 iE In-Ear</Title>
+        <Warranty>2 years</Warranty>
+      </ItemAttributes>
+    </Item>
+    <Item>
+      <ASIN>B001EZWO5O</ASIN>
+      <ParentASIN>B007P2NLSE</ParentASIN>
+      <DetailPageURL>http://www.amazon.com/Sennheiser-400-II-Precision-Ear-Canal-Bass-Driven/dp/B001EZWO5O%3Fpsc%3D1%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB001EZWO5O</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Sennheiser-400-II-Precision-Ear-Canal-Bass-Driven/dp/tech-data/B001EZWO5O%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001EZWO5O</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB001EZWO5O%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001EZWO5O</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB001EZWO5O%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001EZWO5O</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB001EZWO5O%26SubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001EZWO5O</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B001EZWO5O%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001EZWO5O</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B001EZWO5O%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001EZWO5O</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B001EZWO5O%3FSubscriptionId%3DAKIAIIZDMTEMK7GMAUNQ%26tag%3Ducla130connex-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB001EZWO5O</URL>
+        </ItemLink>
+      </ItemLinks>
+      <SmallImage>
+        <URL>http://ecx.images-amazon.com/images/I/41vpcejUNWL._SL75_.jpg</URL>
+        <Height Units="pixels">46</Height>
+        <Width Units="pixels">75</Width>
+      </SmallImage>
+      <MediumImage>
+        <URL>http://ecx.images-amazon.com/images/I/41vpcejUNWL._SL160_.jpg</URL>
+        <Height Units="pixels">99</Height>
+        <Width Units="pixels">160</Width>
+      </MediumImage>
+      <LargeImage>
+        <URL>http://ecx.images-amazon.com/images/I/41vpcejUNWL.jpg</URL>
+        <Height Units="pixels">310</Height>
+        <Width Units="pixels">500</Width>
+      </LargeImage>
+      <ImageSets>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/417iYhWcveL._SL30_.jpg</URL>
+            <Height Units="pixels">30</Height>
+            <Width Units="pixels">17</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/417iYhWcveL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">43</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/417iYhWcveL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">43</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/417iYhWcveL._SL110_.jpg</URL>
+            <Height Units="pixels">110</Height>
+            <Width Units="pixels">63</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/417iYhWcveL._SL160_.jpg</URL>
+            <Height Units="pixels">160</Height>
+            <Width Units="pixels">92</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/417iYhWcveL.jpg</URL>
+            <Height Units="pixels">500</Height>
+            <Width Units="pixels">287</Width>
+          </LargeImage>
+        </ImageSet>
+        <ImageSet Category="primary">
+          <SwatchImage>
+            <URL>http://ecx.images-amazon.com/images/I/41vpcejUNWL._SL30_.jpg</URL>
+            <Height Units="pixels">19</Height>
+            <Width Units="pixels">30</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>http://ecx.images-amazon.com/images/I/41vpcejUNWL._SL75_.jpg</URL>
+            <Height Units="pixels">46</Height>
+            <Width Units="pixels">75</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>http://ecx.images-amazon.com/images/I/41vpcejUNWL._SL75_.jpg</URL>
+            <Height Units="pixels">46</Height>
+            <Width Units="pixels">75</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>http://ecx.images-amazon.com/images/I/41vpcejUNWL._SL110_.jpg</URL>
+            <Height Units="pixels">68</Height>
+            <Width Units="pixels">110</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>http://ecx.images-amazon.com/images/I/41vpcejUNWL._SL160_.jpg</URL>
+            <Height Units="pixels">99</Height>
+            <Width Units="pixels">160</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>http://ecx.images-amazon.com/images/I/41vpcejUNWL.jpg</URL>
+            <Height Units="pixels">310</Height>
+            <Width Units="pixels">500</Width>
+          </LargeImage>
+        </ImageSet>
+      </ImageSets>
+      <ItemAttributes>
+        <Binding>Electronics</Binding>
+        <Brand>Sennheiser</Brand>
+        <CatalogNumberList>
+          <CatalogNumberListElement>LN59577</CatalogNumberListElement>
+          <CatalogNumberListElement>##-SENNHEISER-CASQUE-504034</CatalogNumberListElement>
+          <CatalogNumberListElement>##-SENNHEISER-CASQUE-502743</CatalogNumberListElement>
+        </CatalogNumberList>
+        <Color>Grey</Color>
+        <EAN>5053106100179</EAN>
+        <EANList>
+          <EANListElement>5053106100179</EANListElement>
+          <EANListElement>5052711242427</EANListElement>
+          <EANListElement>5052415184016</EANListElement>
+          <EANListElement>5052711517891</EANListElement>
+          <EANListElement>8699918558752</EANListElement>
+          <EANListElement>8680049306145</EANListElement>
+          <EANListElement>4044155043068</EANListElement>
+          <EANListElement>5052276413133</EANListElement>
+          <EANListElement>5052711918001</EANListElement>
+          <EANListElement>5053106598563</EANListElement>
+          <EANListElement>0846306613892</EANListElement>
+        </EANList>
+        <Feature>High-end dynamic speaker systems with Neodymium magnets tuned for a natural sound reproduction</Feature>
+        <Feature>Superior fit in the ear canals offering highest attenuation of ambient noise</Feature>
+        <Feature>Integrated volume control</Feature>
+        <Feature>Optimized for MP3, iPod, iPhone, CD players and portable gaming systems</Feature>
+        <Feature>Symmetrical cable</Feature>
+        <IsAutographed>0</IsAutographed>
+        <IsMemorabilia>0</IsMemorabilia>
+        <ItemDimensions>
+          <Height Units="hundredths-inches">906</Height>
+          <Length Units="hundredths-inches">1602</Length>
+          <Weight Units="hundredths-pounds">26</Weight>
+          <Width Units="hundredths-inches">465</Width>
+        </ItemDimensions>
+        <Label>Sennheiser</Label>
+        <Languages>
+          <Language>
+            <Name>Italian</Name>
+            <Type>Manual</Type>
+          </Language>
+          <Language>
+            <Name>German</Name>
+            <Type>Manual</Type>
+          </Language>
+          <Language>
+            <Name>French</Name>
+            <Type>Manual</Type>
+          </Language>
+          <Language>
+            <Name>English</Name>
+            <Type>Manual</Type>
+          </Language>
+          <Language>
+            <Name>Spanish</Name>
+            <Type>Manual</Type>
+          </Language>
+        </Languages>
+        <Manufacturer>Sennheiser</Manufacturer>
+        <Model>502743</Model>
+        <MPN>CX 400 II Precision Black</MPN>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">165</Height>
+          <Length Units="hundredths-inches">850</Length>
+          <Weight Units="hundredths-pounds">40</Weight>
+          <Width Units="hundredths-inches">378</Width>
+        </PackageDimensions>
+        <PackageQuantity>1</PackageQuantity>
+        <PartNumber>CX 400 II Precision Black</PartNumber>
+        <Platform>Not Machine Specific</Platform>
+        <ProductGroup>CE</ProductGroup>
+        <ProductTypeName>HEADPHONES</ProductTypeName>
+        <Publisher>Sennheiser</Publisher>
+        <Size>..Stereo</Size>
+        <Studio>Sennheiser</Studio>
+        <Title>Sennheiser CX 400-II Precision Ear-Canal Phones with Bass-Driven Stereo Sound (Black)</Title>
+        <UPC>846306613892</UPC>
+        <UPCList>
+          <UPCListElement>846306613892</UPCListElement>
+        </UPCList>
+        <Warranty>90 Day Seller Warranty</Warranty>
+      </ItemAttributes>
+    </Item>
+  </Items>
+</SimilarityLookupResponse>
