@@ -1,24 +1,10 @@
 package application.model;
 
-import java.io.*;
 import java.util.*;
 
-import org.dom4j.Document;
-import org.dom4j.DocumentException;
-import org.dom4j.DocumentHelper;
-import org.dom4j.DocumentException;
-import org.dom4j.Element;
-import org.dom4j.Node;
-import org.dom4j.XPath;
-import org.dom4j.io.SAXReader;
+import org.dom4j.*;
 
 
-
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,20 +12,20 @@ import java.util.List;
 public class AmazonOffer {
 	private static Map uris = new HashMap();
 	public String ASIN = null;
-	public URL url = null;
+	public String url = null;
 	public String manufacturer = null;
 	public String title = null;
-	public List<URL> images = null;
+	public List<String> images = new ArrayList<>();
 	public String sku = null;
     public String upc = null;
     public String description = "";
     public String price = null;
 
-	public AmazonOffer() throws MalformedURLException, NullPointerException {
+	public AmazonOffer() {
 		
 	}
 
-	static public List<AmazonOffer> parseString(String input) throws IOException, NullPointerException {
+	static public List<AmazonOffer> parseString(String input) {
 		if(input == null){
 			return null;
 		}
@@ -56,9 +42,12 @@ public class AmazonOffer {
         		xpath.setNamespaceURIs(uris);
         		nodes = xpath.selectNodes(doc);
         }
-        	catch (Exception e) {
-        		nodes = null;
-        	}
+		catch (NullPointerException e) {
+			nodes = null;
+		}
+		catch (DocumentException e) {
+			nodes = null;
+		}
         if (nodes != null) {
         		for (Node node : nodes){
         			AmazonOffer thisOffer = new AmazonOffer();
@@ -71,7 +60,7 @@ public class AmazonOffer {
         			XPath urlXpath = node.createXPath("./ns:DetailPageURL");
         			urlXpath.setNamespaceURIs(uris);
         			Node urlNode = urlXpath.selectSingleNode(node);
-        			thisOffer.url = new URL(urlNode.getText());
+        			thisOffer.url = urlNode.getStringValue();
         			//manufacturer
         			try {
         				XPath manuXpath = node.createXPath("./ns:ItemAttributes/ns:Manufacturer");
@@ -79,7 +68,7 @@ public class AmazonOffer {
         				Node manuNode = manuXpath.selectSingleNode(node);
         				thisOffer.manufacturer = manuNode.getText();
         			}
-        			catch (Exception e) {
+        			catch (NullPointerException e) {
         				thisOffer.manufacturer = null;
         			}
         			//title
@@ -89,37 +78,38 @@ public class AmazonOffer {
         				Node titleNode = titleXpath.selectSingleNode(node);
         				thisOffer.title = titleNode.getText();
         			}
-        			catch (Exception e) {
+        			catch (NullPointerException e) {
         				thisOffer.title = null;
         			}
         			//SmallImage
-        			try {
-        				XPath siXpath = node.createXPath("./ns:SmallImage");
-        				siXpath.setNamespaceURIs(uris);
-        				Node siNode = siXpath.selectSingleNode(node);
-        				thisOffer.images.add(new URL(siNode.getText()));
-        			}
-        			catch (Exception e) {
-        				
-        			}
+                    try {
+					   XPath siXpath = node.createXPath("./ns:SmallImage");
+					   siXpath.setNamespaceURIs(uris);
+					   Node siNode = siXpath.selectSingleNode(node);
+					   thisOffer.images.add(siNode.getStringValue());
+                    }
+                    catch (NullPointerException e) {
+                        
+                    }
+
         			//MediumImage
         			try {
         				XPath miXpath = node.createXPath("./ns:MediumImage");
         				miXpath.setNamespaceURIs(uris);
         				Node miNode = miXpath.selectSingleNode(node);
-        				thisOffer.images.add(new URL(miNode.getText()));
+        				thisOffer.images.add(miNode.getStringValue());
         			}
-        			catch (Exception e) {
+        			catch (NullPointerException e) {
         				
         			}
         			//LargeImage
         			try {
         				XPath liXpath = node.createXPath("./ns:LargeImage");
         				liXpath.setNamespaceURIs(uris);
-        				Node liNode = liXpath.selectSingleNode(node);
-        				thisOffer.images.add(new URL(liNode.getText()));
+        				Node laNode = liXpath.selectSingleNode(node);
+        				thisOffer.images.add(laNode.getStringValue());
         			}
-        			catch (Exception e) {
+        			catch (NullPointerException e) {
         				
         			}
         			//SKU
@@ -129,7 +119,7 @@ public class AmazonOffer {
         				Node skuNode = skuXpath.selectSingleNode(node);
         				thisOffer.sku = skuNode.getText();
         			}
-        			catch (Exception e) {
+        			catch (NullPointerException e) {
         				thisOffer.sku = null;
         			}
         			//UPC
@@ -139,7 +129,7 @@ public class AmazonOffer {
         				Node upcNode = upcXpath.selectSingleNode(node);
         				thisOffer.upc = upcNode.getText();
         			}
-        			catch (Exception e) {
+        			catch (NullPointerException e) {
         				thisOffer.upc = null;
         			}
         			//description
@@ -153,7 +143,7 @@ public class AmazonOffer {
         					thisOffer.description = thisOffer.description + oneDes.getText() + ". ";
         				}
         			}
-        			catch (Exception e) {
+        			catch (NullPointerException e) {
         				thisOffer.description = null;
         			}
         			//price
@@ -163,7 +153,7 @@ public class AmazonOffer {
         				Node priceNode = priceXpath.selectSingleNode(node);
         				thisOffer.price = priceNode.getText();
         			}
-        			catch (Exception e) {
+        			catch (NullPointerException e) {
         				thisOffer.price = null;
         			}
         			result.add(thisOffer);
