@@ -79,6 +79,7 @@ public class HomeController {
         }
         model.addAttribute("historyOffers", historyOffers);
         model.addAttribute("amazonOffers", amazonOffers);
+
         model.addAttribute("trendOffers", trendOffers);
         return "home";
     }
