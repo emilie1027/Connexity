@@ -39,7 +39,10 @@ public class AmazonOffer {
 		
 	}
 
-	static public List<AmazonOffer> parseString(String input) throws IOException, MalformedURLException, NullPointerException {
+	static public List<AmazonOffer> parseString(String input) throws IOException, NullPointerException {
+		if(input == null){
+			return null;
+		}
 		Document doc = null;
 		List<Node> nodes = new ArrayList();
 		List<AmazonOffer> result = null;

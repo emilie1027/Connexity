@@ -71,6 +71,8 @@ public class AmazonGateway {
     }
 
     private String lookupByProductIdInXML(String itemId, IdType type) throws IOException, NoSuchAlgorithmException, InvalidKeyException {
+        if(itemId == null)
+            return null;
         Signature sig = new Signature(hostAddress,accessKey,secretKey,associateId);
         String operation = "ItemLookup";
         String searchIndex = "All";
@@ -121,8 +123,11 @@ public class AmazonGateway {
     }
 
     public String similarityLookupByASIN(List<String> ASINs) throws IOException, NoSuchAlgorithmException, InvalidKeyException {
+        if(ASINs.size() == 0)
+            return null;
         Signature sig = new Signature(hostAddress,accessKey,secretKey,associateId);
         String operation = "SimilarityLookup";
+        String similarityType = "Random";
         String timeStamp = sig.timestamp();
         String signaturedUrl;
         String ItemId = "";
@@ -137,6 +142,7 @@ public class AmazonGateway {
         queryParam.put("Operation", operation);
         queryParam.put("ItemId", ItemId);
         queryParam.put("ResponseGroup", ResponseGroup);
+        queryParam.put("SimilarityType", similarityType);
         queryParam.put("Timestamp", timeStamp);
         signaturedUrl = sig.sign(queryParam);
         HttpClient client = new HttpClient();

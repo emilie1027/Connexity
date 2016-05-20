@@ -8,6 +8,7 @@ import application.model.Offer;
 import application.search.SearchStrategy;
 import application.gateway.AmazonGateway;
 import application.gateway.HistoryGateway;
+import application.utilities.Utility;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -44,6 +45,7 @@ public class HomeController {
         if (cookieValue.equals("connexityuserid")) {
             String uniqueID = UUID.randomUUID().toString();
             Cookie cookie = new Cookie("ConnexityUserID", uniqueID);
+            cookie.setMaxAge(Utility.TenYearInSeconds);
             cookie.setPath("/");
             response.addCookie(cookie);
         }
@@ -69,8 +71,9 @@ public class HomeController {
                 		if (asin != null) ASINs.add(asin);
                 }  
                 String xml = amazonGateway.similarityLookupByASIN(ASINs);
-                //System.out.println(xml);
-                amazonOffers.addAll(AmazonOffer.parseString(xml));
+                if(xml != null){
+                    amazonOffers.addAll(AmazonOffer.parseString(xml));
+                }
         }
         model.addAttribute("historyOffers", historyOffers);
         model.addAttribute("amazonOffers", amazonOffers);
