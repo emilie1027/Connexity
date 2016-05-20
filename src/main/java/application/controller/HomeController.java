@@ -3,6 +3,7 @@ package application.controller;
 /**
  * Created by lijiayu on 4/30/16.
  */
+import application.gateway.TrendGateway;
 import application.model.AmazonOffer;
 import application.model.Offer;
 import application.search.SearchStrategy;
@@ -37,11 +38,14 @@ public class HomeController {
     private HistoryGateway historyGateway;
 	@Autowired
 	private AmazonGateway amazonGateway;
+    @Autowired
+    private TrendGateway trendGateway;
 
     @RequestMapping("")
     public String HomeController(@CookieValue(value="ConnexityUserID", required=false, defaultValue="connexityuserid") String cookieValue, Model model, HttpServletResponse response) throws IOException, InvalidKeyException, NoSuchAlgorithmException{
         List<Offer> historyOffers = new ArrayList();
         List<AmazonOffer> amazonOffers = new ArrayList();
+        List<Offer> trendOffers = trendGateway.getTopTrends();
         if (cookieValue.equals("connexityuserid")) {
             String uniqueID = UUID.randomUUID().toString();
             Cookie cookie = new Cookie("ConnexityUserID", uniqueID);
@@ -77,6 +81,7 @@ public class HomeController {
         }
         model.addAttribute("historyOffers", historyOffers);
         model.addAttribute("amazonOffers", amazonOffers);
+        model.addAttribute("trendOffers", trendOffers);
         return "home";
     }
 }

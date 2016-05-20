@@ -119,6 +119,9 @@ public class Offer {
 
 
     static  public Offer parseStringForSingleElement(String input) throws IOException {
+        if(input == null)
+            return null;
+
         List<Offer> result = parseString(input);
         if(result.size() == 0) {
             return null;

@@ -1,5 +1,6 @@
 package application.controller;
 
+import application.gateway.TrendGateway;
 import application.model.Offer;
 import application.search.SearchStrategy;
 import application.gateway.HistoryGateway;
@@ -28,7 +29,8 @@ public class SearchController {
     private SearchStrategy searchStrategy;
     @Autowired
     private HistoryGateway historyGateway;
-    
+    @Autowired
+    private TrendGateway trendGateway;
     @RequestMapping("/*")
     /*
     public String search(@RequestParam(value = "key", required = false, defaultValue = "World") String key, Model model) throws IOException {
@@ -62,7 +64,7 @@ public class SearchController {
         else {
         		historyGateway.insertHistory(cookieValue, upc, sku, merchantId);
         }
-
+        trendGateway.insertRecord(upc,sku, merchantId);
         return "redirect:" + redirectUrl;
     }
 
