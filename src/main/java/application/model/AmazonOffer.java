@@ -83,7 +83,7 @@ public class AmazonOffer {
         			}
         			//SmallImage
                     try {
-					   XPath siXpath = node.createXPath("./ns:SmallImage");
+					   XPath siXpath = node.createXPath("./ns:SmallImage/ns:URL");
 					   siXpath.setNamespaceURIs(uris);
 					   Node siNode = siXpath.selectSingleNode(node);
 					   thisOffer.images.add(siNode.getStringValue());
@@ -94,7 +94,7 @@ public class AmazonOffer {
 
         			//MediumImage
         			try {
-        				XPath miXpath = node.createXPath("./ns:MediumImage");
+        				XPath miXpath = node.createXPath("./ns:MediumImage/ns:URL");
         				miXpath.setNamespaceURIs(uris);
         				Node miNode = miXpath.selectSingleNode(node);
         				thisOffer.images.add(miNode.getStringValue());
@@ -104,7 +104,7 @@ public class AmazonOffer {
         			}
         			//LargeImage
         			try {
-        				XPath liXpath = node.createXPath("./ns:LargeImage");
+        				XPath liXpath = node.createXPath("./ns:LargeImage/ns:URL");
         				liXpath.setNamespaceURIs(uris);
         				Node laNode = liXpath.selectSingleNode(node);
         				thisOffer.images.add(laNode.getStringValue());
