@@ -67,9 +67,7 @@ public class HomeController {
                 //from historyOffers to amazonOffers 
                 List<String> ASINs = new ArrayList<>();
                 Iterator it = historyOffers.iterator();
-                int num = 3;//up to 3 ASINs
-                while (it.hasNext() && num>0) {
-                		num--;
+                while (it.hasNext()) {
                 		Offer history = (Offer) it.next();
                 		String asin = amazonGateway.lookupASINbyUPCorSKU(history.upc, history.sku);
                 		if (asin != null) ASINs.add(asin);
