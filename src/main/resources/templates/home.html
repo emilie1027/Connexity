@@ -304,7 +304,7 @@
 
 				<div class="banner-bottom">
 
-					<h2 class="styleClass"> Recommendation</h2>
+					<h2 class="styleClass" id="myAmazon"> Recommendation</h2>
 					<script type="text/javascript">
 
 						(function() {
@@ -353,7 +353,7 @@
 
 					<section class="slider">
 						<div class="flexslider">
-							<ul class="slides" th:value="${amazonOffers.size()}" text="aaa">
+							<ul class="slides" th:attr="value=${amazonOffers.size()}" id="ama" text="aaa">
 								<li  th:each="offer : ${amazonOffers}"  height="250em" width="200em" >
 									<div class="AmazonDiv1">
 									<div class="AmazonDiv2">
@@ -371,12 +371,22 @@
 
 						</div>
 					</section>
+
+					<script>
+						var a =document.getElementById("ama").getAttribute("value") ;// if doesn't have cookie before
+						if(a=="0")
+						{
+							document.getElementById("myAmazon").innerHTML = "";
+						}
+
+					</script>
+
 				</div>
 
 				<div class="banner-bottom">
 					<div>
-					<h2 class="styleClass"> Trending</h2>
-					<ul th:value="${trendOffers.size()}" text="aaa">
+					<h2 class="styleClass" id="myTrend"> Trending</h2>
+					<ul th:attr="value=${trendOffers.size()}" id="tren" text="aaa">
 						<li  th:each="offer : ${trendOffers}">
 							<div class="col-md-3 bottom-grid">
 								<div class="bottom-pad">
@@ -394,6 +404,15 @@
 					</ul>
 					</div>
 				</div>
+
+				<script>
+					var a =document.getElementById("tren").getAttribute("value") ;// if doesn't have cookie before
+					if(a=="0")
+					{
+						document.getElementById("myTrend").innerHTML = "";
+					}
+
+				</script>
 
 			</div>
 
