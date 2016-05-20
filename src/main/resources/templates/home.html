@@ -292,8 +292,6 @@
 							</li>
 						</ul>
 				</div>
-
-
 				<script>
 					var a =document.getElementById("his").value ;// if doesn't have cookie before
 					if(a=="0")
@@ -302,30 +300,6 @@
 					}
 
 				</script>
-
-				<div class="banner-bottom">
-					<div class="flexslider" id="flexslider">
-						<h2 class="styleClass"> Trending</h2>
-						<ul class="slides" th:value="${trendOffers.size()}" text="aaa">
-							<li  th:each="offer : ${trendOffers}">
-								<div class="col-md-3 bottom-grid">
-									<div class="bottom-pad">
-										<div class="btm-img">
-											<img th:src="${offer.images[2]}" alt="" />
-											<!--<input th:value="${offer.images[2]}" />-->
-										</div>
-									</div>
-									<div class="offerinfo">
-										<a th:href="${offer.url}" th:text="${offer.title}">Items</a>
-										<!--<a class="myUrl" th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a>-->
-										<p th:text="${offer.price}"></p>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-
 
 
 				<div class="banner-bottom">
@@ -382,8 +356,8 @@
 							<ul class="slides" th:value="${amazonOffers.size()}" text="aaa">
 								<li  th:each="offer : ${amazonOffers}"  height="250em" width="200em" >
 									<!--<div class="col-md-3 bottom-grid">-->
-									<div height="250em" width="200em" overflow="hidden">
-									<img th:src="${offer.images[2]}" alt="" height="250em" width="200em"/>
+									<div height="100em" width="200em" overflow="hidden">
+									<img th:src="${offer.images[2]}" alt="" height="10em" width="10em"/>
 										</div>
 										<div class="offerinfo">
 											<a th:href="${offer.url}" th:text="${offer.title}">Items</a>
@@ -399,7 +373,27 @@
 					</section>
 				</div>
 
-
+				<div class="banner-bottom">
+					<div>
+					<h2 class="styleClass"> Trending</h2>
+					<ul th:value="${trendOffers.size()}" text="aaa">
+						<li  th:each="offer : ${trendOffers}">
+							<div class="col-md-3 bottom-grid">
+								<div class="bottom-pad">
+									<div class="btm-img">
+										<img th:src="${offer.images[3]}"/>
+									</div>
+								</div>
+								<div class="offerinfo">
+									 <a th:href="${offer.url}" th:text="${offer.title}">Items</a>
+									<!--<a class="myUrl" th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a>-->
+									<p th:text="${offer.price}"></p>
+								</div>
+							</div>
+						</li>
+					</ul>
+					</div>
+				</div>
 
 			</div>
 
