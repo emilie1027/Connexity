@@ -274,7 +274,7 @@
 
 				<div class="banner-bottom">
 						<h2 id="myHistory" class="styleClass"> History</h2>
-						<ul  th:value="${historyOffers.size()}" text="aaa" id="his" th:attr="value=${historyOffers.size()}">
+						<ul  text="aaa" id="his" value="" th:attr="value=${historyOffers.size()}">
 							<!--<input th:value="${historyOffers.size()}" />-->
 							<li  th:each="offer : ${historyOffers}">
 								<div class="col-md-3 bottom-grid">
@@ -286,17 +286,17 @@
 									<div class="offerinfo">
 										<!--<a th:href="${offer.url}" th:text="${offer.title}">Items</a>-->
 										<a class="myUrl" th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a>
-										<p th:text="${offer.price}"></p>
+										<p th:text="'$'+${offer.price}"></p>
 									</div>
 								</div>
 							</li>
 						</ul>
 				</div>
 				<script>
-					var a =document.getElementById("his").value ;// if doesn't have cookie before
+					var a =document.getElementById("his").getAttribute("value") ;// if doesn't have cookie before
 					if(a=="0")
 					{
-						document.getElementById("myHistory").value = "";
+						document.getElementById("myHistory").innerHTML = "";
 					}
 
 				</script>
@@ -355,16 +355,16 @@
 						<div class="flexslider">
 							<ul class="slides" th:value="${amazonOffers.size()}" text="aaa">
 								<li  th:each="offer : ${amazonOffers}"  height="250em" width="200em" >
-									<!--<div class="col-md-3 bottom-grid">-->
-									<div height="100em" width="200em" overflow="hidden">
-									<img th:src="${offer.images[2]}" alt="" height="10em" width="10em"/>
+									<div class="AmazonDiv1">
+									<div class="AmazonDiv2">
+									<img th:src="${offer.images[2]}" height="100em" width="100em"/>
 										</div>
 										<div class="offerinfo">
 											<a th:href="${offer.url}" th:text="${offer.title}">Items</a>
 											<!--<a class="myUrl" th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a>-->
 											<p th:text="${offer.price}"></p>
 										</div>
-									<!--</div>-->
+									</div>
 								</li>
 							</ul>
 
@@ -387,7 +387,7 @@
 								<div class="offerinfo">
 									 <a th:href="${offer.url}" th:text="${offer.title}">Items</a>
 									<!--<a class="myUrl" th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a>-->
-									<p th:text="${offer.price}"></p>
+									<p th:text="'$'+${offer.price}"></p>
 								</div>
 							</div>
 						</li>
