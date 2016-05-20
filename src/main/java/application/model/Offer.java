@@ -4,31 +4,28 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import org.springframework.stereotype.Component;
 
-import java.awt.Image;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.imageio.ImageIO;
 
 public class Offer {
     static private JSONParser jsonParser = new JSONParser();
     public String title = null;
     public String sku = null;
     public String upc = null;
+    public String merchantId = null;
     public String description = null;
     public String manufacturer = null;
     public URL url = null;
     public Double price = null;
     public List<URL> images = null;
     public String merchantName = null;
-    public String merchantLogoUrl = null;
+    public URL merchantLogoUrl = null;
     public String condition = null;
-    public Double relevancy = null;
-    public Double markdownPercent = null; //not sure if this is the discount
+    public Double relevancy = new Double(0.0);
+    public Double markdownPercent = new Double(0.0); //not sure if this is the discount
 
     public Offer(JSONObject offerJson) throws IOException, NullPointerException {
         //some element may not in every jsonObject (eg. relevancy and upc)
@@ -37,37 +34,43 @@ public class Offer {
         try {
             sku = (String) offerJson.get("sku");
         }
-        catch (Exception e) {
+        catch (NullPointerException e) {
             sku = null;
         }
         try{
             upc = (String) offerJson.get("upc");
         }
-        catch (Exception e) {
+        catch (NullPointerException e) {
             upc = null;
+        }
+        try {
+            merchantId = ((Long) offerJson.get("merchantId")).toString();
+        }
+        catch (NullPointerException e){
+            merchantId = null;
         }
         try {
             price = new Double((long)(((JSONObject) offerJson.get("price")).get("integral"))/100.0);
         }
-        catch (Exception e) {
+        catch (NullPointerException e) {
             price = null;
         }
         try {
             description = (String) offerJson.get("description");
         }
-        catch (Exception e) {
+        catch (NullPointerException e) {
             description = null;
         }
         try {
             manufacturer = (String) offerJson.get("manufacturer");
         }
-        catch (Exception e) {
+        catch (NullPointerException e) {
             manufacturer = null;
         }
         try {
             url =  new URL((String) ((JSONObject) offerJson.get("url")).get("value"));
         }
-        catch (Exception e) {
+        catch (NullPointerException e) {
             url = null;
         }
         try {
@@ -79,17 +82,17 @@ public class Offer {
                 images.add(imgURL);
             }
         }
-        catch (Exception e){
+        catch (NullPointerException e){
             images = null;
         }
         try {
             merchantName = (String) offerJson.get("merchantName");
         }
-        catch (Exception e) {
+        catch (NullPointerException e) {
             merchantName = null;
         }
         try {
-            merchantLogoUrl = (String) offerJson.get("merchantLogoUrl");
+            merchantLogoUrl = new URL((String) offerJson.get("merchantLogoUrl"));
         }
         catch (Exception e) {
             merchantLogoUrl = null;
@@ -97,23 +100,37 @@ public class Offer {
         try {
             condition = (String) offerJson.get("condition");
         }
-        catch (Exception e)  {
+        catch (NullPointerException e)  {
             condition = null;
         }
         try {
-            relevancy = new Double((long) offerJson.get("relevancy"));
+            relevancy = (Double)(offerJson.get("relevancy"));
         }
-        catch (Exception e){
-            relevancy = null;
+        catch (NullPointerException e){
+            relevancy = 0.0;
         }
         try {
-            markdownPercent = new Double((long) offerJson.get("markdownPercent"));
+            markdownPercent = (Double)(offerJson.get("markdownPercent"));
         }
-        catch (Exception e) {
-            markdownPercent = null;
+        catch (NullPointerException e) {
+            markdownPercent = 0.0;
         }
     }
 
+
+    static  public Offer parseStringForSingleElement(String input) throws IOException {
+        if(input == null)
+            return null;
+
+        List<Offer> result = parseString(input);
+        if(result.size() == 0) {
+            return null;
+        }
+        else if (result.size() != 1) {
+            System.out.println("Warning: parseStringForSingleElement receive more than one result");
+        }
+        return result.get(0);
+    }
 
     static public List<Offer> parseString(String input) throws IOException {
         try {
@@ -233,12 +250,12 @@ public class Offer {
     }
 
 
-    public String getMerchantLogoUrl() {
+    public URL getMerchantLogoUrl() {
         return merchantLogoUrl;
     }
 
 
-    public void setMerchantLogoUrl(String merchantLogoUrl) {
+    public void setMerchantLogoUrl(URL merchantLogoUrl) {
         this.merchantLogoUrl = merchantLogoUrl;
     }
 

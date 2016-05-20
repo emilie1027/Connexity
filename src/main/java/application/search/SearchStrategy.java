@@ -23,22 +23,43 @@ public class SearchStrategy {
         String searchResult = connexityGateway.getByKeyWord(key, overrideParameter);
         return Offer.parseString(searchResult);
     }
+
+    public List<Offer> advancedSearch(Map<String, String> searchParams) throws IOException {
+        String key = searchParams.get("key");
+        String sort = searchParams.get("sort");
+        if (sort == null)
+            return basicSearch(key);
+        else {
+            switch (sort) {
+                case "discount_desc":
+                    return markdownSearch(key);
+                case "price_desc":
+                case "price_asc":
+                    return basicSearch(key, searchParams);
+                default:
+                    return basicSearch(key);
+            }
+        }
+    }
     
-    public List<Offer> advancedSearch(String key) throws IOException {
+    public List<Offer> markdownSearch(String key) throws IOException {
         List<Offer> searchResult = basicSearch(key);
         Collections.sort(searchResult, new Comparator<Offer>() {
             public int compare(Offer o1, Offer o2) {
-                if (o1.getMarkdownPercent() == null && o2.getMarkdownPercent() == null)
-                    return 0;
-                else if (o1.getMarkdownPercent() == null)
-                    return -1;
-                else if (o2.getMarkdownPercent() == null)
-                    return 1;
-                else
-                    return Double.compare(o1.getMarkdownPercent(), o2.getRelevancy());
+                return Double.compare(o2.getMarkdownPercent(), o1.getMarkdownPercent());
             }
         });
         return searchResult;
+    }
+   
+    //added by xiangning on 5/12 to allow history offer search
+    public List<Offer> historySearch(Map<String, String> history) throws IOException {
+            String upc = history.get("upc");
+            String sku = history.get("sku");
+            String merchantId = history.get("merchantId");
+            String searchResult = connexityGateway.getByUpcOrSku(upc, sku, merchantId);
+        if(searchResult != null) return Offer.parseString(searchResult);
+        else return null;
     }
     
 }
