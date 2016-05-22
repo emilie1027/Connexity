@@ -17,7 +17,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.Cookie;
@@ -28,6 +27,7 @@ import java.net.URL;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -109,6 +109,7 @@ public class HomeController {
                 }
             }
         }
+        Collections.reverse(historyOffers);
         model.addAttribute("historyOffers", historyOffers);
         model.addAttribute("amazonOffers", amazonOffers);
         model.addAttribute("trendOffers", trendOffers);
