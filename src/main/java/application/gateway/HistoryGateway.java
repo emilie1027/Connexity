@@ -1,6 +1,7 @@
 package application.gateway;
 
 import com.mongodb.MongoClient;
+import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCollection;
 import org.bson.Document;
 import static com.mongodb.client.model.Filters.*;
@@ -18,10 +19,8 @@ import static java.util.Arrays.asList;
 
 @Component
 public class HistoryGateway {
-    @Value("${mongo.address}")
-    private String host;
-    @Value("${mongo.port}")
-    private int port;
+    @Value("${mongo.uri}")
+    private String mongodbURI;
     @Value("${mongo.db}")
     private  String db;
     @Value("${history.maxNumberOfRecord}")
@@ -38,7 +37,8 @@ public class HistoryGateway {
 
     @PostConstruct
     public void init() {
-        MongoClient mongoClient = new MongoClient( host , port);
+        MongoClientURI uri = new MongoClientURI(mongodbURI);
+        MongoClient mongoClient = new MongoClient(uri);
         collection = mongoClient.getDatabase(db).getCollection("history");
     }
 

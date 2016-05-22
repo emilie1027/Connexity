@@ -12,6 +12,7 @@ import redis.clients.jedis.Transaction;
 
 import javax.annotation.PostConstruct;
 import java.io.IOException;
+import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.*;
 
@@ -21,6 +22,8 @@ public class RedisGateway {
     private int numberOfTrends;
     @Value("${redis.address}")
     private String hostAddress;
+    @Value("${redis.uri}")
+    private String redisUri;
     @Autowired
     private ConnexityGateway connexityGateway;
     static private JedisPool jedisPool;
@@ -31,7 +34,17 @@ public class RedisGateway {
         poolConfig.setMaxTotal(20);
         poolConfig.setMaxIdle(5);
         poolConfig.setMinIdle(1);
-        jedisPool = new JedisPool(poolConfig, "localhost");
+        poolConfig.setBlockWhenExhausted(true);
+        if(!redisUri.equals("")) {
+            URI uri = new URI(redisUri);
+            jedisPool = new JedisPool(poolConfig, uri);
+        }
+        else if(!hostAddress.equals("")) {
+            jedisPool = new JedisPool(hostAddress);
+        }
+        else {
+            throw new IllegalArgumentException("Redis address is not hosted!");
+        }
     }
 
     public void insertRecord(String upc, String sku, String merchantId) {
@@ -64,7 +77,7 @@ public class RedisGateway {
     public Set<String> getTopTrendsInString()
     {
         Jedis jedis = jedisPool.getResource();
-        Set<String> result = jedis.zrevrange(Utility.currentDate(), 0, numberOfTrends);
+        Set<String> result = jedis.zrevrange(Utility.currentDate(), 0, numberOfTrends-1);
         jedis.close();
         return result;
     }
