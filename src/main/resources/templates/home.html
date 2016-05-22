@@ -272,35 +272,6 @@
 
 			<div class="threeColumn">
 
-				<div class="banner-bottom">
-						<h2 id="myHistory" class="styleClass"> History</h2>
-						<ul  text="aaa" id="his" value="" th:attr="value=${historyOffers.size()}">
-							<!--<input th:value="${historyOffers.size()}" />-->
-							<li  th:each="offer : ${historyOffers}">
-								<div class="col-md-3 bottom-grid">
-									<div class="bottom-pad">
-										<div class="btm-img">
-											<img th:src="${offer.images[3]}" alt="" />
-										</div>
-									</div>
-									<div class="offerinfo">
-										<!--<a th:href="${offer.url}" th:text="${offer.title}">Items</a>-->
-										<a class="myUrl" th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a>
-										<p th:text="'$'+${offer.price}"></p>
-									</div>
-								</div>
-							</li>
-						</ul>
-				</div>
-				<script>
-					var a =document.getElementById("his").getAttribute("value") ;// if doesn't have cookie before
-					if(a=="0")
-					{
-						document.getElementById("myHistory").innerHTML = "";
-					}
-
-				</script>
-
 
 				<div class="banner-bottom">
 
@@ -410,6 +381,34 @@
 					if(a=="0")
 					{
 						document.getElementById("myTrend").innerHTML = "";
+					}
+
+				</script>
+				<div class="banner-bottom">
+					<h2 id="myHistory" class="styleClass"> History</h2>
+					<ul  text="aaa" id="his" value="" th:attr="value=${historyOffers.size()}">
+						<!--<input th:value="${historyOffers.size()}" />-->
+						<li  th:each="offer : ${historyOffers}">
+							<div class="col-md-3 bottom-grid">
+								<div class="bottom-pad">
+									<div class="btm-img">
+										<img th:src="${offer.images[3]}" alt="" />
+									</div>
+								</div>
+								<div class="offerinfo">
+									<!--<a th:href="${offer.url}" th:text="${offer.title}">Items</a>-->
+									<a class="myUrl" th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a>
+									<p th:text="'$'+${offer.price}"></p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<script>
+					var a =document.getElementById("his").getAttribute("value") ;// if doesn't have cookie before
+					if(a=="0")
+					{
+						document.getElementById("myHistory").innerHTML = "";
 					}
 
 				</script>
