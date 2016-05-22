@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.*;
 
 @Component
-public class TrendGateway {
+public class RedisGateway {
     @Value("${trend.maxNumberOfTrends}")
     private int numberOfTrends;
     @Value("${redis.address}")
@@ -52,13 +52,40 @@ public class TrendGateway {
         return listOfTrends;
     }
 
+    public Set<String> getTopTrendsInString()
+    {
+        return jedis.zrevrange(Utility.currentDate(), 0, numberOfTrends);
+    }
+
+    public String getASINByUPC(String upc) {
+        if(upc == null) return null;
+        return jedis.hget("UPC",upc);
+    }
+
+    public String getASINBySKU(String sku) {
+        if(sku == null) return null;
+        return jedis.hget("SKU",sku);
+    }
+
+    public void cacheASINForUPC(String upc, String ASIN) {
+        jedis.hset("UPC",upc,ASIN);
+    }
+
+    public void cacheASINForSKU(String sku, String ASIN) {
+        jedis.hset("SKU", sku,ASIN);
+    }
+
     //for test only
     public void deleteTodayTrend() {
         jedis.del(Utility.currentDate());
     }
 
-    public Set<String> getTopTrendsInString() {
-        return jedis.zrevrange(Utility.currentDate(), 0, numberOfTrends);
+    public void deleteUPCCache(String upc) {
+        jedis.hdel("UPC", upc);
+    }
+
+    public void deleteSKUCache(String sku) {
+        jedis.hdel("SKU", sku);
     }
 
     private Map<String, String> parseRecord(String input) {

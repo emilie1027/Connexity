@@ -1,6 +1,6 @@
 package application.controller;
 
-import application.gateway.TrendGateway;
+import application.gateway.RedisGateway;
 import application.model.Offer;
 import application.search.SearchStrategy;
 import application.gateway.HistoryGateway;
@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -30,7 +29,7 @@ public class SearchController {
     @Autowired
     private HistoryGateway historyGateway;
     @Autowired
-    private TrendGateway trendGateway;
+    private RedisGateway redisGateway;
     @RequestMapping("/*")
     /*
     public String search(@RequestParam(value = "key", required = false, defaultValue = "World") String key, Model model) throws IOException {
@@ -64,7 +63,7 @@ public class SearchController {
         else {
         		historyGateway.insertHistory(cookieValue, upc, sku, merchantId);
         }
-        trendGateway.insertRecord(upc,sku, merchantId);
+        redisGateway.insertRecord(upc,sku, merchantId);
         return "redirect:" + redirectUrl;
     }
 

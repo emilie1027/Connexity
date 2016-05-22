@@ -27,6 +27,8 @@ public class Offer {
     public Double relevancy = new Double(0.0);
     public Double markdownPercent = new Double(0.0); //not sure if this is the discount
 
+    public Offer(){}
+
     public Offer(JSONObject offerJson) throws IOException, NullPointerException {
         //some element may not in every jsonObject (eg. relevancy and upc)
         //Need a way to check and parse it accordingly

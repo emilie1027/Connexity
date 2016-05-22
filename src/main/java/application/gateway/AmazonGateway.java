@@ -6,6 +6,7 @@ import org.apache.commons.httpclient.HttpStatus;
 import org.apache.commons.httpclient.methods.GetMethod;
 import org.apache.commons.httpclient.params.HttpMethodParams;
 import org.jdom2.JDOMException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.apache.log4j.Logger;
 
@@ -32,6 +33,8 @@ public class AmazonGateway {
     private String secretKey;
     @Value("${amazon.requestURI}")
     private String requestURI;
+    @Autowired
+    private RedisGateway redisGateway;
     private String service = "AWSECommerceService";
 
     static Logger log = Logger.getLogger(AmazonGateway.class.getName());
@@ -47,9 +50,12 @@ public class AmazonGateway {
 
 
     public String lookupASINByUPC(String upc) throws IOException, NoSuchAlgorithmException, InvalidKeyException {
+        String cachedResult = redisGateway.getASINByUPC(upc);
+        if(cachedResult != null) return cachedResult;
         try {
             String result = lookupByProductIdInXML(upc, IdType.UPC);
             result = extractASINFromString(result);
+            if(result != null) redisGateway.cacheASINForUPC(upc,result);
             return result;
         }
         catch (JDOMException e) {
@@ -59,9 +65,12 @@ public class AmazonGateway {
     }
 
     public String lookupASINBySKU(String sku) throws IOException, NoSuchAlgorithmException, InvalidKeyException {
+        String cachedResult = redisGateway.getASINBySKU(sku);
+        if(cachedResult != null) return cachedResult;
         try {
-            String result = lookupByProductIdInXML(sku, IdType.SKU  );
+            String result = lookupByProductIdInXML(sku, IdType.SKU);
             result = extractASINFromString(result);
+            if(result != null) redisGateway.cacheASINForSKU(sku,result);
             return result;
         }
         catch (JDOMException e) {

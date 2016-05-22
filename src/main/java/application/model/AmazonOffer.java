@@ -21,9 +21,7 @@ public class AmazonOffer {
     public String description = "";
     public String price = null;
 
-	public AmazonOffer() {
-		
-	}
+	public AmazonOffer() {}
 
 	static public List<AmazonOffer> parseString(String input) {
 		if(input == null){
