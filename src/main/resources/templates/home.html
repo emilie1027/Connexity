@@ -1,14 +1,14 @@
 
 
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="//www.thymeleaf.org">
 	<head>
 		<title>UDeal</title>
 		<link rel="stylesheet" th:href="@{/css/bootstrap-3.3.5-dist/css/bootstrap.css}" />
 		<link rel="stylesheet" th:href="@{/css/mycss/style.css}"/>
 		<link rel="stylesheet" th:href="@{/css/mycss/mystyle.css}"/>
 		<link rel="stylesheet" th:href="@{/css/mycss/colorbox.css}"/>
-		<!--<link rel="stylesheet" th:href="@{http://www.jacklmoore.com/colorbox/example1/colorbox.css}" />-->
+		<!--<link rel="stylesheet" th:href="@{//www.jacklmoore.com/colorbox/example1/colorbox.css}" />-->
 
 		<script th:src="@{/js/modernizr.custom.js}"></script>
 		<script th:src="@{/js/jquery-1.12.3.min.js}"></script>
@@ -59,20 +59,20 @@
 				function changeBGColor() {
 					var a = getRandomInt(1,5);
 					if(a==1) {
-						$('body').css('background-image', 'url("http://images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg")');
+						$('body').css('background-image', 'url("//images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg")');
 					}
 					else if(a==2) {
-						$('body').css('background-image', 'url("http://images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg")');
+						$('body').css('background-image', 'url("//images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg")');
 						document.body.style.opacity = "0.9";
 						document.body.style.filter  = 'alpha(opacity=90)'; // IE fallback
 					}
 					else if(a==3) {
-						$('body').css('background-image', 'url("http://images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg")');
+						$('body').css('background-image', 'url("//images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg")');
 						document.body.style.opacity = "0.9";
 						document.body.style.filter  = 'alpha(opacity=80)'; // IE fallback
 					}
 					else
-						$('body').css('background-image', 'url("http://images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg")');
+						$('body').css('background-image', 'url("//images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg")');
 				}
 			)
 		</script>
@@ -166,13 +166,13 @@
 		document.getElementById("test2").value = $.cookie("ConnexityUserID"); //readCookie('ConnexityUserID');
 	</script>
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 	<script src="/js/jquery.min.js"></script>
 	<!--<script>window.jQuery || document.write('<script src="/js/jquery-1.7.min.js">\x3C/script>')</script>-->
 	<script src="/js/jquery.flexslider.js"></script>
 
-	<script src="http://www.jacklmoore.com/colorbox/jquery.colorbox.js"></script>
+	<script src="//www.jacklmoore.com/colorbox/jquery.colorbox.js"></script>
 	<!--these parts should be moved to body later-->
 	<!--category info can now be sent to backend, but they haven't stored it...-->
 	<script>
