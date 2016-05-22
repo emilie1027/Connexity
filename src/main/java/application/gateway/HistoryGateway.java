@@ -61,6 +61,9 @@ public class HistoryGateway {
                                         .append("merchantId", merchantId)));
            collection.insertOne(doc);
         }
+        else if (recordExist(id,upc,sku,merchantId)) {
+            return;
+        }
         //directly insert into the history array if maximum number of record not reached
         else if (result.size() < maxNumberOfRecord){
             Document newHistory = new Document()
@@ -79,6 +82,16 @@ public class HistoryGateway {
             collection.updateOne(eq("_id", id), new Document("$push", new Document("history", newHistory)));
         }
 
+    }
+
+    private boolean recordExist(String id, String upc, String sku, String merchantId) {
+        List<Map<String, String>> results = findHistory(id);
+        for(Map<String, String> result:results) {
+            if(result.get("upc").equals(upc) && result.get("sku").equals(sku) && result.get("merchantId").equals(merchantId)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public List<Map<String, String>> findHistory(String id) {
