@@ -6,10 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisPool;
+import redis.clients.jedis.JedisPoolConfig;
 import redis.clients.jedis.Transaction;
 
 import javax.annotation.PostConstruct;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.*;
 
 @Component
@@ -20,14 +23,19 @@ public class RedisGateway {
     private String hostAddress;
     @Autowired
     private ConnexityGateway connexityGateway;
-    private Jedis jedis;
+    static private JedisPool jedisPool;
 
     @PostConstruct
-    public void init() {
-        jedis = new Jedis(hostAddress);
+    public void init() throws URISyntaxException {
+        JedisPoolConfig poolConfig = new JedisPoolConfig();
+        poolConfig.setMaxTotal(20);
+        poolConfig.setMaxIdle(5);
+        poolConfig.setMinIdle(1);
+        jedisPool = new JedisPool(poolConfig, "localhost");
     }
 
     public void insertRecord(String upc, String sku, String merchantId) {
+        Jedis jedis = jedisPool.getResource();
         upc = upc == null? "":upc;
         sku = sku == null? "":sku;
         merchantId = merchantId == null? "":merchantId;
@@ -38,6 +46,7 @@ public class RedisGateway {
         transaction.zincrby(currentDate, 1, record);
         transaction.expire(currentDate, (int)Utility.timeUntilMidnightInSecs());
         transaction.exec();
+        jedis.close();
     }
 
     public List<Offer> getTopTrends() throws IOException {
@@ -54,38 +63,58 @@ public class RedisGateway {
 
     public Set<String> getTopTrendsInString()
     {
-        return jedis.zrevrange(Utility.currentDate(), 0, numberOfTrends);
+        Jedis jedis = jedisPool.getResource();
+        Set<String> result = jedis.zrevrange(Utility.currentDate(), 0, numberOfTrends);
+        jedis.close();
+        return result;
     }
 
     public String getASINByUPC(String upc) {
         if(upc == null) return null;
-        return jedis.hget("UPC",upc);
+        Jedis jedis = jedisPool.getResource();
+        String result = jedis.hget("UPC",upc);
+        jedis.close();
+        return result;
     }
 
     public String getASINBySKU(String sku) {
         if(sku == null) return null;
-        return jedis.hget("SKU",sku);
+        Jedis jedis = jedisPool.getResource();
+        String result = jedis.hget("SKU",sku);
+        jedis.close();
+        return result;
     }
 
-    public void cacheASINForUPC(String upc, String ASIN) {
+    public void cacheASINForUPC(String upc, String ASIN)
+    {
+        Jedis jedis = jedisPool.getResource();
         jedis.hset("UPC",upc,ASIN);
+        jedis.close();
     }
 
     public void cacheASINForSKU(String sku, String ASIN) {
+        Jedis jedis = jedisPool.getResource();
         jedis.hset("SKU", sku,ASIN);
+        jedis.close();
     }
 
     //for test only
     public void deleteTodayTrend() {
+        Jedis jedis = jedisPool.getResource();
         jedis.del(Utility.currentDate());
+        jedis.close();
     }
 
     public void deleteUPCCache(String upc) {
+        Jedis jedis = jedisPool.getResource();
         jedis.hdel("UPC", upc);
+        jedis.close();
     }
 
     public void deleteSKUCache(String sku) {
+        Jedis jedis = jedisPool.getResource();
         jedis.hdel("SKU", sku);
+        jedis.close();
     }
 
     private Map<String, String> parseRecord(String input) {
