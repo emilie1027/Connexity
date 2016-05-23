@@ -153,13 +153,15 @@
 
             });
 
+
+            /*
             var activeBtn = sessionStorage.getItem('active-btn');
 
             if (activeBtn) {
                 $('#current').text(activeBtn);
 
             }
-
+             */
             function mydef(obj)
             {
                 document.getElementById("sort").value = obj.id;
@@ -169,12 +171,19 @@
             window.onbeforeunload = function() {
                 sessionStorage.setItem('keyword', $('#key').val());
 
+
             }
 
             window.onload = function() {
 
                 var name = sessionStorage.getItem('keyword');
                 if (name !== null) $('#key').val(name);
+
+                var activeBtn = sessionStorage.getItem('active-btn');
+                if (activeBtn) {
+                    $('#current').text(activeBtn);
+
+                }
             }
 
 
