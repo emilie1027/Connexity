@@ -214,7 +214,7 @@
 						<div class="input-group-btn">
 							<input class="ranking" type="hidden" name="sort" id="sort" />
 							<button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<span data-bind="label">Smart</span>&nbsp;
+								<span data-bind="label" id="current">Smart</span>&nbsp;
 								<span class="caret"></span>
 							</button>
 							<!--<input class="span2" id="sort" name="sort" type="hidden"> -->
@@ -237,23 +237,11 @@
 				</div>
 			</form>
 
-			<!--
-            <script>
-                (function($){
-                    $('.input-group-btn .dropdown-menu a').click(function(e){
-                        e.preventDefault();
-                        $(this).closest('.input-group-btn').find('input').val(($this).data('value'));
-                        $(this).closest('form').submit();
-
-                    });
-                })(jQuery);
-            </script>
-             -->
 			<script>
 				$( document.body).on('click', '.dropdown-menu li', function(event)
 				{
 					var $target = $( event.currentTarget);
-                    localStorage.setItem('active-btn', $(event.currentTarget).text());
+                    //localStorage.setItem('active-btn', $(event.currentTarget).text());
 					$target.closest('.input-group-btn')
 							.find( '[data-bind="label"]').text($target.text())
 							.end()
@@ -263,11 +251,17 @@
 
 				});
 
+                /*
                 var activeBtn = localStorage.getItem('active-btn');
                 if (activeBtn) {
                     // alert(activeBtn);
-                }
+                    //$('#'+activeBtn).button('show');
+                    //alert(activeBtn);
+                    $('#current').text(activeBtn);
 
+
+                }
+                 */
 
 				function mydef(obj)
 				{

@@ -112,38 +112,12 @@
 
 
         <form method="GET" action="/search/query.html"  onsubmit="return validateForm()" name="myform"  >
-            <!--
-            <div class="col-md-12">
-                <div class="input-group">
-
-                    <div class="input-group-btn">
-                        <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Smart
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu">
-
-                            <li><a class="dropdown-item" herf="#"> Price</a></li>
-                            <li><a class="dropdown-item" herf="#"> Popular</a></li>
-                            <div role="separator" class="dropdown-divider"></div>
-                            <li><a class="dropdown-item" href="#"> Sparated link</a></li>
-                        </ul>
-                    </div>
-                    <input name="key" type="text" class="form-control input-lg" placeholder="Search for product" />
-				          <span class="input-group-btn">
-					        <button class="btn btn-info btn-lg" type="submit">
-					          <i class="glyphicon glyphicon-search"></i></button>
-						  </span>
-                </div>
-            </div>
-        </form>
-        -->
             <div class="col-md-12">
                 <div class="input-group">
                     <div class="input-group-btn">
                         <input class="ranking" type="hidden" name="sort" id="sort" />
                         <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span data-bind="label">Smart</span>&nbsp;
+                            <span id="current" data-bind="label">Smart</span>&nbsp;
                             <span class="caret"></span>
                         </button>
                         <!--<input class="span2" id="sort" name="sort" type="hidden"> -->
@@ -170,6 +144,7 @@
             $( document.body).on('click', '.dropdown-menu li', function(event)
             {
                 var $target = $( event.currentTarget);
+                localStorage.setItem('active-btn', $(event.currentTarget).text());
                 $target.closest('.input-group-btn')
                         .find( '[data-bind="label"]').text($target.text())
                         .end()
@@ -177,6 +152,13 @@
                 return false;
 
             });
+
+            var activeBtn = localStorage.getItem('active-btn');
+            if (activeBtn) {
+                $('#current').text(activeBtn);
+
+
+            }
 
             function mydef(obj)
             {
