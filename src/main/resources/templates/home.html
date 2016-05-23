@@ -227,7 +227,7 @@
 								<li><a class="dropdown-item" id ="discount_desc" onclick="mydef(this);" > Sales</a></li>
 							</ul>
 						</div>
-						<input name="key" type="text" class="form-control input-lg" placeholder="Search for product" />
+						<input id="key" name="key" type="text" class="form-control input-lg" placeholder="Search for product" />
 
 				          <span class="input-group-btn">
 					        <button class="btn btn-info btn-lg" type="submit">
@@ -241,7 +241,7 @@
 				$( document.body).on('click', '.dropdown-menu li', function(event)
 				{
 					var $target = $( event.currentTarget);
-                    localStorage.setItem('active-btn', $(event.currentTarget).text());
+                    sessionStorage.setItem('active-btn', $(event.currentTarget).text());
 					$target.closest('.input-group-btn')
 							.find( '[data-bind="label"]').text($target.text())
 							.end()
@@ -251,23 +251,18 @@
 
 				});
 
-                /*
-                var activeBtn = localStorage.getItem('active-btn');
-                if (activeBtn) {
-                    // alert(activeBtn);
-                    //$('#'+activeBtn).button('show');
-                    //alert(activeBtn);
-                    $('#current').text(activeBtn);
-
-
-                }
-                 */
-
 				function mydef(obj)
 				{
 					document.getElementById("sort").value = obj.id;
 
 				}
+
+                window.onbeforeunload = function() {
+                    sessionStorage.setItem('keyword', $('#key').val());
+
+                }
+
+
 
 			</script>
 
