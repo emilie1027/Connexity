@@ -203,6 +203,12 @@
 		<div class="container" name="top">
 			<div class="page-header">
 				<h1 class="styleClass" onclick="location.href = '/home.html'">UDeal</h1>
+                <script>
+                    if(sessionStorage.getItem('active-btn')){
+                        sessionStorage.removeItem('active-btn');
+                    }
+                </script>
+
 			</div>
 
 			<a href="#0" class="cd-top">Top</a>
