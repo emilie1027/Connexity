@@ -253,13 +253,21 @@
 				$( document.body).on('click', '.dropdown-menu li', function(event)
 				{
 					var $target = $( event.currentTarget);
+                    localStorage.setItem('active-btn', $(event.currentTarget).text());
 					$target.closest('.input-group-btn')
 							.find( '[data-bind="label"]').text($target.text())
 							.end()
 							.children( '.dropdown-toggle' ).dropdown( 'toggle' );
+
 					return false;
 
 				});
+
+                var activeBtn = localStorage.getItem('active-btn');
+                if (activeBtn) {
+                    // alert(activeBtn);
+                }
+
 
 				function mydef(obj)
 				{
