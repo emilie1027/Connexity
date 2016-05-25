@@ -86,6 +86,19 @@
 
         })
     </script>
+
+
+
+    <script type="text/javascript">
+        $( document ).ready(
+        function changeFontColor() {
+            var color = localStorage.getItem('color');
+
+            document.getElementById("myHeader").style.color = color;
+            document.getElementById("toggle-button").style.color = color;
+        })
+        </script>
+
     <style type="text/css">
         .item{overflow:hidden;}
         .clear{zoom:1;}
@@ -97,15 +110,15 @@
     </style>
 
 
-
 </head>
+
 
 
 <body>
 
     <div class="container" name="top">
         <div class="page-header">
-            <h1 class="myheader" onclick="location.href = '/home.html'">UDeal</h1>
+            <h1 class="myheader" id="myHeader" onclick="location.href = '/home.html'">UDeal</h1>
         </div>
 
         <a href="#0" class="cd-top">Top</a>
@@ -116,7 +129,7 @@
                 <div class="input-group">
                     <div class="input-group-btn">
                         <input class="ranking" type="hidden" name="sort" id="sort" />
-                        <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button type="button" id="toggle-button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span id="current" data-bind="label">Smart</span>&nbsp;
                             <span class="caret"></span>
                         </button>
@@ -251,7 +264,7 @@
         <div class="footer">
             <div class="footer-one">
                 <h2><a href="#">UDeal</a></h2>
-                <p>Copyright &copy; 2016. Support By Connexity TEAM3.</p>
+                    <p>Copyright &copy; 2016. Support By Connexity Team 3.</p>
                 <p><a href="https://github.com/emilie1027/Connexity">Contact us</a></p>
             </div>
             <div class="footer-two">
