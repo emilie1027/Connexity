@@ -6,12 +6,10 @@
 		<link rel="stylesheet" th:href="@{/css/mycss/style.css}"/>
 		<link rel="stylesheet" th:href="@{/css/mycss/mystyle.css}"/>
 		<link rel="stylesheet" th:href="@{/css/mycss/colorbox.css}"/>
-		<!--<link rel="stylesheet" th:href="@{//www.jacklmoore.com/colorbox/example1/colorbox.css}" />-->
 
 		<script th:src="@{/js/modernizr.custom.js}"></script>
 		<script th:src="@{/js/jquery-1.12.3.min.js}"></script>
 		<script th:src="@{/js/bootstrap.min.js}"></script>
-
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
 
@@ -23,8 +21,6 @@
 
 		<!-- Modernizr -->
 		<script src="/js/modernizr.js"></script>
-
-
 
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -47,32 +43,9 @@
 				width:100%;
 				height:auto;
 			}
-
 		</style>
 
 		<script>$('#carousel-example-generic').carousel({wrap: true});
-		</script>
-		<script type="text/javascript">
-			$( document ).ready(
-				function changeBGColor() {
-					var a = getRandomInt(1,5);
-					if(a==1) {
-						$('body').css('background-image', 'url("//images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg")');
-					}
-					else if(a==2) {
-						$('body').css('background-image', 'url("//images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg")');
-						document.body.style.opacity = "0.9";
-						document.body.style.filter  = 'alpha(opacity=90)'; // IE fallback
-					}
-					else if(a==3) {
-						$('body').css('background-image', 'url("//images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg")');
-						document.body.style.opacity = "0.9";
-						document.body.style.filter  = 'alpha(opacity=80)'; // IE fallback
-					}
-					else
-						$('body').css('background-image', 'url("//images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg")');
-				}
-			)
 		</script>
 
 		<script type="text/javascript">
@@ -92,7 +65,7 @@
 
 				localStorage.setItem('color', color);
 
-        document.getElementById("myHeader").style.color = color;
+				document.getElementById("myHeader").style.color = color;
 				document.getElementById("toggle-button").style.color = color;
 				document.getElementById("myAmazon").style.color = color;
 				document.getElementById("myTrend").style.color = color;
@@ -101,14 +74,16 @@
 
 		<script>
 			function readCookie(name) {
-			var nameEQ = name + "=";
-			var ca = document.cookie.split(';');
-			for(var i=0; ca.length>1 ;i++) {
-			var c = ca[i];
-			while (c.charAt(0)==' ') c = c.substring(1,c.length);
-			if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-			}
-			return null;
+				var nameEQ = name + "=";
+				var ca = document.cookie.split(';');
+				for(var i=0; ca.length>1 ;i++) {
+					var c = ca[i];
+					while (c.charAt(0)==' ')
+						c = c.substring(1,c.length);
+					if (c.indexOf(nameEQ) == 0) 
+						return c.substring(nameEQ.length,c.length);
+				}
+				return null;
 			}
 		</script>
 
@@ -117,8 +92,8 @@
 
 	</head>
 	<body class="myBody">
-	<input  id="test" type="hidden"/>
-	<input  id="test2" type="hidden"/>
+	<input id="test" type="hidden"/>
+	<input id="test2" type="hidden"/>
 
 	<input name="style" id= "style" value="programmer" type="hidden"/>
 
@@ -157,26 +132,21 @@
 				clearInterval(i);
 			}
 		}
-
 		 seconds = 1,
 				i = setInterval(countDown, 1000);
 	</script>
 
-
-
 		<div class="container" name="top">
 			<div class="page-header">
 				<h1 class="styleClass" id="myHeader" onclick="location.href = '/home.html'">UDeal</h1>
-                <script>
-                    if(sessionStorage.getItem('active-btn')){
-                        sessionStorage.removeItem('active-btn');
-                    }
-                </script>
-
+					<script>
+							if(sessionStorage.getItem('active-btn')){
+									sessionStorage.removeItem('active-btn');
+							}
+					</script>
 			</div>
 
 			<a href="#0" class="cd-top">Top</a>
-
 
 			<form method="GET" action="/search/query.html"  onsubmit="return validateForm()" name="myform"  >
 				<div class="col-md-12">
@@ -190,7 +160,7 @@
 							<!--<input class="span2" id="sort" name="sort" type="hidden"> -->
 							<ul id="def" class="dropdown-menu">
 								<!--
-                                <li class="dropdown-item" onclick="$('#sort').val('price_asc')">Price up</li> -->
+																<li class="dropdown-item" onclick="$('#sort').val('price_asc')">Price up</li> -->
 								<li><a class="dropdown-item" id ="relevancy_desc" onclick="mydef(this);" > Smart</a></li>
 								<li><a class="dropdown-item" id ="price_desc" onclick="mydef(this);" > Price down</a></li>
 								<li><a class="dropdown-item" id ="price_asc" onclick="mydef(this);" > Price up</a></li>
@@ -198,47 +168,37 @@
 							</ul>
 						</div>
 						<input id="key" name="key" type="text" class="form-control input-lg" placeholder="Search for product" />
-
-				          <span class="input-group-btn">
-					        <button class="btn btn-info btn-lg" id="search-button" type="submit">
-					          <i class="glyphicon glyphicon-search"></i></button>
-						  </span>
+								<span class="input-group-btn">
+									<button class="btn btn-info btn-lg" id="search-button" type="submit">
+										<i class="glyphicon glyphicon-search"></i></button>
+								</span>
 					</div>
 				</div>
 			</form>
 
 			<script>
-				$( document.body).on('click', '.dropdown-menu li', function(event)
-				{
+				$( document.body).on('click', '.dropdown-menu li', function(event) {
 					var $target = $( event.currentTarget);
-                    sessionStorage.setItem('active-btn', $(event.currentTarget).text());
+										sessionStorage.setItem('active-btn', $(event.currentTarget).text());
 					$target.closest('.input-group-btn')
 							.find( '[data-bind="label"]').text($target.text())
 							.end()
 							.children( '.dropdown-toggle' ).dropdown( 'toggle' );
 
 					return false;
-
 				});
 
-				function mydef(obj)
-				{
+				function mydef(obj) {
 					document.getElementById("sort").value = obj.id;
-
 				}
 
-                window.onbeforeunload = function() {
-                    sessionStorage.setItem('keyword', $('#key').val());
-
-                }
-
-
-
+				window.onbeforeunload = function() {
+					sessionStorage.setItem('keyword', $('#key').val());
+				}
 			</script>
 
 
 			<div class="threeColumn">
-
 
 				<div class="banner-bottom">
 
@@ -246,7 +206,6 @@
 					<script type="text/javascript">
 
 						(function() {
-
 							// store the slider in a local variable
 							var $window = $(window),
 									flexslider = { vars:{} };
@@ -288,7 +247,6 @@
 
 					</script>
 
-
 					<section class="slider">
 						<div class="flexslider">
 							<ul class="slides" th:attr="value=${amazonOffers.size()}" id="ama" text="aaa">
@@ -299,8 +257,6 @@
 										</div>
 										<div class="offerinfo">
 											<a th:href="${offer.url}" th:text="${offer.title}">Items</a>
-											<!--<a class="myUrl" th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a>-->
-											<!-- <p th:text="'$'+${offer.price}"></p> -->
 										</div>
 									</div>
 								</li>
@@ -448,12 +404,7 @@
 			<a href="#0" class="cd-top">Top</a>
 			<script th:src="@{/js/main.js}"></script>
 
-
-
 		</div>
-
-
-
 
 	<script type="text/javascript" src="/js/shCore.js"></script>
 	<script type="text/javascript" src="/js/shBrushXml.js"></script>
