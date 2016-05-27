@@ -135,3 +135,13 @@
     width: 200px;
     overflow: hidden;
 }
+.rightDiv{
+    float:right;
+    width: 20%;
+    text-align: right;
+}
+.leftDiv{
+     float:left;
+     width: 80%;
+     text-align: left;
+ }

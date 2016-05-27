@@ -136,9 +136,48 @@
 				i = setInterval(countDown, 1000);
 	</script>
 
+
 		<div class="container" name="top">
-			<div class="page-header">
+			<div class="page-header" style="margin-bottom: 2em" >
+				<div class="leftDiv">
 				<h1 class="styleClass" id="myHeader" onclick="location.href = '/home.html'">UDeal</h1>
+				</div>
+
+				<div class="rightDiv">
+				<script>
+					$(function() {
+
+						$('#mylist').on('change', function(){
+							var selected = $(this).find("option:selected").val();
+							var cookie_name = 'ConnexityUserCategory';
+							var cookie_value = $(this).find("option:selected").val();
+							createCookie(cookie_name,cookie_value,7);
+							location.reload();
+						});
+
+					});
+					function createCookie(name,value,days) {
+						if (days) {
+							var date = new Date();
+							date.setTime(date.getTime()+(days*24*60*60*1000));
+							var expires = "; expires="+date.toGMTString();
+						}
+						else var expires = "";
+						document.cookie = name+"="+value+expires+"; path=/";
+					}
+
+
+				</script>
+
+				<select style="width:150px" data-live-search="true" id="mylist" class="form-control">
+					<option value="" selected="selected">Choose Style</option>
+					<option value="original" >original</option>
+					<option value="tech" >tech</option>
+					<option value="book" >book</option>
+					<option value="outdoor" >outdoor</option>
+					<option value="fashion">fashion</option>
+				</select>
+				</div>
 					<script>
 							if(sessionStorage.getItem('active-btn')){
 									sessionStorage.removeItem('active-btn');
@@ -147,6 +186,8 @@
 			</div>
 
 			<a href="#0" class="cd-top">Top</a>
+
+
 
 			<form method="GET" action="/search/query.html"  onsubmit="return validateForm()" name="myform"  >
 				<div class="col-md-12">
