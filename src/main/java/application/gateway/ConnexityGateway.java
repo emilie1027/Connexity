@@ -21,7 +21,46 @@ public class ConnexityGateway {
     private String hostAddress;
     private String productDomain = "product";
 
-    public String getByKeyWord(String key) throws IOException{
+    public String getByUpc(String upc) throws IOException {
+        if(upc == null || upc.equals(""))
+            throw new IllegalArgumentException("upc cannot be empty!");
+        if(upc.length() != 12)
+            throw new IllegalArgumentException("upc need to be 12 char long");
+
+        Map<String, String> defaultParameter = returnDefaultParameter();
+        defaultParameter.put("productIdType","UPC");
+        defaultParameter.put("productId",upc);
+        return generalGet(defaultParameter);
+    }
+
+    public String getBySku(String sku, String merchantId) throws IOException {
+        if(sku == null || sku.equals("") || merchantId == null || merchantId.equals(""))
+            throw new IllegalArgumentException("sku and merchantId cannot be empty!");
+
+        Map<String, String> defaultParameter = returnDefaultParameter();
+        defaultParameter.put("productIdType","sku");
+        defaultParameter.put("productId",sku);
+        defaultParameter.put("merchantId", merchantId);
+        return generalGet(defaultParameter);
+    }
+
+    public String getByUpcOrSku(String upc, String sku, String merchantId) throws IOException {
+        String result = null;
+        //the api won't work for upc length != 12, and the upc returned by api can be more than 12 char long
+        //for some products, the api will not recognize its upc/sku returned
+        if(upc != null && !upc.equals("") && upc.length() == 12) {
+            result = getByUpc(upc);
+            if(result != null)
+                return result;
+        }
+
+        if(sku != null && !sku.equals("") && merchantId != null && !merchantId.equals(""))
+            return getBySku(sku, merchantId);
+
+        return null;
+    }
+
+    public String getByKeyWord(String key) throws IOException {
         if(key == null || key.equals(""))
             throw new IllegalArgumentException("search key should not be empty nor null");
 

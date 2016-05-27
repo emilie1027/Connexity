@@ -1,167 +1,459 @@
 <!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="//www.thymeleaf.org">
+	<head>
+		<title>UDeal</title>
+		<link rel="stylesheet" th:href="@{/css/bootstrap-3.3.5-dist/css/bootstrap.css}" />
+		<link rel="stylesheet" th:href="@{/css/mycss/style.css}"/>
+		<link rel="stylesheet" th:href="@{/css/mycss/mystyle.css}"/>
+		<link rel="stylesheet" th:href="@{/css/mycss/colorbox.css}"/>
 
-<head>
-	<title>Connexity</title>
-	<!-- <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap-3.3.5-dist/css/bootstrap.css}" />-->
-	<link rel="stylesheet" th:href="@{/css/bootstrap-3.3.5-dist/css/bootstrap.css}" />
-	<link rel="stylesheet" th:href="@{/css/mycss/style.css}"/>
-	<link rel="stylesheet" th:href="@{/css/mycss/mystyle.css}"/>
-	<script th:src="@{js/modernizr.js}"></script>
-	<script th:src="@{/js/jquery-1.12.3.min.js}"></script>
-	<script th:src="@{/js/bootstrap.min.js}"></script>
+		<script th:src="@{/js/modernizr.custom.js}"></script>
+		<script th:src="@{/js/jquery-1.12.3.min.js}"></script>
+		<script th:src="@{/js/bootstrap.min.js}"></script>
 
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<script>
-		function validateForm() {
-			var x = document.forms["myform"]["key"].value;
-			if (x == null || x == "") {
-				alert("Name must be filled out");
-				return false;
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+
+		<!-- Syntax Highlighter -->
+		<link href="/css/mycss/shCore.css" rel="stylesheet" type="text/css" />
+		<link href="/css/mycss/shThemeDefault.css" rel="stylesheet" type="text/css" />
+		<!-- Demo CSS -->
+		<link rel="stylesheet" href="/css/mycss/flexslider.css" type="text/css" media="screen" />
+
+		<!-- Modernizr -->
+		<script src="/js/modernizr.js"></script>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<script>
+			function validateForm() {
+				var x = document.forms["myform"]["key"].value;
+				if (x == null || x == "") {
+					alert("Name must be filled out");
+					return false;
+				}
 			}
-		}
+
+			function getRandomInt(min, max) {
+				return Math.floor(Math.random() * (max - min)) + min;
+			}
+		</script>
+
+		<style>
+			.carousel.slide img {
+				width:100%;
+				height:auto;
+			}
+		</style>
+
+		<script>$('#carousel-example-generic').carousel({wrap: true});
+		</script>
+
+		<script type="text/javascript">
+			$( document ).ready(
+			function changeFontColor() {
+				var category = document.getElementById('test').value;
+				var color = 'black';
+				if (category == 'tech') {
+					color = '#4682B4';
+				} else if (category == 'outdoor') {
+					color = '#1E90FF'
+				} else if (category == 'book') {
+					color = '#8B0000'
+				} else if (category == 'fashion') {
+					color = '#8B008B'
+				}
+
+				localStorage.setItem('color', color);
+
+				document.getElementById("myHeader").style.color = color;
+				document.getElementById("toggle-button").style.color = color;
+				document.getElementById("myAmazon").style.color = color;
+				document.getElementById("myTrend").style.color = color;
+			})
+		</script>
+
+		<script>
+			function readCookie(name) {
+				var nameEQ = name + "=";
+				var ca = document.cookie.split(';');
+				for(var i=0; ca.length>1 ;i++) {
+					var c = ca[i];
+					while (c.charAt(0)==' ')
+						c = c.substring(1,c.length);
+					if (c.indexOf(nameEQ) == 0) 
+						return c.substring(nameEQ.length,c.length);
+				}
+				return null;
+			}
+		</script>
+
+		<script type="text/javascript"
+				src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+	</head>
+	<body class="myBody">
+	<input id="test" type="hidden"/>
+	<input id="test2" type="hidden"/>
+
+	<input name="style" id= "style" value="programmer" type="hidden"/>
+
+	<script>
+		document.getElementById("test").value = $.cookie("ConnexityUserCategory"); //readCookie('ConnexityUserID');
 	</script>
 
-</head>
+	<script>
+		document.getElementById("test2").value = $.cookie("ConnexityUserID"); //readCookie('ConnexityUserID');
+	</script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	<script src="/js/jquery.min.js"></script>
+	<!--<script>window.jQuery || document.write('<script src="/js/jquery-1.7.min.js">\x3C/script>')</script>-->
+	<script src="/js/jquery.flexslider.js"></script>
+
+	<script src="//www.jacklmoore.com/colorbox/jquery.colorbox.js"></script>
+	<!--these parts should be moved to body later-->
+	<!--category info can now be sent to backend, but they haven't stored it...-->
+	<script>
+		function openColorBox(){
+			var a =document.getElementById("test").value ;// if doesn't have cookie before
+			if(a=="undefined")
+				$.colorbox({iframe:true, width:"70%", height:"80%", href: "/category.html",onClosed:function(){ location.reload(true); }});
+//			$(".chpic").colorbox({width:"80%", height:"80%", iframe:true, href: "/category.html",
+//				onClosed:function(){ location.reload(true); } });
+		}
+
+		function countDown(){
+			var seconds = 1;
+			seconds--
+
+			if (seconds === 0){
+				openColorBox();
+				clearInterval(i);
+			}
+		}
+		 seconds = 1,
+				i = setInterval(countDown, 1000);
+	</script>
 
 
-<body>
 		<div class="container" name="top">
-			<div class="page-header">
-				<h1 class="myheader" onclick="location.href = '/home.html'">Connexity</h1>
+			<div class="page-header" style="margin-bottom: 2em" >
+				<div class="leftDiv">
+				<h1 class="styleClass" id="myHeader" onclick="location.href = '/home.html'">UDeal</h1>
+				</div>
+
+				<div class="rightDiv">
+				<script>
+					$(function() {
+
+						$('#mylist').on('change', function(){
+							var selected = $(this).find("option:selected").val();
+							var cookie_name = 'ConnexityUserCategory';
+							var cookie_value = $(this).find("option:selected").val();
+							createCookie(cookie_name,cookie_value,7);
+							location.reload();
+						});
+
+					});
+					function createCookie(name,value,days) {
+						if (days) {
+							var date = new Date();
+							date.setTime(date.getTime()+(days*24*60*60*1000));
+							var expires = "; expires="+date.toGMTString();
+						}
+						else var expires = "";
+						document.cookie = name+"="+value+expires+"; path=/";
+					}
+
+
+				</script>
+
+				<select style="width:150px" data-live-search="true" id="mylist" class="form-control">
+					<option value="" selected="selected">Choose Style</option>
+					<option value="original" >original</option>
+					<option value="tech" >tech</option>
+					<option value="book" >book</option>
+					<option value="outdoor" >outdoor</option>
+					<option value="fashion">fashion</option>
+				</select>
+				</div>
+					<script>
+							if(sessionStorage.getItem('active-btn')){
+									sessionStorage.removeItem('active-btn');
+							}
+					</script>
 			</div>
 
 			<a href="#0" class="cd-top">Top</a>
-			<form method="GET" action="/search/query.html"  onsubmit="return validateForm()" name="myform"  >
-				<div class="input-group col-md-12">
-					<input name="key" type="text" class="form-control input-lg" placeholder="Search for product" />
-					 <span class="input-group-btn">
-	                	<button class="btn btn-info btn-lg" type="submit">
-	                	<i class="glyphicon glyphicon-search"></i></button>
-	            	</span>
+
+
+
+			<form method="GET" action="/search/query.html"  onsubmit="return validateForm()" name="myform">
+				<div class="col-md-12">
+					<div class="input-group">
+						<div class="input-group-btn">
+							<input class="ranking" type="hidden" name="sort" id="sort" />
+							<button type="button" id="toggle-button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span data-bind="label" id="current">Smart</span>&nbsp;
+								<span class="caret"></span>
+							</button>
+							<!--<input class="span2" id="sort" name="sort" type="hidden"> -->
+							<ul id="def" class="dropdown-menu">
+								<!--
+																<li class="dropdown-item" onclick="$('#sort').val('price_asc')">Price up</li> -->
+								<li><a class="dropdown-item" id ="relevancy_desc" onclick="mydef(this);" > Smart</a></li>
+								<li><a class="dropdown-item" id ="price_desc" onclick="mydef(this);" > Price down</a></li>
+								<li><a class="dropdown-item" id ="price_asc" onclick="mydef(this);" > Price up</a></li>
+								<li><a class="dropdown-item" id ="discount_desc" onclick="mydef(this);" > Sales</a></li>
+							</ul>
+						</div>
+						<input id="key" name="key" type="text" class="form-control input-lg" placeholder="Search for product" autocomplete="on"/>
+								<span class="input-group-btn">
+									<button class="btn btn-info btn-lg" id="search-button" type="submit">
+										<i class="glyphicon glyphicon-search"></i></button>
+								</span>
+					</div>
 				</div>
 			</form>
 
-		 <div class="banner-bottom">
-			<div class="col-md-3 bottom-grid">
-				<div class="bottom-pad">
-					<h3 class="cart-text">New</h3>
-					<a class="cart-image" href="#"><img src="images/cart.png" alt="" /></a>
-					<div class="clearfix"></div>
-					<div class="btm-img">
-						<img src="images/pic2.jpg" alt="" />
-					</div>
-					<h4>kaftan with hand-knit detail</h4>
-					<p>$250</p>
+			<script>
+				$( document.body).on('click', '.dropdown-menu li', function(event) {
+					var $target = $( event.currentTarget);
+										sessionStorage.setItem('active-btn', $(event.currentTarget).text());
+					$target.closest('.input-group-btn')
+							.find( '[data-bind="label"]').text($target.text())
+							.end()
+							.children( '.dropdown-toggle' ).dropdown( 'toggle' );
+
+					return false;
+				});
+
+				function mydef(obj) {
+					document.getElementById("sort").value = obj.id;
+				}
+
+				window.onbeforeunload = function() {
+					sessionStorage.setItem('keyword', $('#key').val());
+				}
+			</script>
+
+
+			<div class="threeColumn">
+
+				<div class="banner-bottom">
+
+					<h2 class="styleClass" id="myAmazon"> Recommendation</h2>
+					<script type="text/javascript">
+
+						(function() {
+							// store the slider in a local variable
+							var $window = $(window),
+									flexslider = { vars:{} };
+
+							// tiny helper function to add breakpoints
+							function getGridSize() {
+								return (600>window.innerWidth ) ? 2 :
+										(900>window.innerWidth ) ? 3 : 4;
+							}
+
+							$(function() {
+								SyntaxHighlighter.all();
+							});
+
+							$window.load(function() {
+								$('.flexslider').flexslider({
+									animation: "slide",
+									animationSpeed: 400,
+									animationLoop: false,
+									itemWidth: 210,
+									itemMargin: 5,
+									minItems: getGridSize(), // use function to pull in initial value
+									maxItems: getGridSize(), // use function to pull in initial value
+									start: function(slider){
+										$('body').removeClass('loading');
+										flexslider = slider;
+									}
+								});
+							});
+
+							// check grid size on resize event
+							$window.resize(function() {
+								var gridSize = getGridSize();
+
+								flexslider.vars.minItems = gridSize;
+								flexslider.vars.maxItems = gridSize;
+							});
+						}());
+
+					</script>
+
+					<section class="slider">
+						<div class="flexslider">
+							<ul class="slides" th:attr="value=${amazonOffers.size()}" id="ama" text="aaa">
+								<li  th:each="offer : ${amazonOffers}"  height="250em" width="200em" >
+									<div class="AmazonDiv1">
+									<div class="AmazonDiv2">
+									<img th:src="${offer.images[2]}" height="100em" width="100em"/>
+										</div>
+										<div class="offerinfo">
+											<a th:href="${offer.url}" th:text="${offer.title}">Items</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+
+
+						</div>
+					</section>
+
+					<script>
+						var a =document.getElementById("ama").getAttribute("value") ;// if doesn't have cookie before
+						if(a=="0")
+						{
+							document.getElementById("myAmazon").innerHTML = "";
+						}
+
+					</script>
+
 				</div>
+
+				<div class="banner-bottom">
+					<div>
+					<h2 class="styleClass" id="myTrend"> Trending</h2>
+					<ul th:attr="value=${trendOffers.size()}" id="tren" text="aaa">
+						<li  th:each="offer : ${trendOffers}">
+							<div class="col-md-3 bottom-grid">
+								<div class="bottom-pad">
+									<div class="btm-img">
+										<img th:src="${offer.images[3]}"/>
+									</div>
+								</div>
+								<div class="offerinfo">
+									 <!--<a th:href="${offer.url}" th:text="${offer.title}">Items</a>-->
+									<a th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a>
+									<p th:text="'$'+${offer.price}"></p>
+								</div>
+							</div>
+						</li>
+					</ul>
+					</div>
+				</div>
+
+				<script>
+					var a =document.getElementById("tren").getAttribute("value") ;// if doesn't have cookie before
+					if(a=="0")
+					{
+						document.getElementById("myTrend").innerHTML = "";
+					}
+
+				</script>
+				<div class="banner-bottom">
+					<h2 id="myHistory" class="styleClass"> History</h2>
+					<ul  text="aaa" id="his" value="" th:attr="value=${historyOffers.size()}">
+						<!--<input th:value="${historyOffers.size()}" />-->
+						<li  th:each="offer : ${historyOffers}">
+							<div class="col-md-3 bottom-grid">
+								<div class="bottom-pad">
+									<div class="btm-img">
+										<img th:src="${offer.images[3]}" alt="" />
+									</div>
+								</div>
+								<div class="offerinfo">
+									<!--<a th:href="${offer.url}" th:text="${offer.title}">Items</a>-->
+									<a class="myUrl" th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a>
+									<p th:text="'$'+${offer.price}"></p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<script>
+					var a =document.getElementById("his").getAttribute("value") ;// if doesn't have cookie before
+					if(a=="0")
+					{
+						document.getElementById("myHistory").innerHTML = "";
+					}
+
+				</script>
+
 			</div>
 
-			<div class="col-md-3 bottom-grid">
-				<div class="bottom-pad">
-					<h3 class="cart-text">New</h3>
-					<a class="cart-image" href="#"><img src="images/cart.png" alt="" /></a>
-					<div class="clearfix"></div>
-					<div class="btm-img">
-						<img src="images/pic2.jpg" alt="" />
-					</div>
-					<h4>kaftan with hand-knit detail</h4>
-					<p>$250</p>
-				</div>
-			</div>
-
-			<div class="col-md-3 bottom-grid">
-				<div class="bottom-pad">
-					<h3 class="cart-text">New</h3>
-					<a class="cart-image" href="#"><img src="images/cart.png" alt="" /></a>
-					<div class="clearfix"></div>
-					<div class="btm-img">
-						<img src="images/pic2.jpg" alt="" />
-					</div>
-					<h4>kaftan with hand-knit detail</h4>
-					<p>$250</p>
-				</div>
-			</div>
-
-			<div class="col-md-3 bottom-grid">
-				<div class="bottom-pad">
-					<h3 class="cart-text">New</h3>
-					<a class="cart-image" href="#"><img src="images/cart.png" alt="" /></a>
-					<div class="clearfix"></div>
-					<div class="btm-img">
-						<img src="images/pic2.jpg" alt="" />
-					</div>
-					<h4>kaftan with hand-knit detail</h4>
-					<p>$250</p>
-				</div>
-			</div>
-		  </div>
-	 </div>
-
-		<div class="footer">
+			<div class="footer">
 				<div class="footer-one">
-					<h2><a href="#">CONNEXITY</a></h2>
-					<p>Copyright &copy; 2016. Support By Connexity TEAM3.</p>
-					<p>Contact US: </p>
+					<h2 name="styleClass"><a href="#" >UDeal</a></h2>
+					<p>Copyright &copy; 2016. Support By Connexity Team 3.</p>
+					<p><a href="https://github.com/emilie1027/Connexity">Contact us</a></p>
 				</div>
 				<div class="footer-two">
 					<h4>MAN</h4>
 					<ul>
-						<li><a href="#">Jackets</a></li>
-						<li><a href="#">Blazers</a></li>
-						<li><a href="#">Suits</a></li>
-						<li><a href="#">Trousers</a></li>
-						<li><a href="#">Jeans</a></li>
+						<li><a href="/search/query.html?key=jackets">Jackets</a></li>
+						<li><a href="/search/query.html?key=blazers+man">Blazers</a></li>
+						<li><a href="/search/query.html?key=man+suits">Suits</a></li>
+						<li><a href="/search/query.html?key=man+trousers">Trousers</a></li>
+						<li><a href="/search/query.html?key=man+jeans">Jeans</a></li>
 					</ul>
 					<ul>
-						<li><a href="#">Denim</a></li>
-						<li><a href="#">Shorts</a></li>
-						<li><a href="#">Shirts</a></li>
-						<li><a href="#">T-shirts</a></li>
-						<li><a href="#">Polo</a></li>
+						<li><a href="/search/query.html?key=man+denim">Denim</a></li>
+						<li><a href="/search/query.html?key=man+shorts">Shorts</a></li>
+						<li><a href="/search/query.html?key=man+shirt">Shirts</a></li>
+						<li><a href="/search/query.html?key=man+t-shirt">T-shirts</a></li>
+						<li><a href="/search/query.html?key=man+polo">Polo</a></li>
 					</ul>
 				</div>
+
 				<div class="footer-two">
 					<h4>WOMAN</h4>
 					<ul>
-						<li><a href="#">Coats</a></li>
-						<li><a href="#">Jackets</a></li>
-						<li><a href="#">Dresses</a></li>
-						<li><a href="#">Jumpsuits</a></li>
-						<li><a href="#">Tops</a></li>
+						<li><a href="/search/query.html?key=woman+coat">Coats</a></li>
+						<li><a href="/search/query.html?key=woman+jacket">Jackets</a></li>
+						<li><a href="/search/query.html?key=dresses">Dresses</a></li>
+						<li><a href="/search/query.html?key=jumpsuit">Jumpsuits</a></li>
+						<li><a href="/search/query.html?key=woman+top">Tops</a></li>
 					</ul>
 					<ul>
-						<li><a href="#">Leather</a></li>
-						<li><a href="#">Trousers</a></li>
-						<li><a href="#">Shorts</a></li>
-						<li><a href="#">Jeans</a></li>
-						<li><a href="#">Denim</a></li>
+						<li><a href="/search/query.html?key=woman+leather">Leather</a></li>
+						<li><a href="/search/query.html?key=woman+trouser">Trousers</a></li>
+						<li><a href="/search/query.html?key=woman+shorts">Shorts</a></li>
+						<li><a href="/search/query.html?key=woman+jeans">Jeans</a></li>
+						<li><a href="/search/query.html?key=woman+denim">Denim</a></li>
 					</ul>
 				</div>
+
 				<div class="footer-three">
 					<h4>KID</h4>
 					<ul>
-						<li><a href="#">Girl</a></li>
-						<li><a href="#">Boy</a></li>
-						<li><a href="#">Baby girl</a></li>
-						<li><a href="#">Baby boy</a></li>
+						<li><a href="/search/query.html?key=girl">Girl</a></li>
+						<li><a href="/search/query.html?key=boy">Boy</a></li>
+						<li><a href="/search/query.html?key=baby+girl">Baby girl</a></li>
+						<li><a href="/search/query.html?key=baby+boy">Baby boy</a></li>
 						<li><a href="#">Min</a></li>
 					</ul>
 				</div>
+
 				<div class="footer-three">
 					<h4>SHOES &amp;	BAGS</h4>
 					<ul>
-						<li><a href="#">Woman</a></li>
-						<li><a href="#">Man</a></li>
-						<li><a href="#">Girl</a></li>
-						<li><a href="#">Boy</a></li>
+						<li><a href="/search/query.html?key=woman+shoe+or+bag">Woman</a></li>
+						<li><a href="/search/query.html?key=man+bag+or+shoe">Man</a></li>
+						<li><a href="/search/query.html?key=girl+bag">Girl</a></li>
+						<li><a href="/search/query.html?key=shoe+boy">Boy</a></li>
 					</ul>
 				</div>
-				<div class="clearfix"></div>
+			</div>
+			<a href="#0" class="cd-top">Top</a>
+			<script th:src="@{/js/main.js}"></script>
+
 		</div>
-		    <a href="#0" class="cd-top">Top</a>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script th:src="@{/js/main.js}"></script>
-</body>
+
+	<script type="text/javascript" src="/js/shCore.js"></script>
+	<script type="text/javascript" src="/js/shBrushXml.js"></script>
+	<script type="text/javascript" src="/js/shBrushJScript.js"></script>
+	<script src="/js/jquery.easing.js"></script>
+	<script src="/js/jquery.mousewheel.js"></script>
+	<script src="/js/demo.js"></script>
+
+
+	</body>
 </html>
