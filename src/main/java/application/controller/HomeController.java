@@ -3,13 +3,10 @@ package application.controller;
 /**
  * Created by lijiayu on 4/30/16.
  */
-import application.gateway.ConnexityGateway;
-import application.gateway.RedisGateway;
+import application.gateway.*;
 import application.model.AmazonOffer;
 import application.model.Offer;
 import application.search.SearchStrategy;
-import application.gateway.AmazonGateway;
-import application.gateway.HistoryGateway;
 import application.utilities.Utility;
 
 import org.springframework.beans.factory.annotation.Autowired;
