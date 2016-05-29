@@ -53,22 +53,49 @@
 			function changeFontColor() {
 				var category = document.getElementById('test').value;
 				var color = 'black';
+				var color2 = 'black';
 				if (category == 'tech') {
-					color = '#4682B4';
+					color = '#5bc0de';
+					color2='#4c8a9c';
 				} else if (category == 'outdoor') {
-					color = '#1E90FF'
+					color = '#6c9f89';
+					color2= '#887B6A';
+
 				} else if (category == 'book') {
-					color = '#8B0000'
+					color = '#b4a276';
+					color2= '#333333';
 				} else if (category == 'fashion') {
-					color = '#8B008B'
+					color = '#ff9a59';
+					color2= '#f99b8b';
 				}
 
 				localStorage.setItem('color', color);
-
 				document.getElementById("myHeader").style.color = color;
 				document.getElementById("toggle-button").style.color = color;
 				document.getElementById("myAmazon").style.color = color;
 				document.getElementById("myTrend").style.color = color;
+				document.getElementById("myHistory").style.color = color;
+				document.getElementById("mylist").style.color = color;
+				var elements = document.getElementsByClassName("btn-info");
+				for (var i = 0;  elements.length>i; i++) {
+					elements[i].style.backgroundColor=color;
+				}
+
+				var elements2 = document.getElementsByClassName("myText");
+				for (var i = 0;  elements2.length>i; i++) {
+					elements2[i].style.color=color2;
+				}
+
+				var elements3 = document.getElementsByClassName("myUrl");
+				for (var i = 0;  elements3.length>i; i++) {
+					elements3[i].style.color=color2;
+				}
+				var elements4 = document.getElementsByClassName("myText2");
+				for (var i = 0;  elements4.length>i; i++) {
+					elements4[i].style.color=color2;
+				}
+
+
 			})
 		</script>
 
@@ -138,9 +165,9 @@
 
 
 		<div class="container" name="top">
-			<div class="page-header" style="margin-bottom: 2em" >
+			<div class="page-header" >
 				<div class="leftDiv">
-				<h1 class="styleClass" id="myHeader" onclick="location.href = '/home.html'">UDeal</h1>
+				<h1 class="myheader" id="myHeader" onclick="location.href = '/home.html'">UDeal</h1>
 				</div>
 
 				<div class="rightDiv">
@@ -169,13 +196,12 @@
 
 				</script>
 
-				<select style="width:150px" data-live-search="true" id="mylist" class="form-control">
-					<option value="" selected="selected">Choose Style</option>
-					<option value="original" >original</option>
-					<option value="tech" >tech</option>
-					<option value="book" >book</option>
-					<option value="outdoor" >outdoor</option>
-					<option value="fashion">fashion</option>
+				<select style="width:150px" data-live-search="true" id="mylist" class="soflow">
+					<option value="" selected="selected">STYLE</option>
+					<option value="tech" >TECH</option>
+					<option value="book" >BOOK</option>
+					<option value="outdoor" >OUTDOOR</option>
+					<option value="fashion">FASHION</option>
 				</select>
 				</div>
 					<script>
@@ -183,11 +209,12 @@
 									sessionStorage.removeItem('active-btn');
 							}
 					</script>
+				<hr/>
 			</div>
 
 			<a href="#0" class="cd-top">Top</a>
 
-
+			<HR COLOR="green" WIDTH="100%"/>
 
 			<form method="GET" action="/search/query.html"  onsubmit="return validateForm()" name="myform">
 				<div class="col-md-12">
@@ -243,7 +270,7 @@
 
 				<div class="banner-bottom">
 
-					<h2 class="styleClass" id="myAmazon"> Recommendation</h2>
+					<h2 class="styleClass" id="myAmazon"> RECOMMENDATION</h2>
 					<script type="text/javascript">
 
 						(function() {
@@ -297,7 +324,7 @@
 									<img th:src="${offer.images[2]}" height="100em" width="100em"/>
 										</div>
 										<div class="offerinfo">
-											<a th:href="${offer.url}" th:text="${offer.title}">Items</a>
+											<a th:href="${offer.url}" th:text="${offer.title}" class="myText">Items</a>
 										</div>
 									</div>
 								</li>
@@ -320,7 +347,7 @@
 
 				<div class="banner-bottom">
 					<div>
-					<h2 class="styleClass" id="myTrend"> Trending</h2>
+					<h2 class="styleClass" id="myTrend"> TRENDING</h2>
 					<ul th:attr="value=${trendOffers.size()}" id="tren" text="aaa">
 						<li  th:each="offer : ${trendOffers}">
 							<div class="col-md-3 bottom-grid">
@@ -331,7 +358,7 @@
 								</div>
 								<div class="offerinfo">
 									 <!--<a th:href="${offer.url}" th:text="${offer.title}">Items</a>-->
-									<a th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a>
+									<a class="myText2" th:href="@{/search/redirect/(url=${offer.url}, sku=${offer.sku}, upc=${offer.upc}, merchantId=${offer.merchantId})}" th:text="${offer.title}">Items</a>
 									<p th:text="'$'+${offer.price}"></p>
 								</div>
 							</div>
@@ -349,7 +376,7 @@
 
 				</script>
 				<div class="banner-bottom">
-					<h2 id="myHistory" class="styleClass"> History</h2>
+					<h2 id="myHistory" class="styleClass"> HISTORY</h2>
 					<ul  text="aaa" id="his" value="" th:attr="value=${historyOffers.size()}">
 						<!--<input th:value="${historyOffers.size()}" />-->
 						<li  th:each="offer : ${historyOffers}">
@@ -385,6 +412,7 @@
 					<p>Copyright &copy; 2016. Support By Connexity Team 3.</p>
 					<p><a href="https://github.com/emilie1027/Connexity">Contact us</a></p>
 				</div>
+
 				<div class="footer-two">
 					<h4>MAN</h4>
 					<ul>
