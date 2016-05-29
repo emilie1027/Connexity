@@ -19,7 +19,7 @@ public class Offer {
     public String description = null;
     public String manufacturer = null;
     public URL url = null;
-    public Double price = null;
+    public String price = null;
     public List<URL> images = null;
     public String merchantName = null;
     public URL merchantLogoUrl = null;
@@ -52,7 +52,8 @@ public class Offer {
             merchantId = null;
         }
         try {
-            price = new Double((long)(((JSONObject) offerJson.get("price")).get("integral"))/100.0);
+            Double priceValue = new Double((long)(((JSONObject) offerJson.get("price")).get("integral"))/100.0);
+            price = String.format("%.2f", priceValue);
         }
         catch (NullPointerException e) {
             price = null;
@@ -222,12 +223,12 @@ public class Offer {
     }
 
 
-    public Double getPrice() {
+    public String getPrice() {
         return price;
     }
 
 
-    public void setPrice(Double price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 
