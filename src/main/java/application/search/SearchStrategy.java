@@ -1,5 +1,6 @@
 package application.search;
 
+import application.gateway.BingSpellCheckGateway;
 import application.gateway.ConnexityGateway;
 import application.model.Offer;
 import org.codehaus.groovy.tools.shell.IO;
@@ -13,15 +14,27 @@ import java.util.*;
 public class SearchStrategy {
     @Autowired
     private ConnexityGateway connexityGateway;
+    @Autowired
+    private BingSpellCheckGateway bingSpellCheckGateway;
     
     public List<Offer> basicSearch(String key) throws IOException {
         String searchResult = connexityGateway.getByKeyWord(key);
-        return Offer.parseString(searchResult);
+        List<Offer> offerlist = Offer.parseString(searchResult);
+        if (offerlist.size() == 0) {
+            String newKey = bingSpellCheckGateway.bingSpellCheck(key);
+            return Offer.parseString(connexityGateway.getByKeyWord(newKey));
+        }
+        return offerlist;
     }
-    
+
     public List<Offer> basicSearch(String key, Map<String, String> overrideParameter) throws IOException {
         String searchResult = connexityGateway.getByKeyWord(key, overrideParameter);
-        return Offer.parseString(searchResult);
+        List<Offer> offerlist = Offer.parseString(searchResult);
+        if (offerlist.size() == 0) {
+            String newKey = bingSpellCheckGateway.bingSpellCheck(key);
+            return Offer.parseString(connexityGateway.getByKeyWord(newKey, overrideParameter));
+        }
+        return offerlist;
     }
 
     public List<Offer> advancedSearch(Map<String, String> searchParams) throws IOException {

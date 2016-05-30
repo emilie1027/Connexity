@@ -28,9 +28,9 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$(".myli:gt(11)").hide();
+			$(".myli:gt(19)").hide();
 			var total_q=$(".myli").index()+1;
-			var current_page=12;
+			var current_page=20;
 			var current_num=1;
 			var total_page = Math.floor(document.getElementById("textbox").value/current_page)+1;
 			var next=$(".next");
@@ -100,8 +100,10 @@
 		.item{overflow:hidden;}
 		.clear{zoom:1;}
 		.clear:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
-		.page_btn{padding-top:20px;}
-		.page_btn a{cursor:pointer;padding:5px;border:solid 1px #ccc;font-size:12px;}
+		.page_btn{padding-top:20px;
+			border:20px;}
+		.page_btn a{cursor:pointer;padding:5px;border:solid 1px #ccc;font-size:12px;
+			color: #000;}
 		.page_box{float:right;}
 		.num{padding:0 10px;}
 	</style>
@@ -114,6 +116,7 @@
 		<div class="page-header">
 			<h1 class="myheader" id="myHeader" onclick="location.href = '/home.html'">UDeal</h1>
 		</div>
+		<HR COLOR="green" WIDTH="100%"/>
 
 		<a href="#0" class="cd-top">Top</a>
 

@@ -154,7 +154,8 @@ public class AmazonOffer {
         			catch (NullPointerException e) {
         				thisOffer.price = null;
         			}
-        			result.add(thisOffer);
+                    if(thisOffer.images.size() == 3)
+                        result.add(thisOffer);
         		}
         }
         		return result;
